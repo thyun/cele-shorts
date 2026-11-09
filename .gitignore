@@ -1,0 +1,27 @@
+# Generated outputs and temporary work files
+#/output/
+#/work/*
+#!/work/*.py
+
+# Video and audio assets
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.m4v
+*.mp3
+*.m4a
+*.wav
+*.flac
+*.aac
+
+# Python and local environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and OS files
+.idea/
+.DS_Store
