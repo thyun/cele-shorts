@@ -1,7 +1,10 @@
 import importlib
+import copy
+import json
 import os
 import pycapcut as cc
 from pycapcut import trange, tim
+from title_style import highlight_color, title_ranges
 plan = importlib.import_module(os.environ.get("SHORTS_PLAN", "plan"))
 SHORTS, SRC = plan.SHORTS, plan.SRC
 
@@ -21,6 +24,7 @@ for s in SHORTS:
     script.add_track(cc.TrackType.video, "main")
     script.add_track(cc.TrackType.text, "title")
     script.add_track(cc.TrackType.text, "caption")
+    script.add_track(cc.TrackType.text, "source")
 
     segs = s["segments"]
     offs, acc = [], 0.0
@@ -49,19 +53,49 @@ for s in SHORTS:
             seg.add_fade(0, round(END_FADE * 1_000_000))
         script.add_segment(seg, "main")
 
+    base_total = total
+    if "outro_video" in s:
+        outro_path = os.path.abspath(s["outro_video"])
+        outro = cc.VideoMaterial(outro_path)
+        duration = outro.duration
+        script.add_segment(cc.VideoSegment(outro, trange(round(total * 1_000_000), duration)), "main")
+        total += duration / 1_000_000
+
     def to_out(t):
         for (a, b, _), o in zip(segs, offs):
             if a - 1e-6 <= t <= b + 1e-6:
                 return o + (t - a) / SPEED
 
     title = cc.TextSegment(
-        s["title"], trange(tim("0s"), tim(f"{total}s")),
+        s["title"], trange(tim("0s"), tim(f"{base_total}s")),
         style=cc.TextStyle(size=9.0, bold=True, color=(1, 1, 1), align=1),
-        clip_settings=cc.ClipSettings(transform_y=0.72),
-        background=cc.TextBackground(color="#FF3B5C", alpha=0.93, round_radius=0.3, height=0.25, width=0.25),
+        clip_settings=cc.ClipSettings(transform_y=0.79),
+        background=cc.TextBackground(color="#AF1432", alpha=0.93, round_radius=0.3, height=0.25, width=0.25),
         border=cc.TextBorder(color=(0, 0, 0), width=30.0),
     )
     script.add_segment(title, "title")
+    material = script.materials.texts[-1]
+    content = json.loads(material["content"])
+    base = content["styles"][0]
+    ranges = title_ranges(s)
+    boundaries = sorted({0, len(s["title"]), *(p for pair in ranges for p in pair)})
+    styles = []
+    for start, end in zip(boundaries, boundaries[1:]):
+        style = copy.deepcopy(base)
+        style["range"] = [start, end]
+        if any(start >= a and end <= b for a, b in ranges):
+            style["fill"]["content"]["solid"]["color"] = list(highlight_color(s))
+        styles.append(style)
+    content["styles"] = styles
+    material["content"] = json.dumps(content, ensure_ascii=False)
+
+    source = cc.TextSegment(
+        f"출처: {s['source']}", trange(tim("0s"), tim(f"{base_total}s")),
+        style=cc.TextStyle(size=4.0, color=(1, 1, 1), align=1),
+        clip_settings=cc.ClipSettings(transform_y=-0.9),
+        border=cc.TextBorder(color=(0, 0, 0), width=25.0),
+    )
+    script.add_segment(source, "source")
 
     for a, b, t in s["captions"]:
         oa, ob = to_out(a), to_out(b)

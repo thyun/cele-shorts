@@ -1,0 +1,11 @@
+{
+  "name": "cele-shorts-browser",
+  "private": true,
+  "scripts": {
+    "browser:open": "node browser/studio.mjs",
+    "browser:check": "node browser/studio.mjs --check"
+  },
+  "dependencies": {
+    "playwright": "^1.57.0"
+  }
+}

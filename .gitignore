@@ -25,3 +25,7 @@ venv/
 # Editor and OS files
 .idea/
 .DS_Store
+
+# Browser automation dependencies and private login profile
+node_modules/
+.browser-profile/

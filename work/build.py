@@ -1,5 +1,6 @@
 import importlib, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
+from title_style import highlight_color, title_parts
 plan = importlib.import_module(os.environ.get("SHORTS_PLAN", "plan"))
 SHORTS, SRC = plan.SHORTS, plan.SRC
 
@@ -34,6 +35,31 @@ def text_png(path, text, size, y, fill, stroke, box=None):
     if box:
         d.rounded_rectangle((x + bb[0] - 40, y + bb[1] - 24, x + bb[0] + tw + 40, y + bb[1] + th + 24), 28, fill=box)
     d.text((x, y), text, font=f, fill=fill, stroke_width=stroke, stroke_fill=stroke and (0, 0, 0, 255))
+    im.save(path)
+
+
+def title_png(path, short):
+    lines = title_parts(short)
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    size = 78
+    while size > 35:
+        f = font(size)
+        if max(d.textlength(line, font=f) for line, _ in lines) <= W - 150:
+            break
+        size -= 2
+    f = font(size)
+    height = size + 22
+    for row, (line, spans) in enumerate(lines):
+        x = (W - d.textlength(line, font=f)) / 2
+        y = 110 + row * height
+        d.rounded_rectangle((x - 30, y - 10, W - x + 30, y + height), 22, fill=(175, 20, 50, 235))
+        d.text((x, y), line, font=f, fill="white", stroke_width=7, stroke_fill="black")
+        for start, end in spans:
+            pos = x + d.textlength(line[:start], font=f)
+            d.text((pos, y), line[start:end], font=f,
+                   fill=tuple(round(c * 255) for c in highlight_color(short)),
+                   stroke_width=7, stroke_fill="black")
     im.save(path)
 
 
@@ -75,8 +101,11 @@ def build(s):
     # 오버레이 PNG: 상단 후킹 문구 + 하단 자막
     pngs = []
     tp = f"{PNG_DIR}/{s['id']}_title.png"
-    text_png(tp, s["title"], 78, 190, (255, 255, 255, 255), 8, box=(255, 59, 92, 235))
+    title_png(tp, s)
     pngs.append((tp, 0.0, total))
+    source_png = f"{PNG_DIR}/{s['id']}_source.png"
+    text_png(source_png, f"출처: {s['source']}", 32, 1810, (255, 255, 255, 255), 3)
+    pngs.append((source_png, 0.0, total))
     srt = []
     for k, (a, b, t) in enumerate(s["captions"], 1):
         oa, ob = to_out(a), to_out(b)
