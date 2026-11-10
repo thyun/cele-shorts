@@ -26,15 +26,17 @@
 
 - 참고 쇼츠: https://www.youtube.com/shorts/pcjpUReL5b0
 - 원본 롱폼: 부글부글 「얼굴보고 얘기해 EP08」, https://www.youtube.com/watch?v=z16w81kdlVw
-- 현재 결과물: `output/`의 쿠션·립밤·바디크림 MP4와 SRT, `output/capcut_drafts/`의 프로젝트 3개. 컷 시간과 요약은 `output/편집안.txt` 참고.
+- 기존 결과물: `output/2026-11-09/sooyoung/`. 비교본: `output/2026-11-10/sooyoung-comparison/`.
 - 립밤의 “15년째” 발언자는 티파니이며, 동일한 제품을 15년간 사용했다는 뜻으로 단정하지 않는다.
 - 현재 결과물은 원본 영상 위주의 컷 편집으로, 게시 권한 및 YouTube 재사용 콘텐츠 수익 창출 적합성은 확인되지 않았다. 독자적인 해설과 게시 전 검토가 필요하다.
-- 캡컷 앱에서 프로젝트를 여는 검사와 실제 청취를 통한 컷 연결 검사는 아직 완료되지 않았다. 프로젝트는 `work/long.mp4`의 절대 경로를 참조한다.
+- 캡컷 앱에서 프로젝트를 여는 검사와 실제 청취를 통한 컷 연결 검사는 아직 완료되지 않았다. 프로젝트는 원본 영상의 절대 경로를 참조한다.
 
 ## 작업 파일
 
-- `work/long.mp4`: 현재 롱폼 원본. `work/bgz.ko-orig.srt`: 자동 자막.
-- `work/plan_hooks_20s.py`: 현재 세 편의 원본 구간과 자막. `work/build.py`: MP4·SRT 생성. `work/capcut.py`: 캡컷 프로젝트 생성.
-- 각 편집안의 `title`은 줄바꿈을 포함한 두 줄, `title_highlights`는 타이틀에 포함된 핵심 단어 목록, `source`는 원본 출처로 지정한다.
-- 빌드에는 FFmpeg, Python Pillow, pycapcut 및 macOS의 AppleSDGothicNeo 폰트를 사용했다. 출력 위치와 편집안, 배속은 각각 `SHORTS_OUTPUT`, `SHORTS_PLAN`, `SHORTS_SPEED` 환경 변수로 설정한다.
+- 각 작업은 `work/YYYY-MM-DD/작업명/`과 `output/YYYY-MM-DD/작업명/`에 둔다. 같은 날짜에도 다른 작업명을 사용해 덮어쓰지 않는다.
+- 롱폼과 자막 준비: `python shorts/cli.py prepare '유튜브 URL' --date YYYY-MM-DD --job 작업명`. 원본 사용 권한을 확인하고, 다운로드한 뒤 소재를 검토해 해당 작업 폴더에 `plan.json`을 작성한다.
+- 결과 생성: `python shorts/cli.py render --date YYYY-MM-DD --job 작업명`. URL 입력만으로 소재 선정과 리뷰가 자동으로 완료되는 것은 아니다.
+- 편집안 예시는 `work/2026-11-09/sooyoung/plan.json`. `title`은 줄바꿈을 포함한 두 줄, `title_highlights`는 타이틀에 포함된 핵심 단어 목록, `source`는 원본 출처로 지정한다.
+- `shorts/build.py`는 MP4·SRT, `shorts/capcut.py`는 캡컷 프로젝트를 생성한다. FFmpeg, yt-dlp, Python Pillow, pycapcut 및 macOS의 AppleSDGothicNeo 폰트가 필요하다.
+- 선택적 `narration_outro`는 작업 폴더 내 2~4초 길이의 미리 제작한 세로형 영상·음성 클립과 `text` 자막을 지정한다. 클립에는 타이틀과 출처를 포함해야 하며 캡컷에서는 별도 오디오 트랙이 아니다. 자동 음성 생성이나 외부 업로드는 하지 않는다.
 - `work/`의 임시 파일은 사용자가 남겨두도록 요청했다. 정리하거나 원본을 이동·삭제하기 전에 사용자 지시를 확인한다. 기존 결과물을 덮어쓰거나 삭제할 때도 요청 범위를 지킨다.

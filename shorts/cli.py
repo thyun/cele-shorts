@@ -1,0 +1,112 @@
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+from datetime import date
+from pathlib import Path
+from urllib.parse import urlparse
+
+from title_style import highlight_color, title_parts
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+def valid_date(value):
+    try:
+        if date.fromisoformat(value).isoformat() != value:
+            raise ValueError()
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("날짜는 YYYY-MM-DD 형식이어야 합니다") from exc
+    return value
+
+
+def valid_job(value):
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]{0,63}", value):
+        raise argparse.ArgumentTypeError("작업명에는 영문, 숫자, 밑줄, 하이픈만 사용할 수 있습니다")
+    return value
+
+
+def youtube_url(value):
+    parsed = urlparse(value)
+    if parsed.scheme != "https" or parsed.hostname not in {
+        "youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"
+    } or parsed.username or parsed.password:
+        raise argparse.ArgumentTypeError("https YouTube URL을 입력하세요")
+    return value
+
+
+def main():
+    parser = argparse.ArgumentParser(description="날짜별 쇼츠 작업 준비 및 편집안 렌더링")
+    sub = parser.add_subparsers(dest="command", required=True)
+    prepare = sub.add_parser("prepare", help="롱폼 및 제공되는 한국어 자막 다운로드")
+    prepare.add_argument("url", type=youtube_url)
+    for cmd in (prepare, sub.add_parser("render", help="검토된 plan.json으로 MP4, SRT 및 캡컷 초안 생성")):
+        cmd.add_argument("--date", type=valid_date, default=date.today().isoformat())
+        cmd.add_argument("--job", type=valid_job, required=True)
+    args = parser.parse_args()
+    work = ROOT / "work" / args.date / args.job
+    output = ROOT / "output" / args.date / args.job
+    if args.command == "prepare":
+        work.mkdir(parents=True, exist_ok=False)
+        print(f"작업 폴더: {work}", flush=True)
+        subprocess.run([
+            "yt-dlp", "--no-playlist", "--no-overwrites",
+            "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]",
+            "--merge-output-format", "mp4", "--write-subs", "--write-auto-subs",
+            "--sub-langs", "ko-orig,ko", "--convert-subs", "srt",
+            "-o", str(work / "long.%(ext)s"), "--", args.url,
+        ], check=True)
+        if not (work / "long.mp4").is_file():
+            raise FileNotFoundError(f"다운로드된 MP4가 없습니다: {work / 'long.mp4'}")
+        if not list(work.glob("long.*.srt")):
+            print("한국어 자막이 없습니다. 전사 또는 수동 대본이 필요합니다.", file=sys.stderr)
+        print("소재 검토 후 plan.json을 작성하고 render 명령을 실행하세요.")
+        return
+
+    plan_path = work / "plan.json"
+    source = work / "long.mp4"
+    with plan_path.open(encoding="utf-8") as file:
+        plan = json.load(file)
+    if not source.is_file():
+        raise FileNotFoundError(f"롱폼 영상이 없습니다: {source}")
+    if not isinstance(plan.get("shorts"), list) or not plan["shorts"]:
+        raise ValueError("plan.json에는 비어 있지 않은 shorts 목록이 필요합니다")
+    seen = set()
+    for short in plan["shorts"]:
+        name = valid_job(short["id"])
+        if name in seen:
+            raise ValueError(f"중복 쇼츠 ID: {name}")
+        seen.add(name)
+        title_parts(short)
+        highlight_color(short)
+        if not short["segments"]:
+            raise ValueError(f"{name}: 영상 구간이 없습니다")
+        for start, end, center in short["segments"]:
+            if not (0 <= start < end and 0 <= center <= 1):
+                raise ValueError(f"{name}: 잘못된 영상 구간")
+        for start, end, text in short["captions"]:
+            if not text or not any(a <= start < end <= b for a, b, _ in short["segments"]):
+                raise ValueError(f"{name}: 자막이 한 구간에 속해야 합니다")
+        if "narration_outro" in short:
+            outro = short["narration_outro"]
+            path = (work / outro["video"]).resolve()
+            if not path.is_relative_to(work.resolve()) or not path.is_file() or not outro["text"]:
+                raise ValueError(f"{name}: 작업 폴더 안의 내레이션 파일과 자막이 필요합니다")
+
+    output.mkdir(parents=True, exist_ok=False)
+    png = work / "renders" / args.job
+    png.mkdir(parents=True, exist_ok=False)
+    env = os.environ | {
+        "SHORTS_PLAN": str(plan_path), "SHORTS_SOURCE": str(source),
+        "SHORTS_WORK": str(work), "SHORTS_OUTPUT": str(output),
+        "SHORTS_PNG": str(png), "SHORTS_DRAFTS": str(output / "capcut_drafts"),
+    }
+    for script in ("build.py", "capcut.py"):
+        subprocess.run([sys.executable, str(ROOT / "shorts" / script)], env=env, check=True)
+    print(f"결과: {output}")
+
+
+if __name__ == "__main__":
+    main()
