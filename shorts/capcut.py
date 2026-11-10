@@ -4,6 +4,7 @@ import os
 import pycapcut as cc
 from pycapcut import trange, tim
 from title_style import highlight_color, title_ranges
+from narration import narration_clips
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
@@ -20,6 +21,7 @@ if SPEED <= 0:
 folder = cc.DraftFolder(ROOT)
 
 for s in SHORTS:
+    clips = narration_clips(s, os.environ["SHORTS_WORK"])
     script = folder.create_draft(s["id"], 1080, 1920, fps=30, allow_replace=False)
     script.add_track(cc.TrackType.video, "main")
     script.add_track(cc.TrackType.text, "title")
@@ -28,6 +30,11 @@ for s in SHORTS:
 
     segs = s["segments"]
     offs, acc = [], 0.0
+    if "intro" in clips:
+        intro = cc.VideoMaterial(clips["intro"]["path"])
+        script.add_segment(cc.VideoSegment(intro, trange(0, intro.duration)), "main")
+        acc = intro.duration / 1_000_000
+    base_start = acc
     for a, b, _ in segs:
         offs.append(acc)
         acc += round((b - a) * 1_000_000 / SPEED) / 1_000_000
@@ -54,9 +61,8 @@ for s in SHORTS:
         script.add_segment(seg, "main")
 
     base_total = total
-    if "narration_outro" in s:
-        outro_path = os.path.join(os.environ["SHORTS_WORK"], s["narration_outro"]["video"])
-        outro = cc.VideoMaterial(os.path.abspath(outro_path))
+    if "outro" in clips:
+        outro = cc.VideoMaterial(clips["outro"]["path"])
         script.add_segment(cc.VideoSegment(outro, trange(round(total * 1_000_000), outro.duration)), "main")
         total += outro.duration / 1_000_000
     def to_out(t):
@@ -65,7 +71,7 @@ for s in SHORTS:
                 return o + (t - a) / SPEED
 
     title = cc.TextSegment(
-        s["title"], trange(tim("0s"), tim(f"{base_total}s")),
+        s["title"], trange(tim(f"{base_start}s"), tim(f"{base_total-base_start}s")),
         style=cc.TextStyle(size=9.0, bold=True, color=(1, 1, 1), align=1),
         clip_settings=cc.ClipSettings(transform_y=0.79),
         background=cc.TextBackground(color="#AF1432", alpha=0.93, round_radius=0.3, height=0.25, width=0.25),
@@ -88,7 +94,7 @@ for s in SHORTS:
     material["content"] = json.dumps(content, ensure_ascii=False)
 
     source = cc.TextSegment(
-        f"출처: {s['source']}", trange(tim("0s"), tim(f"{base_total}s")),
+        f"출처: {s['source']}", trange(tim(f"{base_start}s"), tim(f"{base_total-base_start}s")),
         style=cc.TextStyle(size=4.0, color=(1, 1, 1), align=1),
         clip_settings=cc.ClipSettings(transform_y=-0.9),
         border=cc.TextBorder(color=(0, 0, 0), width=25.0),

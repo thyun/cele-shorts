@@ -1,6 +1,7 @@
 import json, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 from title_style import highlight_color, title_parts
+from narration import narration_clips
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
@@ -70,6 +71,7 @@ def srt_time(t):
 
 
 def build(s):
+    clips = narration_clips(s, os.environ["SHORTS_WORK"])
     segs = s["segments"]
     offs, acc = [], 0.0
     for a, b, _ in segs:
@@ -108,14 +110,15 @@ def build(s):
     text_png(source_png, f"출처: {s['source']}", 32, 1810, (255, 255, 255, 255), 3)
     pngs.append((source_png, 0.0, total))
     srt = []
+    intro_duration = clips.get("intro", {}).get("duration", 0)
+    if "intro" in clips:
+        srt.append((0, intro_duration, clips["intro"]["text"]))
     for k, (a, b, t) in enumerate(s["captions"], 1):
         oa, ob = to_out(a), to_out(b)
         p = f"{PNG_DIR}/{s['id']}_c{k}.png"
         text_png(p, t, 64, 1560, (255, 255, 255, 255), 9)
         pngs.append((p, oa, ob))
-        srt.append(f"{k}\n{srt_time(oa)} --> {srt_time(ob)}\n{t}\n")
-    with open(f"{OUT}/{s['id']}.srt", "x", encoding="utf8") as subtitle:
-        subtitle.write("\n".join(srt))
+        srt.append((oa + intro_duration, ob + intro_duration, t))
 
     last = "cv"
     for j, (p, oa, ob) in enumerate(pngs):
@@ -124,35 +127,40 @@ def build(s):
         fc.append(f"[{last}][{idx}:v]overlay=0:0:enable='between(t,{oa:.3f},{ob:.3f})'[o{j}]")
         last = f"o{j}"
     out = f"{OUT}/{s['id']}.mp4"
-    outro = s.get("narration_outro")
-    base = os.path.join(PNG_DIR, f"{s['id']}_base.mp4") if outro else out
+    base = os.path.join(PNG_DIR, f"{s['id']}_base.mp4") if clips else out
     cmd = ["ffmpeg", "-v", "error", "-n"] + inputs + [
         "-filter_complex", ";".join(fc), "-map", f"[{last}]", "-map", "[audio]" if END_FADE else "[ca]",
         "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", base,
     ]
     subprocess.run(cmd, check=True)
-    if outro:
-        narration = os.path.join(os.environ["SHORTS_WORK"], outro["video"])
-        def duration(path):
-            return float(subprocess.check_output(
-                ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-                 "-of", "default=nw=1:nk=1", path], text=True))
-        base_duration, narration_duration = duration(base), duration(narration)
-        if not 2 <= narration_duration <= 4:
-            raise ValueError(f"{s['id']}: narration outro must be 2–4 seconds")
+    if clips:
+        base_duration = float(subprocess.check_output(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", base], text=True))
+        paths = ([clips["intro"]["path"]] if "intro" in clips else []) + [base] + ([clips["outro"]["path"]] if "outro" in clips else [])
+        inputs = [arg for path in paths for arg in ("-i", path)]
+        filters = []
+        for i in range(len(paths)):
+            filters.append(f"[{i}:v]setpts=PTS-STARTPTS,fps=30,setsar=1,format=yuv420p[v{i}]")
+            filters.append(f"[{i}:a]asetpts=PTS-STARTPTS,aresample=48000,aformat=channel_layouts=stereo[a{i}]")
+        filters.append("".join(f"[v{i}][a{i}]" for i in range(len(paths))) + f"concat=n={len(paths)}:v=1:a=1[v][a]")
         subprocess.run([
-            "ffmpeg", "-v", "error", "-n", "-i", base, "-i", narration,
-            "-filter_complex",
-            "[0:v][0:a][1:v][1:a]concat=n=2:v=1:a=1[v][a]",
+            "ffmpeg", "-v", "error", "-n", *inputs,
+            "-filter_complex", ";".join(filters),
             "-map", "[v]", "-map", "[a]", "-c:v", "libx264",
             "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
             "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out,
         ], check=True)
-        with open(f"{OUT}/{s['id']}.srt", "a", encoding="utf-8") as subtitle:
-            subtitle.write(f"\n{len(srt)+1}\n{srt_time(base_duration)} --> "
-                           f"{srt_time(base_duration+narration_duration)}\n{outro['text']}\n")
-    print(out, f"{total:.1f}s")
+        if "outro" in clips:
+            start = intro_duration + base_duration
+            srt.append((start, start + clips["outro"]["duration"], clips["outro"]["text"]))
+    with open(f"{OUT}/{s['id']}.srt", "x", encoding="utf8") as subtitle:
+        subtitle.write("\n\n".join(
+            f"{i}\n{srt_time(a)} --> {srt_time(b)}\n{text}"
+            for i, (a, b, text) in enumerate(srt, 1)
+        ) + "\n")
+    print(out, f"{total + sum(clip['duration'] for clip in clips.values()):.1f}s")
 
 
 if __name__ == "__main__":

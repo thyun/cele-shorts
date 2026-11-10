@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from title_style import highlight_color, title_parts
+from narration import narration_clips
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -89,11 +90,7 @@ def main():
         for start, end, text in short["captions"]:
             if not text or not any(a <= start < end <= b for a, b, _ in short["segments"]):
                 raise ValueError(f"{name}: 자막이 한 구간에 속해야 합니다")
-        if "narration_outro" in short:
-            outro = short["narration_outro"]
-            path = (work / outro["video"]).resolve()
-            if not path.is_relative_to(work.resolve()) or not path.is_file() or not outro["text"]:
-                raise ValueError(f"{name}: 작업 폴더 안의 내레이션 파일과 자막이 필요합니다")
+        narration_clips(short, work)
 
     output.mkdir(parents=True, exist_ok=False)
     png = work / "renders" / args.job
