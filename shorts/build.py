@@ -27,10 +27,14 @@ def font(size):
     return f
 
 
-def text_png(path, text, size, y, fill, stroke, box=None):
+def text_png(path, text, size, y, fill, stroke, box=None, max_width=None):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     f = font(size)
+    if max_width:
+        while size > 20 and d.textlength(text, font=f) > max_width:
+            size -= 2
+            f = font(size)
     bb = d.textbbox((0, 0), text, font=f, stroke_width=stroke)
     tw, th = bb[2] - bb[0], bb[3] - bb[1]
     x = (W - tw) // 2 - bb[0]
@@ -86,13 +90,15 @@ def build(s):
         raise ValueError(t)
 
     inputs, fc = [], []
+    crop_width = s.get("crop_width", 0.4)
+    crop_height = s.get("crop_height", 0.75)
     for i, (a, b, cx) in enumerate(segs):
         inputs += ["-ss", f"{a}", "-t", f"{b-a}", "-i", SRC]
-        x = max(0.0, min(0.6, cx - 0.2))
+        x = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         fc.append(
             f"[{i}:v]split[bg{i}][fg{i}];"
             f"[bg{i}]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=40,eq=brightness=-0.15[b{i}];"
-            f"[fg{i}]crop=iw*0.4:ih*0.75:iw*{x:.3f}:0,scale=1080:-2[f{i}];"
+            f"[fg{i}]crop=iw*{crop_width}:ih*{crop_height}:iw*{x:.6f}:0,scale=1080:-2[f{i}];"
             f"[b{i}][f{i}]overlay=0:(H-h)/2-40,setsar=1,setpts=(PTS-STARTPTS)/{SPEED},fps=30,format=yuv420p[v{i}];"
             f"[{i}:a]asetpts=PTS-STARTPTS,afade=t=in:d=0.04,afade=t=out:st={b-a-0.04:.3f}:d=0.04,atempo={SPEED}[a{i}]"
         )
@@ -119,6 +125,12 @@ def build(s):
         text_png(p, t, 64, 1560, (255, 255, 255, 255), 9)
         pngs.append((p, oa, ob))
         srt.append((oa + intro_duration, ob + intro_duration, t))
+
+    for k, (a, b, text) in enumerate(s.get("editorial_notes", []), 1):
+        p = f"{PNG_DIR}/{s['id']}_note{k}.png"
+        text_png(p, f"채널 체크 | {text}", 44, 1680, (170, 239, 255, 255),
+                 2, box=(13, 30, 45, 245), max_width=930)
+        pngs.append((p, to_out(a), to_out(b)))
 
     last = "cv"
     for j, (p, oa, ob) in enumerate(pngs):

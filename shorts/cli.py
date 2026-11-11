@@ -38,6 +38,20 @@ def youtube_url(value):
     return value
 
 
+def validate_visual_options(short):
+    width = short.get("crop_width", 0.4)
+    if not isinstance(width, (int, float)) or not 0 < width <= 1:
+        raise ValueError(f"{short['id']}: crop_width는 0보다 크고 1 이하여야 합니다")
+    height = short.get("crop_height", 0.75)
+    if not isinstance(height, (int, float)) or not 0 < height <= 1:
+        raise ValueError(f"{short['id']}: crop_height는 0보다 크고 1 이하여야 합니다")
+    for start, end, text in short.get("editorial_notes", []):
+        if not isinstance(text, str) or not text.strip() or "\n" in text:
+            raise ValueError(f"{short['id']}: 채널 체크는 비어 있지 않은 한 줄이어야 합니다")
+        if not any(a <= start < end <= b for a, b, _ in short["segments"]):
+            raise ValueError(f"{short['id']}: 채널 체크가 한 영상 구간에 속해야 합니다")
+
+
 def main():
     parser = argparse.ArgumentParser(description="날짜별 쇼츠 작업 준비 및 편집안 렌더링")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -90,6 +104,7 @@ def main():
         for start, end, text in short["captions"]:
             if not text or not any(a <= start < end <= b for a, b, _ in short["segments"]):
                 raise ValueError(f"{name}: 자막이 한 구간에 속해야 합니다")
+        validate_visual_options(short)
         narration_clips(short, work)
 
     output.mkdir(parents=True, exist_ok=False)

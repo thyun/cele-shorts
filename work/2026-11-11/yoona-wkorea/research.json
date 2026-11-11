@@ -1,0 +1,95 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+  "source_channel": "W KOREA",
+  "source_title": "임윤아 되는 주파수는 없지만 인 마이 백은 있다! 이동할 때 꼭 가지고 다니는 임윤아의 애착템은?",
+  "checked_on": "2026-11-11",
+  "permission_status": "unconfirmed",
+  "production_status": "planning_only_pending_actual_permission",
+  "review_limits": [
+    "공개 영상 메타데이터와 기사, 보완 정보 출처만 확인했다.",
+    "원본 영상·음성·자막을 내려받지 않았으며 스틸·청취·컷 경계 검토는 하지 않았다.",
+    "아래 제목과 채널 해설은 기획 초안이다. 원본 발언 인용문이나 확정된 편집안이 아니다.",
+    "정확한 제품명·모델·가격·원본 구간은 확인하지 않았다.",
+    "검색 결과와 기사에 포함된 사진은 사용 허락을 확인하지 못해 다운로드하거나 사용하지 않았다."
+  ],
+  "references": [
+    {
+      "id": "source",
+      "url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+      "supports": "W KOREA 영상 제목·채널·334초 길이·2026년 11월 10일 공개 및 설명에 있는 괄사 소개",
+      "image_permission": "unconfirmed"
+    },
+    {
+      "id": "items_report",
+      "url": "https://www.chosun.com/entertainments/broadcast/2026/11/10/MI2DQZJUGE2WCZJZGA3GMMRXMU/",
+      "supports": "마스크팩·스트레칭 밴드·괄사를 소개했다는 보도. 제품 효능 검증 자료로는 사용하지 않는다.",
+      "image_permission": "unconfirmed"
+    },
+    {
+      "id": "minimalism_report",
+      "url": "https://www.xportsnews.com/article/2218230",
+      "supports": "삼색펜 휴대, 무선 이어폰 케이스를 씌우지 않는 취향, 분홍색 스트레칭 밴드에 관한 보도",
+      "image_permission": "unconfirmed"
+    },
+    {
+      "id": "gua_sha_guidance",
+      "url": "https://health.clevelandclinic.org/why-gua-sha-might-be-good-for-you",
+      "supports": "얼굴 괄사는 약한 압력으로 사용하며 과한 압력은 멍 등의 위험이 있고 효능에 관한 고품질 연구가 충분하지 않다는 안내",
+      "image_permission": "unconfirmed"
+    }
+  ],
+  "concepts": [
+    {
+      "id": "s1_gua_sha",
+      "target_duration_seconds": 20,
+      "title": "윤아 가방 속 괄사\n따라 사기 전 체크",
+      "title_highlights": ["체크"],
+      "angle": "연예인 사용 사실과 누구에게나 효과가 있다는 주장을 구분한다.",
+      "structure": [
+        "원본 확인 후 괄사 소개·휴대 맥락에서 후킹 구간 선정",
+        "원본 발언과 실제 사용 장면이 있으면 그 맥락을 유지",
+        "짧은 자체 제작 정보 카드로 채널의 판단 보완"
+      ],
+      "channel_commentary_draft": "얼굴 괄사, 강하게 누르지는 마세요.",
+      "supplementary_card": "강한 압력은 멍·자극 위험",
+      "supplementary_reference": "gua_sha_guidance",
+      "narration_decision": "정보 카드만으로 충분하면 생략. 필요할 때만 2~4초 아웃트로 검토.",
+      "avoid": ["얼굴이 작아진다는 단정", "윤아의 외모를 제품 효과로 연결", "확인하지 않은 제품 판매 링크"],
+      "visual_plan": "사용 조건 미확인 검색 사진 대신 직접 제작한 텍스트·도형 카드"
+    },
+    {
+      "id": "s2_stretch_band",
+      "target_duration_seconds": 20,
+      "title": "윤아가 챙긴 밴드\n살 때는 색보다 이것",
+      "title_highlights": ["색보다 이것"],
+      "angle": "귀여운 색상에서 관심을 끌되 자신의 용도에 맞는지 판단하는 관점으로 전환한다.",
+      "structure": [
+        "원본 확인 후 분홍색 밴드와 색상 취향 반응에서 후킹 선정",
+        "시연이 있으면 대화보다 시연을 충분히 유지",
+        "제품 식별 후 제조사의 강도·사용 안내 확인 여부를 구매 체크로 제시"
+      ],
+      "channel_commentary_draft": "색보다 내 용도에 맞는지 먼저 보세요.",
+      "narration_decision": "시연과 체크 자막이 충분하면 생략.",
+      "verification_needed": ["제품 모델", "제조사의 강도 표시와 사용 안내", "원본 시연 존재 여부"],
+      "avoid": ["동일 색상이면 동일 강도라는 추정", "통증 치료·체형 교정 효과 단정", "확인되지 않은 운동법 안내"],
+      "visual_plan": "제품 식별 전에는 제품 비교 사진을 사용하지 않는다."
+    },
+    {
+      "id": "s3_minimal_bag",
+      "target_duration_seconds": 20,
+      "title": "윤아의 가방이 가벼운 이유\n더 사기보다 덜 챙기기",
+      "title_highlights": ["덜 챙기기"],
+      "angle": "매번 구매를 유도하지 않고 이미 가진 물건으로 해결하는 선택도 보여준다.",
+      "structure": [
+        "원본 확인 후 달라진 취향에 관한 대화를 후킹으로 선정",
+        "필통 대신 삼색펜을 챙기는 사례 등으로 구체화",
+        "새 제품 구매보다 휴대품 정리라는 채널 관점으로 마무리"
+      ],
+      "channel_commentary_draft": "새로 사기 전, 매일 쓰는 것부터 남겨보세요.",
+      "narration_decision": "원본 대화의 자연스러운 끝을 우선하고 판단 자막만으로 마무리 가능.",
+      "verification_needed": ["제목이 실제 원본 맥락과 일치하는지", "가벼운 이유를 객관적 무게 측정처럼 표현하지 않는지"],
+      "avoid": ["실제 가방 무게 단정", "추천하지 않은 제품을 추천한 것으로 표시", "불필요한 제휴 구매 유도"],
+      "visual_plan": "원본 사용 허락 확인 후 관련 구간 사용. 보완 화면은 자체 제작 체크 카드."
+    }
+  ]
+}

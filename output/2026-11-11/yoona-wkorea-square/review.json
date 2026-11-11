@@ -1,0 +1,27 @@
+{
+  "revision": "square_crop",
+  "source_job": "yoona-wkorea-edit",
+  "original_outputs_preserved": true,
+  "source_dimensions": [1920, 1080],
+  "crop_dimensions": [1080, 1080],
+  "display_dimensions": [1080, 1080],
+  "canvas_dimensions": [1080, 1920],
+  "display_top_px": 380,
+  "unchanged": ["선정 소재", "편집 구간", "재생 속도", "자막 타이밍", "타이틀", "채널 체크"],
+  "outputs": [
+    {"id": "s1_band", "duration_seconds": 20.767},
+    {"id": "s2_mask", "duration_seconds": 21.267},
+    {"id": "s3_camera", "duration_seconds": 19.533}
+  ],
+  "verified": [
+    "최종 스틸에서 정사각형 원본 화면 확대와 타이틀·자막 배치 확인",
+    "캡컷의 원본 크롭 가로·세로 픽셀 수 일치 확인",
+    "기존 버전과 SRT 내용·타이밍 일치 확인",
+    "세 영상의 전체 디코딩과 1080x1920 출력 확인"
+  ],
+  "limitations": [
+    "1:1 크롭이므로 원본 좌우 일부와 원본 내 가로 자막 일부는 잘린다.",
+    "별도 대사 자막은 유지했다.",
+    "실제 청취 검토와 캡컷 앱에서 열기 확인은 하지 않았다."
+  ]
+}

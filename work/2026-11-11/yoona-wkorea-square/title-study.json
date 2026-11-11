@@ -1,0 +1,116 @@
+{
+  "checked_on": "2026-11-11",
+  "scope": "제목 개선을 위한 관찰 연구. 기존 영상·편집안·심사 결과는 변경하지 않았다.",
+  "method": "공개 YouTube 영상 메타데이터로 실제 업로드 제목·누적 조회수·게시일을 확인하고, 고조회수 사례 4개의 공개 썸네일에 보이는 화면 타이틀을 별도로 확인했다.",
+  "limitations": [
+    "기존에 발견한 제한된 편의 표본이며 쇼핑 쇼츠 전체를 대표하지 않는다.",
+    "누적 조회수는 제목의 단독 효과나 최근 상승세를 증명하지 않는다.",
+    "썸네일은 영상 전체에서 타이틀이 유지되는지 확인한 증거가 아니다.",
+    "일부 예시의 과장·사회적 증거 문구는 실제 사실 여부를 검증하지 않았으므로 그대로 모방하지 않는다.",
+    "신규 웹 검색 도구가 오류를 반환해 이미 발견한 영상들의 직접 메타데이터와 썸네일 확인으로 조사했다."
+  ],
+  "examples": [
+    {
+      "url": "https://www.youtube.com/shorts/m5RFImkZ8z4",
+      "channel": "쇼핑이멀전시",
+      "upload_title": "\"정말로...거짓말 안치고!!\" 화사가 써보고 놀란 찐애정템💕",
+      "views": 3039783,
+      "published_date_at_source_timezone": "2025-07-10",
+      "screen_title_observation": "“이게 저를 살렸어요” / 화사가 써보고 깜놀한 찐애정템",
+      "pattern": "강한 개인 경험과 제품 미공개가 만드는 정보 공백",
+      "caution": "우리 원본에 없는 강한 발언을 창작하거나 비유를 효능으로 확대하지 않는다."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/pcjpUReL5b0",
+      "channel": "줍줍걸",
+      "upload_title": "수영이 매일 들고 다니는 파우치 속 찐찐템 인생쿠션 최애립밤 공개",
+      "views": 2199490,
+      "published_date_at_source_timezone": "2026-08-31",
+      "screen_title_observation": "다들 손민수 난리 난 / 수영이 매일 쓰는 2가지",
+      "pattern": "유명인의 반복 사용과 개수를 제한한 발견의 약속",
+      "caution": "다들 따라 산다는 반응은 검증 없이 가져오지 않는다."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/4LRD8yDLzds",
+      "channel": "연예부기자 다람이",
+      "upload_title": "알고있으면 개이득.. 연예인 가성비 추천템 TOP3",
+      "views": 609692,
+      "published_date_at_source_timezone": "2025-08-08",
+      "screen_title_observation": "알고있으면 개이득인 / 연예인 가성비 추천템 TOP3",
+      "pattern": "구체적인 시청 이익과 세 개라는 정보량 약속",
+      "caution": "가성비 주장은 실제 가격과 비교 근거가 필요하다."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/c2r3bmNhiJw",
+      "channel": "언니파우치",
+      "upload_title": "연예인들도 애타게 찾고 있다는 블러셔",
+      "views": 457399,
+      "published_date_at_source_timezone": "2025-10-27",
+      "screen_title_observation": "연예인들도 애타게 / 찾고 있다는 블러셔",
+      "pattern": "평소 쉽게 구할 법한 상품과 애타게 찾는다는 상황의 대비",
+      "caution": "제품 수요나 품절을 확인하지 않고 비슷한 주장을 쓰지 않는다."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/weMmcsqnAyY",
+      "channel": "픽에딧",
+      "upload_title": "강민경도 반한 고현정·제니 가방 정체 #연예인템 #연예인꿀템 #쿠팡추천템",
+      "views": 32215,
+      "published_date_at_source_timezone": "2026-08-26",
+      "pattern": "비교 참고. 유명인·정체를 넣었다는 사실만으로 고성과를 보장하지 않는다."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/I5heDA7dcsw",
+      "channel": "셀럽템인포",
+      "upload_title": "장원영이 쟁여두고 쓴다는 이 템 필독✨ #장원영 #헤어오일 #손상모복구 #머릿결관리 #쇼핑쇼츠",
+      "views": 4363,
+      "published_date_at_source_timezone": "2026-11-01",
+      "pattern": "비교 참고. 이 템·필독 같은 표현만으로는 구체적 상황이나 시청 보상이 생기지 않는다."
+    }
+  ],
+  "current_title_diagnosis": {
+    "s1_band": "핑크 밴드라고 답을 이미 알려주면서 정체라고 묻는다. 첫 화면도 밴드를 공개하므로 제품 이름보다 사용 이유를 질문해야 한다.",
+    "s2_mask": "상하 분리는 구체적이지만 제목에 답까지 적었다. 실제 구조를 충분히 보여주지 못한 본문 문제와 함께 개선해야 한다.",
+    "s3_camera": "카메라 사기 전 생각할 것은 교훈이지 장면을 보고 싶은 이유가 아니다. 못 찍고 돌아온다는 고백과 테스트 사진 공개의 대비를 전면에 둔다."
+  },
+  "candidates": [
+    {
+      "id": "s1_band",
+      "options": [
+        "윤아가 요즘 꼭 챙긴다는\n이 밴드, 어디에 쓸까?",
+        "가방에서 밴드를 꺼낸 윤아\n가장 좋아하는 동작은?",
+        "윤아가 좋아한다는\n밴드 스트레칭은 이 동작"
+      ],
+      "preferred_index": 1,
+      "open_question": "윤아가 좋아하는 밴드 동작은 무엇인가?",
+      "source_evidence_seconds": [221.992, 226.88],
+      "payoff": "만세 동작 설명과 실제 사용 장면. 현재 구간에 있으나 크롭 손실 수정이 필요하다.",
+      "status": "제목 후보. 실제 청취와 개선된 시연 구도 확인 후 확정."
+    },
+    {
+      "id": "s2_mask",
+      "options": [
+        "윤아가 이 팩 쓰면서\n편하다고 한 이유",
+        "해외 갈 때도 챙기는 팩\n윤아가 짚은 편한 점은?",
+        "윤아 가방 속 마스크팩\n보통 팩과 다른 점 하나"
+      ],
+      "preferred_index": 0,
+      "open_question": "무엇 때문에 편하다고 했는가?",
+      "source_evidence_seconds": [116.591, 121.98],
+      "payoff": "상하 분리라는 답을 원본 대사·손짓으로 제시. 구조 그림을 추가한다면 정확한 제품 확인 후 직접 제작.",
+      "status": "제목 후보. 구조의 시각적 보상 확보 후 확정. 세 번째 후보는 다른 일반 제품과의 비교 범위 검토가 필요하다."
+    },
+    {
+      "id": "s3_camera",
+      "options": [
+        "윤아도 못 찍고 온다는\n카메라 속 사진 봤더니",
+        "들고는 다니는데 못 찍는다?\n윤아가 공개한 사진",
+        "윤아 카메라에 담긴 사진\n대부분 테스트 컷이라고?"
+      ],
+      "preferred_index": 0,
+      "open_question": "카메라를 들고 다니는 윤아가 실제로 보여주는 사진은 어떤가?",
+      "source_evidence_seconds": [56.15, 61.45, 64.8, 76.48],
+      "payoff": "못 찍고 돌아오는 경우가 많다는 고백 뒤 테스트 컷과 카메라 화면을 보여준다.",
+      "status": "제목 후보. 사진 공개를 너무 늦추지 않고 첫 컷과 마지막 다음 화제 침입을 함께 정리해야 한다."
+    }
+  ]
+}

@@ -12,7 +12,6 @@ SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
 ROOT = os.path.abspath(os.environ["SHORTS_DRAFTS"])
 os.makedirs(ROOT, exist_ok=True)
 SRC_ABS = os.path.abspath(SRC)
-CROP_W, CROP_H = 0.4, 0.75
 SPEED = float(os.environ.get("SHORTS_SPEED", "1.2"))
 END_FADE = float(os.environ.get("SHORTS_END_FADE", "0.2"))
 if SPEED <= 0:
@@ -27,6 +26,8 @@ for s in SHORTS:
     script.add_track(cc.TrackType.text, "title")
     script.add_track(cc.TrackType.text, "caption")
     script.add_track(cc.TrackType.text, "source")
+    if s.get("editorial_notes"):
+        script.add_track(cc.TrackType.text, "editorial")
 
     segs = s["segments"]
     offs, acc = [], 0.0
@@ -40,13 +41,15 @@ for s in SHORTS:
         acc += round((b - a) * 1_000_000 / SPEED) / 1_000_000
     total = acc
 
+    crop_width = s.get("crop_width", 0.4)
+    crop_height = s.get("crop_height", 0.75)
     for i, ((a, b, cx), o) in enumerate(zip(segs, offs)):
-        x0 = max(0.0, min(1 - CROP_W, cx - CROP_W / 2))
+        x0 = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         crop = cc.CropSettings(
             upper_left_x=x0, upper_left_y=0.0,
-            upper_right_x=x0 + CROP_W, upper_right_y=0.0,
-            lower_left_x=x0, lower_left_y=CROP_H,
-            lower_right_x=x0 + CROP_W, lower_right_y=CROP_H,
+            upper_right_x=x0 + crop_width, upper_right_y=0.0,
+            lower_left_x=x0, lower_left_y=crop_height,
+            lower_right_x=x0 + crop_width, lower_right_y=crop_height,
         )
         mat = cc.VideoMaterial(SRC_ABS, crop_settings=crop)
         seg = cc.VideoSegment(
@@ -111,6 +114,17 @@ for s in SHORTS:
             border=cc.TextBorder(color=(0, 0, 0), width=40.0),
         )
         script.add_segment(cap, "caption")
+
+    for a, b, text in s.get("editorial_notes", []):
+        start_us, end_us = round(to_out(a) * 1_000_000), round(to_out(b) * 1_000_000)
+        note = cc.TextSegment(
+            f"채널 체크 | {text}", trange(start_us, end_us - start_us),
+            style=cc.TextStyle(size=5.0, bold=True, color=(0.67, 0.94, 1.0), align=1),
+            clip_settings=cc.ClipSettings(transform_y=-0.77),
+            background=cc.TextBackground(color="#0D1E2D", alpha=0.96, round_radius=0.2),
+            border=cc.TextBorder(color=(0, 0, 0), width=15.0),
+        )
+        script.add_segment(note, "editorial")
 
     script.save()
     print("saved", s["id"], f"{total:.1f}s")

@@ -1,0 +1,50 @@
+{
+  "reviewed_on": "2026-11-11",
+  "source_url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+  "permission_status": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서의 독립 검증은 하지 않음.",
+  "selection": ["스트레칭 밴드", "마스크팩", "카메라"],
+  "selection_changes": "이전 예비 기획의 괄사·미니멀 소품 대신 사용 장면과 대화가 충분한 마스크팩·카메라를 선정했다. 괄사는 본문이 짧아 20초를 채우기 위한 반복을 피했다.",
+  "speed": 1.2,
+  "external_image_decision": "원본의 제품 인서트와 시연 장면이 있어 외부 검색 사진은 불필요하다. 사용 조건이 확인되지 않은 웹 이미지는 사용하지 않는다.",
+  "additional_value": {
+    "s1_band": "원본 시연에 맞춰 가로 크롭을 넓히고, 취향과 구매 기준을 구분하는 채널 체크를 추가한다.",
+    "s2_mask": "상하 분리의 사용 편의성을 먼저 제시한다. 매일 사용과 피부 체감은 개인 경험으로 유지하고 사용 안내·자기 피부 반응을 먼저 보자는 관점을 추가한다.",
+    "s3_camera": "카메라를 갖고도 사진을 못 찍는다는 반응을 먼저 배치하고, 구매 전 실제 사용 상황을 생각하도록 한다."
+  },
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+      "use": "모든 제품 소개·반응·사용 습관의 원본. 제품 가격·효능·공식 추천 여부는 별도로 단정하지 않는다."
+    },
+    {
+      "url": "https://health.clevelandclinic.org/why-gua-sha-might-be-good-for-you",
+      "use": "괄사 후보의 안전 정보를 조사했으나 이번 최종 3개에는 괄사를 사용하지 않았다."
+    },
+    {
+      "url": "https://www.aad.org/public/everyday-care/skin-care-secrets/routine/facial-masks-and-skin-care",
+      "use": "보완 정보 후보를 조사했으나 페이지 본문을 충분히 확인하지 못해 이 출처를 근거로 구체적인 의학적 주장을 추가하지 않았다."
+    }
+  ],
+  "caption_policy": "자동 자막의 반복·군더더기를 정리한 대사 자막이며 축어 전사가 아니다. 채널의 의견은 별도 채널 체크 트랙으로 구분하고 대사 SRT에는 넣지 않는다.",
+  "completed_checks": [
+    "최종 MP4 3개의 1080x1920 영상·오디오 트랙 및 전체 디코딩 확인",
+    "SRT 순번·시간 순서·영상 길이 내 배치 확인",
+    "캡컷 구간·채널 체크 타이밍 및 참조 미디어 경로 확인",
+    "최종 스틸에서 두 줄 타이틀·강조색·대사·채널 체크·출처 확인",
+    "밴드 시연은 가로 전체를 보존하고, 원본 248.682초 부근의 다음 제품 전환 전에 종료하도록 수정"
+  ],
+  "outputs": [
+    {"id": "s1_band", "duration_seconds": 20.767, "subtitle_cues": 12},
+    {"id": "s2_mask", "duration_seconds": 21.267, "subtitle_cues": 11},
+    {"id": "s3_camera", "duration_seconds": 19.533, "subtitle_cues": 10}
+  ],
+  "pending_checks": [
+    "실제 청취를 통한 말끝과 컷 연결 확인",
+    "캡컷 앱에서 프로젝트를 여는 호환성 확인"
+  ],
+  "publication": {
+    "uploaded": false,
+    "affiliate_links_added": false,
+    "note": "제휴 링크를 붙여 게시하는 경우 경제적 이해관계 표시와 별도 음악 권리를 확인한다."
+  }
+}
