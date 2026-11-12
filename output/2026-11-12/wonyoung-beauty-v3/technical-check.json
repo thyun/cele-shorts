@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-12",
+  "result": "pass",
+  "clips": {
+    "s1_shampoo": {
+      "duration_seconds": 14.521,
+      "resolution": "1080x1920",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "full_decode": true,
+      "srt_entries": 13,
+      "srt_timecodes_within_duration": true,
+      "capcut_draft_present": true,
+      "capcut_source_paths_exist": true
+    },
+    "s2_scalp": {
+      "duration_seconds": 16.244,
+      "resolution": "1080x1920",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "full_decode": true,
+      "srt_entries": 11,
+      "srt_timecodes_within_duration": true,
+      "capcut_draft_present": true,
+      "capcut_source_paths_exist": true
+    },
+    "s3_choice": {
+      "duration_seconds": 16.767,
+      "resolution": "1080x1920",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "full_decode": true,
+      "srt_entries": 15,
+      "srt_timecodes_within_duration": true,
+      "capcut_draft_present": true,
+      "capcut_source_paths_exist": true
+    }
+  },
+  "preview": "preview.jpg",
+  "not_checked": [
+    "실제 청취 및 컷 연결의 연속 재생",
+    "CapCut 앱에서 프로젝트를 실제로 열기",
+    "별도 음악 권리 문서 독립 검증",
+    "게시 시 제휴 표시 및 플랫폼 정책 확인"
+  ]
+}

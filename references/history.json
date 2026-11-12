@@ -465,9 +465,266 @@
           "role": "discovered",
           "record": "work/2026-11-12/material-discovery/references.json",
           "date": "2026-11-12"
+        },
+        {
+          "role": "prepared",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v1"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/wonyoung-beauty-v1/plan.json",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v1"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/wonyoung-beauty-v2/plan.json",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v2"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/wonyoung-beauty-v3/plan.json",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v3"
         }
       ],
-      "generations": [],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=RRQvsZ6U-I0",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v1",
+          "output_directory": "output/2026-11-12/wonyoung-beauty-v1",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_shampoo",
+              "title": "스프레이 뿌린 날\n샴푸를 더 꼼꼼히 하는 이유",
+              "segments": [
+                [
+                  47.6,
+                  60.76,
+                  0.5
+                ],
+                [
+                  60.76,
+                  65.0,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v1/s1_shampoo.mp4"
+            },
+            {
+              "id": "s2_scalp",
+              "title": "두피 세럼 바른 뒤\n몇 초간 마사지할까?",
+              "segments": [
+                [
+                  114.36,
+                  116.24,
+                  0.38
+                ],
+                [
+                  99.16,
+                  113.74,
+                  0.5
+                ],
+                [
+                  121.66,
+                  124.62,
+                  0.53
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v1/s2_scalp.mp4"
+            },
+            {
+              "id": "s3_choice",
+              "title": "푸석한 날과 평소\n같은 헤어 제품을 쓸까?",
+              "segments": [
+                [
+                  126.46,
+                  131.36,
+                  0.41
+                ],
+                [
+                  132.06,
+                  147.7,
+                  0.54
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v1/s3_choice.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=RRQvsZ6U-I0",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v2",
+          "output_directory": "output/2026-11-12/wonyoung-beauty-v2",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "게시 전 확인 필요",
+          "review_file": "output/2026-11-12/wonyoung-beauty-v2/upload-review.json",
+          "review_verdicts": {
+            "s1_shampoo": "업로드 비추천",
+            "s2_scalp": "수정 후 재심",
+            "s3_choice": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_shampoo",
+              "title": "스프레이 뿌린 날\n샴푸를 더 꼼꼼히 하는 이유",
+              "segments": [
+                [
+                  47.6,
+                  60.76,
+                  0.5
+                ],
+                [
+                  60.76,
+                  65.0,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v2/s1_shampoo.mp4"
+            },
+            {
+              "id": "s2_scalp",
+              "title": "두피 세럼 바른 뒤\n몇 초간 마사지할까?",
+              "segments": [
+                [
+                  114.36,
+                  116.24,
+                  0.36
+                ],
+                [
+                  99.16,
+                  113.74,
+                  0.5
+                ],
+                [
+                  121.66,
+                  124.62,
+                  0.53
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v2/s2_scalp.mp4"
+            },
+            {
+              "id": "s3_choice",
+              "title": "푸석한 날과 평소\n같은 헤어 제품을 쓸까?",
+              "segments": [
+                [
+                  132.06,
+                  141.4,
+                  0.52
+                ],
+                [
+                  147.7,
+                  158.42,
+                  0.42
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v2/s3_choice.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=RRQvsZ6U-I0",
+          "date": "2026-11-12",
+          "job": "wonyoung-beauty-v3",
+          "output_directory": "output/2026-11-12/wonyoung-beauty-v3",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "게시 전 확인 필요",
+          "review_file": "output/2026-11-12/wonyoung-beauty-v3/upload-review.json",
+          "review_verdicts": {
+            "s1_shampoo": "업로드 비추천",
+            "s2_scalp": "수정 후 재심",
+            "s3_choice": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_shampoo",
+              "title": "스프레이 뿌린 날엔\n샴푸를 왜 꼼꼼히 할까?",
+              "segments": [
+                [
+                  47.6,
+                  60.76,
+                  0.5
+                ],
+                [
+                  60.76,
+                  65.0,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v3/s1_shampoo.mp4"
+            },
+            {
+              "id": "s2_scalp",
+              "title": "두피 세럼 바른 뒤\n몇 초간 마사지할까?",
+              "segments": [
+                [
+                  114.36,
+                  116.24,
+                  0.36
+                ],
+                [
+                  99.16,
+                  113.74,
+                  0.5
+                ],
+                [
+                  121.66,
+                  124.62,
+                  0.53
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v3/s2_scalp.mp4"
+            },
+            {
+              "id": "s3_choice",
+              "title": "푸석한 날과 평소\n같은 헤어 제품을 쓸까?",
+              "segments": [
+                [
+                  132.06,
+                  141.4,
+                  0.52
+                ],
+                [
+                  147.7,
+                  158.42,
+                  0.42
+                ]
+              ],
+              "file": "output/2026-11-12/wonyoung-beauty-v3/s3_choice.mp4"
+            }
+          ]
+        }
+      ],
       "title": "[EN] 장원영의 뷰티 시크릿✨ 헤어 케어, 모닝 루틴, 촬영 전날 꼭 하는 것 | BEAUTY SECRET",
       "channel": "VOGUE KOREA",
       "format": "long",

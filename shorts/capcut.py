@@ -120,7 +120,7 @@ for s in SHORTS:
     for a, b, text in s.get("editorial_notes", []):
         start_us, end_us = round(to_out(a) * 1_000_000), round(to_out(b) * 1_000_000)
         note = cc.TextSegment(
-            f"채널 체크 | {text}", trange(start_us, end_us - start_us),
+            text, trange(start_us, end_us - start_us),
             style=cc.TextStyle(size=5.0, bold=True, color=(0.67, 0.94, 1.0), align=1),
             clip_settings=cc.ClipSettings(
                 transform_y=0.64 if s.get("editorial_position") == "top" else -0.77),

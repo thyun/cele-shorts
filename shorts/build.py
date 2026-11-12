@@ -129,7 +129,7 @@ def build(s):
     for k, (a, b, text) in enumerate(s.get("editorial_notes", []), 1):
         p = f"{PNG_DIR}/{s['id']}_note{k}.png"
         note_y = 320 if s.get("editorial_position") == "top" else 1680
-        text_png(p, f"채널 체크 | {text}", 44, note_y, (170, 239, 255, 255),
+        text_png(p, text, 44, note_y, (170, 239, 255, 255),
                  2, box=(13, 30, 45, 245), max_width=930)
         pngs.append((p, to_out(a), to_out(b)))
 

@@ -50,9 +50,9 @@ def validate_visual_options(short):
         raise ValueError(f"{short['id']}: crop_height는 0보다 크고 1 이하여야 합니다")
     for start, end, text in short.get("editorial_notes", []):
         if not isinstance(text, str) or not text.strip() or "\n" in text:
-            raise ValueError(f"{short['id']}: 채널 체크는 비어 있지 않은 한 줄이어야 합니다")
+            raise ValueError(f"{short['id']}: 추가 화면 문구는 비어 있지 않은 한 줄이어야 합니다")
         if not any(a <= start < end <= b for a, b, _ in short["segments"]):
-            raise ValueError(f"{short['id']}: 채널 체크가 한 영상 구간에 속해야 합니다")
+            raise ValueError(f"{short['id']}: 추가 화면 문구가 한 영상 구간에 속해야 합니다")
     for start, end, text, x, y in short.get("visual_labels", []):
         if (not isinstance(text, str) or not text.strip() or "\n" in text
                 or not all(isinstance(v, (int, float)) and 0 <= v <= 1 for v in (x, y))

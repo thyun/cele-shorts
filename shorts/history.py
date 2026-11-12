@@ -89,7 +89,7 @@ def record_generation(root, plan, output):
         "source_url": url, "date": output.parent.name, "job": output.name,
         "output_directory": relative, "status": "generated",
         "permission": plan.get("permission", {"status": "unknown"}),
-        "publication_status": "unknown",
+        "publication_status": review.get("publication_status", "unknown") if review else "unknown",
         "review_file": str(review_path.relative_to(root)) if review else None,
         "review_verdicts": {v["id"]: v["content_verdict"] for v in review["videos"]} if review else {},
         "shorts": [{"id": s["id"], "title": s["title"], "segments": s["segments"],

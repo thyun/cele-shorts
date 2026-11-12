@@ -45,12 +45,19 @@ class HistoryTests(unittest.TestCase):
                 draft.parent.mkdir(parents=True)
                 for path in (draft, output / "test.mp4", output / "test.srt"):
                     path.touch()
+                if job == "revision":
+                    (output / "upload-review.json").write_text(json.dumps({
+                        "publication_status": "게시 전 확인 필요",
+                        "videos": [{"id": "test", "content_verdict": "수정 후 재심"}],
+                    }), encoding="utf-8")
                 record_generation(root, plan, output)
                 record_generation(root, plan, output)
             data = json.loads((root / "references" / "history.json").read_text())
             entry = data["videos"]["IvaYUWFiLDg"]
             self.assertEqual(len(entry["generations"]), 2)
             self.assertEqual(entry["generations"][0]["publication_status"], "unknown")
+            self.assertEqual(entry["generations"][1]["publication_status"], "게시 전 확인 필요")
+            self.assertEqual(entry["generations"][1]["review_verdicts"], {"test": "수정 후 재심"})
             reference = data["videos"]["pcjpUReL5b0"]
             self.assertEqual(reference["generations"], [])
             self.assertEqual(reference["references"][0]["role"], "creative_reference")
