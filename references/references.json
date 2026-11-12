@@ -154,5 +154,87 @@
       "use": "11월 할인 일정형 정보 콘텐츠 참고. 같은 주제의 영상들에서 날짜가 달라 공식 일정 재검증이 필요하며 연예인 채널 방향과도 거리가 있어 주 후보에서 제외한다."
     }
   ],
+  "additional_candidates": [
+    {
+      "id": "ZVF_dzRfceM",
+      "url": "https://www.youtube.com/watch?v=ZVF_dzRfceM",
+      "format": "long",
+      "channel": "VOGUE KOREA",
+      "title": "[EN] 에이티즈 산의 가방 그리고 ‘BAD’ 챌린지에 대해 묻다 | MY VOGUE",
+      "published_kst": "2026-09-21",
+      "duration_seconds": 557,
+      "views_checked_2026-11-12": 774751,
+      "material": "대기 시간을 보내는 닌텐도 스위치와 게임 반응, 향수·립밤",
+      "verified_basis": "공식 영상 설명에서 미니멀리스트라는 소개, 스위치·향수·립밤과 카이에게 고마웠던 이유를 확인했다.",
+      "advertising": "설명에 나스(NARS) 유료 광고 포함 표기",
+      "why_priority": "가방 속 물건 나열뿐 아니라 기다리는 시간과 게임 반응 같은 개인 상황을 함께 보여줄 가능성이 있다.",
+      "full_video_reviewed": false,
+      "needed_before_production": ["실제 사용·반응 장면", "제품별 광고 맥락", "재사용 허락"]
+    },
+    {
+      "id": "E4yIu7esU3Q",
+      "url": "https://www.youtube.com/watch?v=E4yIu7esU3Q",
+      "format": "long",
+      "channel": "VOGUE KOREA",
+      "title": "[EN] 세븐틴 조슈아의 미스터리 박스 | MYSTERY BOX",
+      "published_kst": "2026-11-07",
+      "duration_seconds": 309,
+      "views_checked_2026-11-12": 186238,
+      "material": "손끝 감각으로 미스터리 박스 속 물건을 맞히는 미션",
+      "verified_basis": "공식 설명에서 라부부, 톰 포드 뷰티 향수, 캐럿봉이 등장한다고 확인했다.",
+      "advertising": "설명에 톰 포드 뷰티 광고 포함 표기",
+      "why_priority": "제품을 먼저 나열하지 않고 촉감으로 정체를 추측하는 행동과 반응을 중심으로 구성할 수 있다.",
+      "full_video_reviewed": false,
+      "needed_before_production": ["실제 추측·정답·반응 순서", "광고 맥락", "재사용 허락"]
+    },
+    {
+      "id": "b_gJ72sHwZw",
+      "url": "https://www.youtube.com/watch?v=b_gJ72sHwZw",
+      "format": "long",
+      "channel": "W KOREA",
+      "title": "[ENG/JP] 리노가 만든 라면은 차원이 달라🫪 스트레이 키즈 리노를 당황하게 만든 미션은?",
+      "published_kst": "2026-10-27",
+      "duration_seconds": 541,
+      "views_checked_2026-11-12": 254082,
+      "material": "투어 중 루틴과 직접 만드는 라면 레시피·미션 반응",
+      "verified_basis": "공식 설명에서 월드 투어 중 루틴, 특별한 라면 레시피, 멤버들과의 이야기 및 미션을 확인했다.",
+      "advertising": "설명에서 유료 광고 표기는 확인되지 않음. 영상 내 고지는 미확인.",
+      "why_priority": "개인 레시피와 실제 조리·반응을 확인할 수 있다면 단순 제품 소개와 다른 식품 소재가 될 수 있다.",
+      "full_video_reviewed": false,
+      "needed_before_production": ["실제 조리·시식 장면", "레시피와 제품 식별", "재사용 허락"]
+    },
+    {
+      "id": "KsRxupJETgk",
+      "url": "https://www.youtube.com/watch?v=KsRxupJETgk",
+      "format": "long",
+      "channel": "W KOREA",
+      "title": "[ENG] 혜리가 가장 좋아하는 겨울 소리는? 혜리의 첫 ASMR로 만나는 겨울 테라피",
+      "published_kst": "2026-10-22",
+      "duration_seconds": 669,
+      "views_checked_2026-11-12": 133115,
+      "material": "겨울 소리 ASMR, 방한 아이템과 촬영 중 빠져든 물건",
+      "verified_basis": "공식 설명에서 첫 ASMR, 겨울 준비 아이템과 혜리가 ASMR 도중 빠져든 아이템을 확인했다.",
+      "advertising": "설명에 무스너클 아이템 모아보기 링크가 있음. 영상의 유료 광고 여부는 별도 확인 필요.",
+      "why_priority": "소리와 표정·반응이 핵심인 포맷이라 제품을 실제로 다루는 장면이 확인되면 인물의 취향을 살릴 수 있다.",
+      "full_video_reviewed": false,
+      "needed_before_production": ["제품을 다루는 구체적 장면", "광고·협찬 고지", "재사용 허락"]
+    },
+    {
+      "id": "PORa3x_TloQ",
+      "url": "https://www.youtube.com/watch?v=PORa3x_TloQ",
+      "format": "long",
+      "channel": "W KOREA",
+      "title": "[ENG/JP] F1 굿즈? 무조건 사야지 막스 베르스타펜 덕질에 진심인 엔하이픈 제이의 가방 속은?",
+      "published_kst": "2026-09-22",
+      "duration_seconds": 686,
+      "views_checked_2026-11-12": 236596,
+      "material": "마드리드 F1 직관 경험, 태그호이어 시계와 경기장 굿즈",
+      "verified_basis": "공식 설명에서 마드리드 경기 직관, 한정판 태그호이어 시계, 온라인 구매 아이템과 현장 굿즈를 확인했다.",
+      "advertising": "설명에서 유료 광고 표기는 확인되지 않음. 영상 내 고지는 미확인.",
+      "why_priority": "물건보다 F1 팬으로서의 실제 경험과 굿즈를 얻은 과정이 소재의 중심이 될 수 있다.",
+      "full_video_reviewed": false,
+      "needed_before_production": ["직관 경험과 구매 과정의 실제 장면", "제품·광고 관계", "재사용 허락"]
+    }
+  ],
   "next_stage": "우선 요거트·장원영·사우나 3개 원본의 이용 허락과 실제 장면을 확인한다. 구체적인 시연·반응·새 정보가 약하면 제작 개수를 채우지 않고 다른 후보로 교체한다."
 }

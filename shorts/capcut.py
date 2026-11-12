@@ -79,7 +79,6 @@ for s in SHORTS:
         s["title"], trange(tim(f"{base_start}s"), tim(f"{base_total-base_start}s")),
         style=cc.TextStyle(size=9.0, bold=True, color=(1, 1, 1), align=1),
         clip_settings=cc.ClipSettings(transform_y=0.79),
-        background=cc.TextBackground(color="#AF1432", alpha=0.93, round_radius=0.3, height=0.25, width=0.25),
         border=cc.TextBorder(color=(0, 0, 0), width=30.0),
     )
     script.add_segment(title, "title")

@@ -1,0 +1,55 @@
+{
+  "job": "kimdoyeon-myvogue-v2",
+  "source_url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+  "result": "렌더링 및 기술·정지화면 사전 검토 완료. 독립 업로드 심사는 별도 기록한다.",
+  "clips": [
+    {
+      "id": "s1_sunglasses",
+      "duration_seconds": 23.4,
+      "resolution": "1080x1920",
+      "video_audio": "H.264 video, AAC audio",
+      "subtitles": "SRT 8 cues; final cue ends within the video duration"
+    },
+    {
+      "id": "s2_goatcheese",
+      "duration_seconds": 18.2,
+      "resolution": "1080x1920",
+      "video_audio": "H.264 video, AAC audio",
+      "subtitles": "SRT 8 cues; final cue ends within the video duration"
+    },
+    {
+      "id": "s3_travelbag",
+      "duration_seconds": 21.4,
+      "resolution": "1080x1920",
+      "video_audio": "H.264 video, AAC audio",
+      "subtitles": "SRT 10 cues; final cue ends within the video duration"
+    }
+  ],
+  "visual_checks": {
+    "title_thumbnails": "각 영상의 270x480 축소 썸네일에서 두 줄 타이틀과 강조색을 확인했다.",
+    "opening_and_sampled_frames": "시작부, 본문 샘플, 구간 경계와 끝부분의 정지 프레임을 확인했다. 연속 재생으로 모든 프레임을 검토한 것은 아니다.",
+    "crop_and_source_graphics": "고트 치즈 편은 원본의 하단 제품 그래픽이 새 대사 자막과 겹치지 않도록 1:1 크롭을 조정했다. 축소 크롭 비교와 최종 샘플 프레임에서 원본 제품 그래픽 조각이 보이지 않는 것을 확인했다.",
+    "movement_and_cut_audio": "정지 화면으로 동작·컷 연결·말끝의 자연스러움을 완전히 판정할 수 없다."
+  },
+  "capcut": {
+    "drafts_generated": true,
+    "source_paths_exist": true,
+    "opened_in_capcut_app": false,
+    "compatibility": "실제 앱에서 열어 보지 않아 호환성은 확인되지 않았다."
+  },
+  "not_checked": [
+    "실제 청취 및 연속 재생",
+    "캡컷 앱에서 프로젝트 열기",
+    "권리 허락 문서와 별도 음악 권리의 독립 검증",
+    "게시 시 유료 프로모션 및 제휴 고지 요건"
+  ],
+  "rights_and_publication": {
+    "permission": "사용자가 재편집·재업로드 및 제휴 목적 상업적 이용 허락과 별도 음악 권리를 확보했다고 확인했다.",
+    "independent_verification": "허락 문서와 음악 권리를 독립 검증하지 않았다.",
+    "uploaded": false
+  },
+  "independent_upload_review": {
+    "status": "not_completed",
+    "reason": "심사 에이전트가 보고를 반환하지 않아 판정을 기록할 수 없다. upload-review.json에 미완료 상태를 남겼다."
+  }
+}

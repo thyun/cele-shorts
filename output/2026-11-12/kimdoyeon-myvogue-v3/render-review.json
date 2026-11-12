@@ -1,0 +1,33 @@
+{
+  "job": "kimdoyeon-myvogue-v3",
+  "revision_scope": "타이틀 문구·강조어를 재기획해 MP4와 캡컷 초안을 새 작업명으로 렌더링했다. 이전 버전은 보존했다.",
+  "title_review": "각 270x480 미리보기에서 두 줄 가독성과 첫 1–3초의 제목-화면 약속을 확인했다. 검정이 아닌 선글라스, 다른 치즈가 시시하다는 개인 반응, 짐과 스타일의 가방 딜레마를 각각 중심에 두었다.",
+  "outputs": {
+    "s1_sunglasses": {
+      "duration_seconds": 23.4,
+      "resolution": "1080x1920",
+      "subtitle_cues": 8
+    },
+    "s2_goatcheese": {
+      "duration_seconds": 18.2,
+      "resolution": "1080x1920",
+      "subtitle_cues": 8
+    },
+    "s3_travelbag": {
+      "duration_seconds": 21.47,
+      "resolution": "1080x1920",
+      "subtitle_cues": 10
+    }
+  },
+  "not_checked": [
+    "실제 음성 청취 및 연속 재생",
+    "캡컷 앱에서 프로젝트 열기",
+    "권리 허락 문서와 별도 음악 권리의 독립 검증",
+    "게시 시 유료 프로모션 및 제휴 고지 요건"
+  ],
+  "independent_upload_review": {
+    "status": "not_completed",
+    "reason": "이전 v2 심사 호출은 판정 보고를 반환하지 않았다. 이 신규 타이틀 버전의 독립 심사 완료를 주장하지 않는다."
+  },
+  "uploaded": false
+}

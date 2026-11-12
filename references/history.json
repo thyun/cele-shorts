@@ -756,9 +756,279 @@
           "role": "discovered",
           "record": "work/2026-11-12/material-discovery/references.json",
           "date": "2026-11-12"
+        },
+        {
+          "role": "prepared",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v1"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/kimdoyeon-myvogue-v1/plan.json",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v1"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/kimdoyeon-myvogue-v2/plan.json",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v2"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/kimdoyeon-myvogue-v3/plan.json",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v3"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/kimdoyeon-myvogue-v4/plan.json",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v4"
         }
       ],
-      "generations": [],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v1",
+          "output_directory": "output/2026-11-12/kimdoyeon-myvogue-v1",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_sunglasses",
+              "title": "교복처럼 쓰는 선글라스\n고를 때 본 건 뭐였을까?",
+              "segments": [
+                [
+                  123.45,
+                  151.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v1/s1_sunglasses.mp4"
+            },
+            {
+              "id": "s2_goatcheese",
+              "title": "향이 좀 세다는데\n김도연은 왜 좋아할까?",
+              "segments": [
+                [
+                  296.75,
+                  318.57,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v1/s2_goatcheese.mp4"
+            },
+            {
+              "id": "s3_travelbag",
+              "title": "짐은 많아도 예쁘고 싶다면\n가방 고르는 기준은?",
+              "segments": [
+                [
+                  359.41,
+                  376.35,
+                  0.46
+                ],
+                [
+                  397.85,
+                  406.65,
+                  0.46
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v1/s3_travelbag.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v2",
+          "output_directory": "output/2026-11-12/kimdoyeon-myvogue-v2",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_sunglasses",
+              "title": "교복처럼 쓰는 선글라스\n고를 때 본 건 뭐였을까?",
+              "segments": [
+                [
+                  123.45,
+                  151.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v2/s1_sunglasses.mp4"
+            },
+            {
+              "id": "s2_goatcheese",
+              "title": "향이 좀 세다는데\n김도연은 왜 좋아할까?",
+              "segments": [
+                [
+                  296.75,
+                  318.57,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v2/s2_goatcheese.mp4"
+            },
+            {
+              "id": "s3_travelbag",
+              "title": "짐은 많아도 예쁘고 싶다면\n가방 고르는 기준은?",
+              "segments": [
+                [
+                  359.41,
+                  376.35,
+                  0.46
+                ],
+                [
+                  397.85,
+                  406.65,
+                  0.46
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v2/s3_travelbag.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v3",
+          "output_directory": "output/2026-11-12/kimdoyeon-myvogue-v3",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_sunglasses",
+              "title": "매일 쓰는 선글라스\n왜 검정이 아니었을까?",
+              "segments": [
+                [
+                  123.45,
+                  151.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v3/s1_sunglasses.mp4"
+            },
+            {
+              "id": "s2_goatcheese",
+              "title": "고트 치즈 맛 들이면\n다른 치즈가 시시해진다고?",
+              "segments": [
+                [
+                  296.75,
+                  318.57,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v3/s2_goatcheese.mp4"
+            },
+            {
+              "id": "s3_travelbag",
+              "title": "짐은 많은데 예쁘고 싶다?\n이 가방, 둘 다 될까?",
+              "segments": [
+                [
+                  359.41,
+                  376.35,
+                  0.46
+                ],
+                [
+                  397.85,
+                  406.65,
+                  0.46
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v3/s3_travelbag.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+          "date": "2026-11-12",
+          "job": "kimdoyeon-myvogue-v4",
+          "output_directory": "output/2026-11-12/kimdoyeon-myvogue-v4",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "music_rights": "user_confirmed",
+            "verification": "사용자가 영상 이용 허락과 별도 음악 권리를 확인함. 허락 문서는 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_sunglasses",
+              "title": "김도연이 매일 쓰는 선글라스\n왜 검정이 아니었을까?",
+              "segments": [
+                [
+                  123.45,
+                  151.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v4/s1_sunglasses.mp4"
+            },
+            {
+              "id": "s2_goatcheese",
+              "title": "김도연의 고트 치즈 취향\n다른 치즈가 시시해졌다고?",
+              "segments": [
+                [
+                  296.75,
+                  318.57,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v4/s2_goatcheese.mp4"
+            },
+            {
+              "id": "s3_travelbag",
+              "title": "짐은 많은데 예쁘고 싶다?\n김도연의 가방, 둘 다 될까?",
+              "segments": [
+                [
+                  359.41,
+                  376.35,
+                  0.46
+                ],
+                [
+                  397.85,
+                  406.65,
+                  0.46
+                ]
+              ],
+              "file": "output/2026-11-12/kimdoyeon-myvogue-v4/s3_travelbag.mp4"
+            }
+          ]
+        }
+      ],
       "title": "[EN] ‘느좋’의 정석! 김도연 가방 속 공개 👜 | MY VOGUE",
       "channel": "VOGUE KOREA",
       "format": "long",

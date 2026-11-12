@@ -59,7 +59,6 @@ def title_png(path, short):
     for row, (line, spans) in enumerate(lines):
         x = (W - d.textlength(line, font=f)) / 2
         y = 110 + row * height
-        d.rounded_rectangle((x - 30, y - 10, W - x + 30, y + height), 22, fill=(175, 20, 50, 235))
         d.text((x, y), line, font=f, fill="white", stroke_width=7, stroke_fill="black")
         for start, end in spans:
             pos = x + d.textlength(line[:start], font=f)

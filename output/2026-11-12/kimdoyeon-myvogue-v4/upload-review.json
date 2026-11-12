@@ -1,0 +1,10 @@
+{
+  "review_status": "not_completed",
+  "reviewer": "shorts-upload-reviewer",
+  "review_attempted_for_this_revision": false,
+  "prior_attempt": "v2 독립 심사 호출은 완료됐으나 판정 보고가 반환되지 않았다.",
+  "content_verdict": null,
+  "publication_status": "게시 전 확인 필요",
+  "reason": "v4는 인물명을 반영해 다시 렌더링한 결과다. 이 버전에 대한 독립 판정이 없어 업로드 추천 여부를 판단하지 않는다.",
+  "automatic_rework": false
+}
