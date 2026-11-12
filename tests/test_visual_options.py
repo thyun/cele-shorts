@@ -7,6 +7,13 @@ from cli import validate_visual_options
 
 
 class VisualOptionsTests(unittest.TestCase):
+    def test_editorial_position(self):
+        short = {"id": "test", "segments": [[10, 15, 0.5]]}
+        for position in ("top", "bottom"):
+            validate_visual_options(short | {"editorial_position": position})
+        with self.assertRaises(ValueError):
+            validate_visual_options(short | {"editorial_position": "middle"})
+
     def test_existing_plan_and_valid_options(self):
         short = {"id": "test", "segments": [[10, 15, 0.5], [20, 25, 0.5]]}
         validate_visual_options(short)
@@ -37,6 +44,14 @@ class VisualOptionsTests(unittest.TestCase):
                     "id": "test", "segments": [[10, 15, 0.5], [20, 25, 0.5]],
                     "editorial_notes": [note],
                 })
+
+    def test_visual_labels_require_visible_positions_and_one_segment(self):
+        short = {"id": "test", "segments": [[10, 15, 0.5], [20, 25, 0.5]]}
+        validate_visual_options(short | {"visual_labels": [[10, 15, "filter", 0.5, 0.5]]})
+        for label in ([10, 15, "filter", -0.1, 0.5], [10, 15, "filter", 0.5, float("nan")],
+                      [14, 21, "filter", 0.5, 0.5], [10, 15, " ", 0.5, 0.5]):
+            with self.subTest(label=label), self.assertRaises(ValueError):
+                validate_visual_options(short | {"visual_labels": [label]})
 
 
 if __name__ == "__main__":

@@ -28,6 +28,8 @@ for s in SHORTS:
     script.add_track(cc.TrackType.text, "source")
     if s.get("editorial_notes"):
         script.add_track(cc.TrackType.text, "editorial")
+    if s.get("visual_labels"):
+        script.add_track(cc.TrackType.text, "visual_labels")
 
     segs = s["segments"]
     offs, acc = [], 0.0
@@ -120,11 +122,22 @@ for s in SHORTS:
         note = cc.TextSegment(
             f"채널 체크 | {text}", trange(start_us, end_us - start_us),
             style=cc.TextStyle(size=5.0, bold=True, color=(0.67, 0.94, 1.0), align=1),
-            clip_settings=cc.ClipSettings(transform_y=-0.77),
+            clip_settings=cc.ClipSettings(
+                transform_y=0.64 if s.get("editorial_position") == "top" else -0.77),
             background=cc.TextBackground(color="#0D1E2D", alpha=0.96, round_radius=0.2),
             border=cc.TextBorder(color=(0, 0, 0), width=15.0),
         )
         script.add_segment(note, "editorial")
+
+    for a, b, text, x, y in s.get("visual_labels", []):
+        start_us, end_us = round(to_out(a) * 1_000_000), round(to_out(b) * 1_000_000)
+        label = cc.TextSegment(
+            text, trange(start_us, end_us - start_us),
+            style=cc.TextStyle(size=6.0, bold=True, color=(0.67, 0.94, 1.0), align=1),
+            clip_settings=cc.ClipSettings(transform_x=2*x-1, transform_y=1-2*y),
+            border=cc.TextBorder(color=(0, 0, 0), width=20.0),
+        )
+        script.add_segment(label, "visual_labels")
 
     script.save()
     print("saved", s["id"], f"{total:.1f}s")

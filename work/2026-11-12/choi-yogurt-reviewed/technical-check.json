@@ -1,0 +1,26 @@
+[
+  {
+    "id": "s1_curry",
+    "duration_seconds": 20.537007,
+    "expected_seconds": 20.46666666666681,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "full_decode": "passed",
+    "capcut_source_paths": "exist",
+    "capcut_square_crop": "passed"
+  },
+  {
+    "id": "s2_dripper",
+    "duration_seconds": 18.518005,
+    "expected_seconds": 18.484166666666702,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "full_decode": "passed",
+    "capcut_source_paths": "exist",
+    "capcut_square_crop": "passed"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "job": "choi-yogurt-v5",
+  "checked_on": "2026-11-12",
+  "durations": {
+    "s1_dripper": 19.0,
+    "s2_curry": 20.0,
+    "s3_dressing": 19.2
+  },
+  "technical": {
+    "resolution": "1080x1920 x3",
+    "decode": "ok x3",
+    "capcut_paths": "원본 long.mp4 절대경로 참조",
+    "note": "SRT 시간·캡컷 앱 열기 미검사"
+  },
+  "timing": "faster-whisper(medium)로 컷 시작·끝 단어 확인. 일부 컷 경계는 청취 미확인",
+  "caveats": [
+    "S1 끝 '매일매일 먹기에는'이 문장 중간에서 끝남",
+    "S3 시작에 자막 없는 '그리고'가 들림",
+    "'그다음에 요거트랑 같이' 전사 불확실",
+    "실제 청취·연속 재생·캡컷 앱·음악 권리·제휴 표시 미확인"
+  ],
+  "changes_vs_v4": "v4 카레·드리퍼 외 드레싱 추가, 1:1 크롭(0.45x0.80), 상단 채널 체크 메모, 단어 단위 컷 보정"
+}

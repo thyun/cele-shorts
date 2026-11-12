@@ -1,0 +1,35 @@
+{
+  "reviewed_on": "2026-11-12",
+  "reviewer": "production_self_check",
+  "not_independent_upload_review": true,
+  "previous_independent_review": "../choi-yogurt-reviewed/upload-review.json",
+  "technical_evidence": "technical-check.json",
+  "selection": {"created_count": 2, "reason_not_three": "바나나 바크는 1:1 도해 손실·추가 가치 부족으로 제외.", "narration": "intro/outro 모두 생략. 원본 시연·비교를 우선."},
+  "videos": [
+    {
+      "id": "s1_curry",
+      "duration_seconds": 20.570998,
+      "changes": "기존 비교·시식·한 숟갈 제안은 유지. 첫 시식 샷으로 넘어가기 전에 크롭 중심을 0.43에서 0.56으로 분리해 얼굴 오른쪽과 숟가락을 보존했다.",
+      "visual_check": "새 MP4 6.3·6.467·6.6·6.8·7.0초 및 전체 contact sheet에서 두 번의 시식·얼굴·손을 확인.",
+      "plus_alpha": "완성 후 토핑이라는 관찰, 카레만 먼저 맛본 뒤 한 숟갈에서 산미 취향을 확인하자는 채널 제안을 구분한다.",
+      "source_end": "18:46.79에서 끝내 건강효과 발언·다음 화제 제외."
+    },
+    {
+      "id": "s2_dripper",
+      "duration_seconds": 18.518005,
+      "changes": "받침컵 라벨과 설명 종료를 원본220.9초로 앞당겼다. 사각 질감 시연 용기로 바뀌기 전에 부위 표시를 끝낸다.",
+      "visual_check": "새 MP4 6.05·6.2·6.267·6.4·6.533초와 전체 contact sheet 확인. 6.267초 이후 사각 용기에 받침컵 라벨이 남지 않는다.",
+      "plus_alpha": "여과지의 고형분 유지, 아래 컵의 유청 수집 역할을 실물 라벨로 연결하고 여과지·받침컵 호환을 살필 기준으로 제시.",
+      "source_end": "03:55.8에서 끝내 짧은 후속 인물샷 제외."
+    }
+  ],
+  "visual_evidence": "../../../work/2026-11-12/choi-yogurt-v4/corrected-boundaries.jpg",
+  "thumbnail_method": "실제 최종 MP4의 270x480 축소 프레임 확인. 두 줄 제목과 강조어 식별 가능.",
+  "facts_and_rights": {
+    "permission": "이 원본에 필요한 재편집·재업로드·제휴 상업적 이용 허락 확보는 사용자 확인. 문서·음악 권리는 독립 검증 안 함.",
+    "external_media": "사용 안 함. 레퍼런스 쇼츠는 제목 구조만 참고.",
+    "shopping_link": "정확한 연결 상품 식별·동일성·도구 적합성 미확인. 임의 상품 링크 생성 안 함.",
+    "publication": "게시 안 함. 필요 제휴 고지·음악 권리·재생 확인은 별도."
+  },
+  "unverified": ["실제 청취·발음·자막 싱크·말끝·1.2배속 체감", "연속 움직임 인지·유청 낙하", "캡컷 앱 열기·YouTube UI", "허락 문서·별도 음악 권리·제휴 고지·연결 상품 및 식품 접촉·보관 적합성"]
+}

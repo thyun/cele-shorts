@@ -1,0 +1,50 @@
+{
+  "reviewer": "shorts-upload-reviewer",
+  "reviewed_at": "2026-11-12T13:21:44+09:00",
+  "output_directory": "output/2026-11-12/choi-yogurt-reviewed/",
+  "scope": "수정본 독립 재심. 직접 ffprobe·전체 디코딩·경계와 시연/라벨/마지막 프레임 및 축소 화면·원본 자막 대조.",
+  "evidence_directory": "/Users/1001291/.copilot/session-state/27448bec-eb6e-4760-8534-cbb6fbb4ce75/files/choi-independent-review-v2/",
+  "videos": [
+    {
+      "id": "s1_curry",
+      "file": "s1_curry.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "두 시식과 한 숟갈 제안으로 고유 가치는 개선됐다. 첫 시식 시작의 다른 샷에 얼굴 오른쪽 잘림이 남는다.",
+      "criteria": {"첫 1~3초": "강점", "시청 보상·전개": "보통", "채널 고유 가치": "보통", "쇼핑 판단의 정직성": "강점", "시청 경험": "약점", "사실·게시 준비": "미확인"},
+      "evidence": [
+        {"output_timecode": "전체", "method": "독립 ffprobe·전체 디코딩", "observation": "20.537초, 1080x1920, H.264/AAC. 오류 없음."},
+        {"output_timecode": "00:06.467–00:06.600", "method": "프레임194–198 원해상도 확인", "observation": "첫 시식 시작에 얼굴 오른쪽·안경 끝이 우측 경계에 잘림.", "artifact": "s1_curry-frame194-native.png"},
+        {"output_timecode": "00:13.033–00:20.500", "observation": "두 번째 실제 시식·단계 라벨·한 숟갈 제안과 개인평가 구분 확인. 다음 화제 없음."}
+      ],
+      "required_changes": [
+        {"priority": 1, "action": "첫 시식 샷 시작 크롭 조정.", "pass_condition": "새 MP4 6.467초 전후 및 해당 샷에서 얼굴·숟가락·시식이 잘리지 않음."},
+        {"priority": 2, "action": "실제 청취·연속 재생과 권리·제휴 게시 확인.", "pass_condition": "말끝·싱크·속도·컷 연결·음악 권리·제휴 고지 기록."}
+      ],
+      "unverified": ["청취·연속 재생·싱크·말끝·배속", "캡컷 앱·YouTube UI", "허락 문서·음악 권리·제휴·연결 상품"]
+    },
+    {
+      "id": "s2_dripper",
+      "file": "s2_dripper.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "초반 잘린 자막과 마지막 후속샷 해결. 역할·호환 기준은 유용하나 받침컵 라벨이 다른 용기의 질감 시연까지 남음.",
+      "criteria": {"첫 1~3초": "강점", "시청 보상·전개": "강점", "채널 고유 가치": "보통", "쇼핑 판단의 정직성": "보통", "시청 경험": "약점", "사실·게시 준비": "미확인"},
+      "evidence": [
+        {"output_timecode": "전체", "method": "독립 ffprobe·전체 디코딩", "observation": "18.518초, 1080x1920, H.264/AAC. 오류 없음."},
+        {"output_timecode": "00:06.267–00:06.533", "method": "장면 전환 검출 후 프레임188–196 확인", "observation": "사각 요거트 용기로 바뀌어도 받침컵 라벨이 남음.", "artifact": "s2_dripper-precise-boundary.jpg"},
+        {"output_timecode": "00:06.567–00:18.467", "observation": "질감·남성 반응·호환 기준·마지막 도구 클로즈업 확인. 기존 후속샷 없음."}
+      ],
+      "required_changes": [
+        {"priority": 1, "action": "받침컵 라벨을6.267초 전환 전에 종료.", "pass_condition": "컵 없는 프레임에 라벨·화살표가 표시되지 않음."},
+        {"priority": 2, "action": "실제 청취·연속 재생과 권리·제휴 게시 확인.", "pass_condition": "말끝·싱크·움직임·음악 권리·제휴 고지, 상품 연결 시 식품 적합성·호환 확인."}
+      ],
+      "unverified": ["청취·연속 재생·유청 낙하·싱크·말끝", "동일 배치·시간·무게 비교", "식품 접촉·보관 적합성", "캡컷 앱·YouTube UI", "허락 문서·음악 권리·제휴 게시"]
+    }
+  ],
+  "batch_recommendation": {
+    "current_upload_recommendation": "현재 추천 없음",
+    "priority_for_revision": ["s2_dripper", "s1_curry"],
+    "reason": "콘텐츠 가치 문제는 개선됐다. 확인된 크롭·라벨 오류를 국소 수정한 새 MP4로 재심하면 됨. 실제 재생확인은 게시 전 미확인."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "reference": "TITLE_PLAYBOOK.md",
+  "reviewed_on": "2026-11-12",
+  "principles_applied": [
+    "기대와 실제의 대비",
+    "실제 발언 인용",
+    "의외의 재료"
+  ],
+  "thumbnail_check": "테스트 렌더의 축소 시트에서 두 줄 타이틀 가독성 확인. 강조 색은 풀해상도 별도 확인 필요.",
+  "opening_check": "각 쇼츠 0~3초 프레임과 제목이 같은 약속을 하는지 시트로 확인. 실제 청취 미확인.",
+  "shorts": [
+    {
+      "id": "s1_dripper",
+      "source_facts": [
+        {
+          "fact": "커피 여과지와 받침컵으로 요거트 유청을 거른다",
+          "source_timecode": "3:33.9–3:45.1"
+        },
+        {
+          "fact": "시판 그릭요거트가 비싸 매일 먹기엔 부담이라는 본인 체감(가격 수치 없음)",
+          "source_timecode": "3:58.1–4:01.1"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "비싼 그릭요거트 대신\n커피 도구로 만든다고?",
+          "structure": "기대와 실제의 대비",
+          "viewer_question": "커피 도구로 어떻게 그릭요거트를 만드나",
+          "source_evidence": "3:33.9–4:01.1",
+          "opening_visual": "여과지 위 요거트 클로즈업",
+          "payoff": "여과 과정과 '비싸다' 발언",
+          "risk": "비싸다는 본인 체감, 가격·효능 단정 금지",
+          "decision": "선정. 첫 화면 도구와 제목이 일치"
+        },
+        {
+          "title": "최화정이 커피 드리퍼에\n요거트를 올린 이유",
+          "structure": "행동과 이유",
+          "viewer_question": "왜 요거트를 드리퍼에 올리나",
+          "source_evidence": "3:33.9–3:45.1",
+          "opening_visual": "드리퍼에 요거트를 넣는 손",
+          "payoff": "유청이 빠져 꾸덕해짐",
+          "risk": "도구 이름만으로 약함",
+          "decision": "탈락. '이유' 답이 덜 구체적"
+        },
+        {
+          "title": "\"그게 좀 비싸\"\n그릭요거트를 집에서",
+          "structure": "솔직한 고백",
+          "viewer_question": "무엇이 비싸다는 건가",
+          "source_evidence": "3:58.1–4:01.1",
+          "opening_visual": "없음(마지막에야 등장)",
+          "payoff": "비싸다 발언",
+          "risk": "답이 끝에만 있어 첫 장면과 불일치",
+          "decision": "탈락"
+        }
+      ]
+    },
+    {
+      "id": "s2_curry",
+      "source_facts": [
+        {
+          "fact": "완성 카레 위에 요거트 한 스쿱, 오리지널 먼저 먹고 요거트와 함께 시식",
+          "source_timecode": "18:06.5–18:32.6"
+        },
+        {
+          "fact": "'요거트가 들어가니까 이국적이야' '약간 산미가 있잖아' 본인 평가",
+          "source_timecode": "18:41.5–18:46.9"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "카레에 요거트 넣고\n\"되게 이국적이야\"",
+          "structure": "실제 발언 인용+의외의 조합",
+          "viewer_question": "요거트 넣은 카레가 왜 이국적이라는가",
+          "source_evidence": "18:41.5–18:46.9",
+          "opening_visual": "'요거트가 들어가니까 이국적이야' 발언 장면",
+          "payoff": "그 뒤 시식 과정",
+          "risk": "발언은 개인 평가",
+          "decision": "선정. 첫 화면이 발언 자체"
+        },
+        {
+          "title": "요거트 넣은 카레에\n최화정이 한 말",
+          "structure": "반응과 계기",
+          "viewer_question": "무슨 말을 했나",
+          "source_evidence": "18:41.5–18:46.9",
+          "opening_visual": "발언 장면",
+          "payoff": "발언",
+          "risk": "모호함",
+          "decision": "탈락. 덜 구체적"
+        },
+        {
+          "title": "카레는 오리지널부터\n요거트는 그다음에",
+          "structure": "구체적인 순서",
+          "viewer_question": "순서가 왜 중요한가",
+          "source_evidence": "18:17.3–18:22.2",
+          "opening_visual": "시식 순서",
+          "payoff": "비교 시식",
+          "risk": "소재 설명에 가까움",
+          "decision": "탈락"
+        }
+      ]
+    },
+    {
+      "id": "s3_dressing",
+      "source_facts": [
+        {
+          "fact": "드레싱에 '킥'으로 피시소스를 조금 넣는다",
+          "source_timecode": "11:38.6–11:43.4"
+        },
+        {
+          "fact": "마요네즈:요거트 1:1, 꿀은 선택",
+          "source_timecode": "11:00.2–11:06.5, 11:11.6–11:23.0"
+        }
+      ],
+      "candidates": [
+        {
+          "title": "요거트 드레싱에\n피시소스를 넣는다고?",
+          "structure": "의외의 재료",
+          "viewer_question": "왜 피시소스를 넣나",
+          "source_evidence": "11:38.6–11:43.4",
+          "opening_visual": "'여기에 킥이 있어' 발언",
+          "payoff": "피시소스 조금 언급",
+          "risk": "맛 효과는 본인 표현",
+          "decision": "선정"
+        },
+        {
+          "title": "마요네즈만큼 넣는다는\n요거트 드레싱",
+          "structure": "구체적 수치",
+          "viewer_question": "비율이 얼마인가",
+          "source_evidence": "11:00.2–11:06.5",
+          "opening_visual": "마요네즈 짜는 장면",
+          "payoff": "1:1 설명",
+          "risk": "수치만으로 평범",
+          "decision": "탈락"
+        },
+        {
+          "title": "시저 드레싱 요거트로\n바꾸면 생기는 일",
+          "structure": "결과 질문",
+          "viewer_question": "무엇이 바뀌나",
+          "source_evidence": "11:00–11:23",
+          "opening_visual": "섞는 장면",
+          "payoff": "결과 장면 부족",
+          "risk": "원본이 결과를 보여주지 않음",
+          "decision": "탈락"
+        }
+      ]
+    }
+  ]
+}

@@ -128,8 +128,18 @@ def build(s):
 
     for k, (a, b, text) in enumerate(s.get("editorial_notes", []), 1):
         p = f"{PNG_DIR}/{s['id']}_note{k}.png"
-        text_png(p, f"채널 체크 | {text}", 44, 1680, (170, 239, 255, 255),
+        note_y = 320 if s.get("editorial_position") == "top" else 1680
+        text_png(p, f"채널 체크 | {text}", 44, note_y, (170, 239, 255, 255),
                  2, box=(13, 30, 45, 245), max_width=930)
+        pngs.append((p, to_out(a), to_out(b)))
+
+    for k, (a, b, text, x, y) in enumerate(s.get("visual_labels", []), 1):
+        p = f"{PNG_DIR}/{s['id']}_label{k}.png"
+        image = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(image)
+        draw.text((W * x, H * y), text, font=font(48), anchor="mm",
+                  fill=(170, 239, 255, 255), stroke_width=4, stroke_fill="black")
+        image.save(p)
         pngs.append((p, to_out(a), to_out(b)))
 
     last = "cv"

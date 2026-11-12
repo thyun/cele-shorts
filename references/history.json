@@ -1,0 +1,1073 @@
+{
+  "schema_version": 1,
+  "videos": {
+    "IvaYUWFiLDg": {
+      "id": "IvaYUWFiLDg",
+      "url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt/plan.json"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-final"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt-reviewed/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-reviewed"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt-v4/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v4"
+        },
+        {
+          "role": "prepared",
+          "date": "2026-11-12",
+          "job": "choi-yogurt"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-12/choi-yogurt-v5/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v5"
+        }
+      ],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+          "date": "2026-11-12",
+          "job": "choi-yogurt",
+          "output_directory": "output/2026-11-12/choi-yogurt",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서·별도 음악 권리를 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_curry",
+              "title": "최화정 카레에 요거트?\n따로 먹어본 뒤 한 말",
+              "segments": [
+                [
+                  1086.8,
+                  1090.3,
+                  0.56
+                ],
+                [
+                  1098.31,
+                  1108.26,
+                  0.52
+                ],
+                [
+                  1108.8,
+                  1112.95,
+                  0.42
+                ],
+                [
+                  1121.48,
+                  1126.79,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt/s1_curry.mp4"
+            },
+            {
+              "id": "s2_dripper",
+              "title": "최화정이 커피 도구에\n요거트를 넣는 이유",
+              "segments": [
+                [
+                  211.239,
+                  226.229,
+                  0.53
+                ],
+                [
+                  226.239,
+                  228.589,
+                  0.62
+                ],
+                [
+                  228.599,
+                  235.95,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt/s2_dripper.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-final",
+          "output_directory": "output/2026-11-12/choi-yogurt-final",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서·별도 음악 권리를 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": "output/2026-11-12/choi-yogurt-final/upload-review.json",
+          "review_verdicts": {
+            "s1_curry": "수정 후 재심",
+            "s2_dripper": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_curry",
+              "title": "최화정 카레에 요거트?\n따로 먹어본 뒤 한 말",
+              "segments": [
+                [
+                  1086.8,
+                  1090.3,
+                  0.56
+                ],
+                [
+                  1098.31,
+                  1108.26,
+                  0.43
+                ],
+                [
+                  1108.8,
+                  1110.6,
+                  0.57
+                ],
+                [
+                  1110.6,
+                  1112.95,
+                  0.42
+                ],
+                [
+                  1121.48,
+                  1126.79,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-final/s1_curry.mp4"
+            },
+            {
+              "id": "s2_dripper",
+              "title": "최화정이 커피 도구에\n요거트를 넣는 이유",
+              "segments": [
+                [
+                  211.239,
+                  226.229,
+                  0.53
+                ],
+                [
+                  226.239,
+                  228.589,
+                  0.62
+                ],
+                [
+                  228.599,
+                  235.95,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-final/s2_dripper.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-reviewed",
+          "output_directory": "output/2026-11-12/choi-yogurt-reviewed",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서·별도 음악 권리를 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": "output/2026-11-12/choi-yogurt-reviewed/upload-review.json",
+          "review_verdicts": {
+            "s1_curry": "수정 후 재심",
+            "s2_dripper": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_curry",
+              "title": "최화정 카레에 요거트?\n따로 먹어본 뒤 한 말",
+              "segments": [
+                [
+                  1086.8,
+                  1090.3,
+                  0.56
+                ],
+                [
+                  1098.31,
+                  1108.26,
+                  0.43
+                ],
+                [
+                  1110.8,
+                  1112.95,
+                  0.42
+                ],
+                [
+                  1117.05,
+                  1120.7,
+                  0.55
+                ],
+                [
+                  1121.48,
+                  1126.79,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-reviewed/s1_curry.mp4"
+            },
+            {
+              "id": "s2_dripper",
+              "title": "최화정이 커피 도구에\n요거트를 넣는 이유",
+              "segments": [
+                [
+                  213.599,
+                  226.229,
+                  0.53
+                ],
+                [
+                  226.239,
+                  228.589,
+                  0.62
+                ],
+                [
+                  228.599,
+                  235.8,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-reviewed/s2_dripper.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v4",
+          "output_directory": "output/2026-11-12/choi-yogurt-v4",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서·별도 음악 권리를 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": "output/2026-11-12/choi-yogurt-v4/upload-review.json",
+          "review_verdicts": {
+            "s1_curry": "업로드 추천",
+            "s2_dripper": "업로드 추천"
+          },
+          "shorts": [
+            {
+              "id": "s1_curry",
+              "title": "최화정 카레에 요거트?\n따로 먹어본 뒤 한 말",
+              "segments": [
+                [
+                  1086.8,
+                  1090.3,
+                  0.56
+                ],
+                [
+                  1098.31,
+                  1102.4,
+                  0.43
+                ],
+                [
+                  1102.4,
+                  1108.26,
+                  0.56
+                ],
+                [
+                  1110.8,
+                  1112.95,
+                  0.42
+                ],
+                [
+                  1117.05,
+                  1120.7,
+                  0.55
+                ],
+                [
+                  1121.48,
+                  1126.79,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-v4/s1_curry.mp4"
+            },
+            {
+              "id": "s2_dripper",
+              "title": "최화정이 커피 도구에\n요거트를 넣는 이유",
+              "segments": [
+                [
+                  213.599,
+                  226.229,
+                  0.53
+                ],
+                [
+                  226.239,
+                  228.589,
+                  0.62
+                ],
+                [
+                  228.599,
+                  235.8,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-v4/s2_dripper.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v5",
+          "output_directory": "output/2026-11-12/choi-yogurt-v5",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-12",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 필요한 이용 허락 확보를 확인함. 허락 문서·별도 음악 권리를 독립 검증하지 않음."
+          },
+          "publication_status": "unknown",
+          "review_file": "output/2026-11-12/choi-yogurt-v5/upload-review.json",
+          "review_verdicts": {
+            "s2_curry": "업로드 추천",
+            "s1_dripper": "수정 후 재심",
+            "s3_dressing": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_dripper",
+              "title": "비싼 그릭요거트 대신\n커피 도구로 만든다고?",
+              "segments": [
+                [
+                  213.85,
+                  225.08,
+                  0.53
+                ],
+                [
+                  229.5,
+                  241.1,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-v5/s1_dripper.mp4"
+            },
+            {
+              "id": "s2_curry",
+              "title": "카레에 요거트 넣고\n\"되게 이국적이야\"",
+              "segments": [
+                [
+                  1121.45,
+                  1126.85,
+                  0.5
+                ],
+                [
+                  1086.5,
+                  1088.84,
+                  0.5
+                ],
+                [
+                  1097.28,
+                  1102.2,
+                  0.52
+                ],
+                [
+                  1102.41,
+                  1106.0,
+                  0.52
+                ],
+                [
+                  1108.61,
+                  1112.55,
+                  0.5
+                ],
+                [
+                  1116.6,
+                  1120.43,
+                  0.52
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-v5/s2_curry.mp4"
+            },
+            {
+              "id": "s3_dressing",
+              "title": "요거트 드레싱에\n피시소스를 넣는다고?",
+              "segments": [
+                [
+                  698.1,
+                  703.4,
+                  0.7
+                ],
+                [
+                  660.2,
+                  666.5,
+                  0.66
+                ],
+                [
+                  671.6,
+                  683.04,
+                  0.7
+                ]
+              ],
+              "file": "output/2026-11-12/choi-yogurt-v5/s3_dressing.mp4"
+            }
+          ]
+        }
+      ],
+      "title": "관리의 신 최화정! 아침에 꼭 챙겨먹는 그릭요거트 요리 5종 최초공개",
+      "channel": "안녕하세요 최화정이에요",
+      "format": "long",
+      "published_kst": "2026-10-15",
+      "duration_seconds": 1367
+    },
+    "RRQvsZ6U-I0": {
+      "id": "RRQvsZ6U-I0",
+      "url": "https://www.youtube.com/watch?v=RRQvsZ6U-I0",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "title": "[EN] 장원영의 뷰티 시크릿✨ 헤어 케어, 모닝 루틴, 촬영 전날 꼭 하는 것 | BEAUTY SECRET",
+      "channel": "VOGUE KOREA",
+      "format": "long",
+      "published_kst": "2026-10-03",
+      "duration_seconds": 218
+    },
+    "l2juU6Dws7M": {
+      "id": "l2juU6Dws7M",
+      "url": "https://www.youtube.com/watch?v=l2juU6Dws7M",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "title": "인간 방부제 최화정! 40년간 하루도 빠짐없이 다닌 사우나 루틴 최초 공개 (+MZ 사우나템)",
+      "channel": "안녕하세요 최화정이에요",
+      "format": "long",
+      "published_kst": "2026-10-22",
+      "duration_seconds": 1406
+    },
+    "9q1FS3PGogc": {
+      "id": "9q1FS3PGogc",
+      "url": "https://www.youtube.com/watch?v=9q1FS3PGogc",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "title": "[EN] ‘느좋’의 정석! 김도연 가방 속 공개 👜 | MY VOGUE",
+      "channel": "VOGUE KOREA",
+      "format": "long",
+      "published_kst": "2026-10-05",
+      "duration_seconds": 445
+    },
+    "BKHkbYn2CP0": {
+      "id": "BKHkbYn2CP0",
+      "url": "https://www.youtube.com/watch?v=BKHkbYn2CP0",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "title": "서울에선 절대 볼 수 없는 것들! 최화정 눈돌아간 '의정부 제일시장' (찐맛집,수입코너,정육점)",
+      "channel": "안녕하세요 최화정이에요",
+      "format": "long",
+      "published_kst": "2026-10-29",
+      "duration_seconds": 1574
+    },
+    "m5RFImkZ8z4": {
+      "id": "m5RFImkZ8z4",
+      "url": "https://www.youtube.com/watch?v=m5RFImkZ8z4",
+      "references": [
+        {
+          "role": "researched",
+          "record": "TITLE_PLAYBOOK.md",
+          "date": "2026-11-11"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt/plan.json"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt",
+          "use": "반응과 계기의 연결 구조만 참고. 영상·음성·이미지 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-final",
+          "use": "반응과 계기의 연결 구조만 참고. 영상·음성·이미지 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-reviewed/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-reviewed",
+          "use": "반응과 계기의 연결 구조만 참고. 영상·음성·이미지 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-v4/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v4",
+          "use": "반응과 계기의 연결 구조만 참고. 영상·음성·이미지 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-v5/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v5",
+          "use": "반응과 계기의 연결 구조만 참고. 영상·음성·이미지 재사용 없음."
+        }
+      ],
+      "generations": [],
+      "title": "정말로...거짓말 안치고!! 화사가 써보고 놀란 찐애정템",
+      "channel": "쇼핑이멀전시",
+      "format": "short"
+    },
+    "pcjpUReL5b0": {
+      "id": "pcjpUReL5b0",
+      "url": "https://www.youtube.com/watch?v=pcjpUReL5b0",
+      "references": [
+        {
+          "role": "researched",
+          "record": "TITLE_PLAYBOOK.md",
+          "date": "2026-11-11"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt/plan.json"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json"
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt",
+          "use": "두 줄 화면 타이틀과 정보량 약속 분석 참고. 미디어 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-final/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-final",
+          "use": "두 줄 화면 타이틀과 정보량 약속 분석 참고. 미디어 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-reviewed/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-reviewed",
+          "use": "두 줄 화면 타이틀과 정보량 약속 분석 참고. 미디어 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-v4/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v4",
+          "use": "두 줄 화면 타이틀과 정보량 약속 분석 참고. 미디어 재사용 없음."
+        },
+        {
+          "role": "creative_reference",
+          "record": "output/2026-11-12/choi-yogurt-v5/plan.json",
+          "date": "2026-11-12",
+          "job": "choi-yogurt-v5",
+          "use": "두 줄 화면 타이틀과 정보량 약속 분석 참고. 미디어 재사용 없음."
+        }
+      ],
+      "generations": [],
+      "title": "수영이 매일 들고 다니는 파우치 속 찐찐템 인생쿠션 최애립밤 공개",
+      "channel": "줍줍걸",
+      "format": "short"
+    },
+    "4LRD8yDLzds": {
+      "id": "4LRD8yDLzds",
+      "url": "https://www.youtube.com/watch?v=4LRD8yDLzds",
+      "references": [
+        {
+          "role": "researched",
+          "record": "TITLE_PLAYBOOK.md",
+          "date": "2026-11-11"
+        }
+      ],
+      "generations": [],
+      "title": "알고있으면 개이득.. 연예인 가성비 추천템 TOP3",
+      "channel": "연예부기자 다람이",
+      "format": "short"
+    },
+    "c2r3bmNhiJw": {
+      "id": "c2r3bmNhiJw",
+      "url": "https://www.youtube.com/watch?v=c2r3bmNhiJw",
+      "references": [
+        {
+          "role": "researched",
+          "record": "TITLE_PLAYBOOK.md",
+          "date": "2026-11-11"
+        }
+      ],
+      "generations": [],
+      "title": "연예인들도 애타게 찾고 있다는 블러셔",
+      "channel": "언니파우치",
+      "format": "short"
+    },
+    "h6VvQZc1wVI": {
+      "id": "h6VvQZc1wVI",
+      "url": "https://www.youtube.com/watch?v=h6VvQZc1wVI",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "channel": "사볼까",
+      "format": "short",
+      "published_kst": "2026-10-16"
+    },
+    "KWid9BuZVws": {
+      "id": "KWid9BuZVws",
+      "url": "https://www.youtube.com/watch?v=KWid9BuZVws",
+      "references": [
+        {
+          "role": "discovered",
+          "record": "work/2026-11-12/material-discovery/references.json",
+          "date": "2026-11-12"
+        }
+      ],
+      "generations": [],
+      "channel": "머니한줄",
+      "format": "short",
+      "published_kst": "2026-11-04"
+    },
+    "dRCFS8NnDtk": {
+      "id": "dRCFS8NnDtk",
+      "url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+      "references": [
+        {
+          "role": "source",
+          "record": "output/2026-11-11/yoona-wkorea-square/plan.json"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-11/yoona-wkorea-edit/plan.json"
+        }
+      ],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+          "date": "2026-11-11",
+          "job": "yoona-wkorea-square",
+          "output_directory": "output/2026-11-11/yoona-wkorea-square",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-11",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 확보했다고 확인함. 허락 문서를 별도로 검증한 것은 아님."
+          },
+          "publication_status": "unknown",
+          "review_file": "output/2026-11-11/yoona-wkorea-square/upload-review.json",
+          "review_verdicts": {
+            "s1_band": "수정 후 재심",
+            "s2_mask": "수정 후 재심",
+            "s3_camera": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_band",
+              "title": "윤아가 꼭 챙긴다는\n핑크 밴드의 정체",
+              "segments": [
+                [
+                  230.792,
+                  234.682,
+                  0.5
+                ],
+                [
+                  216.492,
+                  230.78,
+                  0.5
+                ],
+                [
+                  241.992,
+                  248.65,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-square/s1_band.mp4"
+            },
+            {
+              "id": "s2_mask",
+              "title": "윤아가 챙기는 팩\n위아래가 따로라고?",
+              "segments": [
+                [
+                  118.6,
+                  121.98,
+                  0.53
+                ],
+                [
+                  105.0,
+                  118.58,
+                  0.5
+                ],
+                [
+                  121.992,
+                  130.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-square/s2_mask.mp4"
+            },
+            {
+              "id": "s3_camera",
+              "title": "윤아도 들고만 온 날?\n카메라 사기 전 생각할 것",
+              "segments": [
+                [
+                  56.15,
+                  61.45,
+                  0.5
+                ],
+                [
+                  38.9,
+                  45.28,
+                  0.5
+                ],
+                [
+                  64.8,
+                  76.48,
+                  0.53
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-square/s3_camera.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=dRCFS8NnDtk",
+          "date": "2026-11-11",
+          "job": "yoona-wkorea-edit",
+          "output_directory": "output/2026-11-11/yoona-wkorea-edit",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_on": "2026-11-11",
+            "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용",
+            "verification": "사용자가 확보했다고 확인함. 허락 문서를 별도로 검증한 것은 아님."
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_band",
+              "title": "윤아가 꼭 챙긴다는\n핑크 밴드의 정체",
+              "segments": [
+                [
+                  230.792,
+                  234.682,
+                  0.5
+                ],
+                [
+                  216.492,
+                  230.78,
+                  0.5
+                ],
+                [
+                  241.992,
+                  248.65,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-edit/s1_band.mp4"
+            },
+            {
+              "id": "s2_mask",
+              "title": "윤아가 챙기는 팩\n위아래가 따로라고?",
+              "segments": [
+                [
+                  118.6,
+                  121.98,
+                  0.53
+                ],
+                [
+                  105.0,
+                  118.58,
+                  0.5
+                ],
+                [
+                  121.992,
+                  130.5,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-edit/s2_mask.mp4"
+            },
+            {
+              "id": "s3_camera",
+              "title": "윤아도 들고만 온 날?\n카메라 사기 전 생각할 것",
+              "segments": [
+                [
+                  56.15,
+                  61.45,
+                  0.5
+                ],
+                [
+                  38.9,
+                  45.28,
+                  0.5
+                ],
+                [
+                  64.8,
+                  76.48,
+                  0.53
+                ]
+              ],
+              "file": "output/2026-11-11/yoona-wkorea-edit/s3_camera.mp4"
+            }
+          ]
+        }
+      ],
+      "channel": "W KOREA",
+      "format": "long",
+      "title": "[ENG] 임윤아 되는 주파수는 없지만 인 마이 백은 있다! 이동할 때 꼭 가지고 다니는 임윤아의 애착템은?",
+      "duration_seconds": 334
+    },
+    "z16w81kdlVw": {
+      "id": "z16w81kdlVw",
+      "url": "https://www.youtube.com/watch?v=z16w81kdlVw",
+      "references": [
+        {
+          "role": "source",
+          "record": "work/2026-11-09/sooyoung/plan.json"
+        }
+      ],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=z16w81kdlVw",
+          "date": "2026-11-09",
+          "job": "sooyoung",
+          "output_directory": "output/2026-11-09/sooyoung",
+          "status": "generated",
+          "permission": {
+            "status": "unknown"
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_cushion_hook",
+              "title": "막 발라도 예쁘다는\n쿠션",
+              "source_ranges_seconds": [
+                [
+                  1852.4,
+                  1856.3
+                ],
+                [
+                  1835.5,
+                  1850.0
+                ],
+                [
+                  1856.5,
+                  1862.1
+                ]
+              ],
+              "file": "output/2026-11-09/sooyoung/s1_cushion_hook.mp4",
+              "evidence": "output/2026-11-09/sooyoung/capcut_drafts/s1_cushion_hook/draft_content.json"
+            },
+            {
+              "id": "s2_lipbalm_hook",
+              "title": "15년째 이런 립밤을\n산다고?",
+              "source_ranges_seconds": [
+                [
+                  1892.0,
+                  1899.1
+                ],
+                [
+                  1863.0,
+                  1869.3
+                ],
+                [
+                  1886.8,
+                  1891.8
+                ],
+                [
+                  1907.1,
+                  1915.0
+                ]
+              ],
+              "file": "output/2026-11-09/sooyoung/s2_lipbalm_hook.mp4",
+              "evidence": "output/2026-11-09/sooyoung/capcut_drafts/s2_lipbalm_hook/draft_content.json"
+            },
+            {
+              "id": "s3_bodycream_hook",
+              "title": "끝까지 싹싹 쓰는\n바디크림",
+              "source_ranges_seconds": [
+                [
+                  1609.6,
+                  1612.5
+                ],
+                [
+                  1604.7,
+                  1609.5
+                ],
+                [
+                  1612.6,
+                  1633.3
+                ]
+              ],
+              "file": "output/2026-11-09/sooyoung/s3_bodycream_hook.mp4",
+              "evidence": "output/2026-11-09/sooyoung/capcut_drafts/s3_bodycream_hook/draft_content.json"
+            }
+          ],
+          "migration_note": "기존 최종 MP4와 캡컷 초안의 실제 원본 구간을 대조해 이관함. 게시 여부 미확인."
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=z16w81kdlVw",
+          "date": "2026-11-10",
+          "job": "sooyoung-comparison",
+          "output_directory": "output/2026-11-10/sooyoung-comparison",
+          "status": "generated",
+          "permission": {
+            "status": "unknown"
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_cushion_hook",
+              "title": "막 발라도 예쁘다는\n쿠션",
+              "source_ranges_seconds": [
+                [
+                  1852.4,
+                  1856.3
+                ],
+                [
+                  1835.5,
+                  1850.0
+                ],
+                [
+                  1856.5,
+                  1862.1
+                ]
+              ],
+              "file": "output/2026-11-10/sooyoung-comparison/s1_cushion_hook_with_narration.mp4",
+              "evidence": "output/2026-11-10/sooyoung-comparison/capcut_drafts/s1_cushion_hook/draft_content.json"
+            },
+            {
+              "id": "s2_lipbalm_hook",
+              "title": "15년째 이런 립밤을\n산다고?",
+              "source_ranges_seconds": [
+                [
+                  1892.0,
+                  1899.1
+                ],
+                [
+                  1863.0,
+                  1869.3
+                ],
+                [
+                  1886.8,
+                  1891.8
+                ],
+                [
+                  1907.1,
+                  1915.0
+                ]
+              ],
+              "file": "output/2026-11-10/sooyoung-comparison/s2_lipbalm_hook.mp4",
+              "evidence": "output/2026-11-10/sooyoung-comparison/capcut_drafts/s2_lipbalm_hook/draft_content.json"
+            },
+            {
+              "id": "s3_bodycream_hook",
+              "title": "끝까지 싹싹 쓰는\n바디크림",
+              "source_ranges_seconds": [
+                [
+                  1609.6,
+                  1612.5
+                ],
+                [
+                  1604.7,
+                  1609.5
+                ],
+                [
+                  1612.6,
+                  1633.3
+                ]
+              ],
+              "file": "output/2026-11-10/sooyoung-comparison/s3_bodycream_hook.mp4",
+              "evidence": "output/2026-11-10/sooyoung-comparison/capcut_drafts/s3_bodycream_hook/draft_content.json"
+            }
+          ],
+          "migration_note": "기존 최종 MP4와 캡컷 초안의 실제 원본 구간을 대조해 이관함. 게시 여부 미확인."
+        }
+      ],
+      "title": "[SUB] 소시 왜 이제 와? 소녀시대 도장깨기 시작 (다음 가족도 대기 중..🫢) ✨수영✨ l 얼굴보고 얘기해 EP08 #티파니영 #수영 #소녀시대",
+      "channel": "부글부글",
+      "format": "long",
+      "duration_seconds": 2053
+    }
+  }
+}

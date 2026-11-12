@@ -1,0 +1,52 @@
+{
+  "reviewed_on": "2026-11-12",
+  "reviewer": "production_self_check",
+  "not_independent_upload_review": true,
+  "source_url": "https://www.youtube.com/watch?v=IvaYUWFiLDg",
+  "selection": {
+    "created_count": 2,
+    "reason_not_three": "바나나 바크는 좌우 분할 도해의 1:1 확대 손실과 추가 가치 부족으로 제외했다.",
+    "narration": "두 편 모두 intro/outro 생략. 원본 시연·비교 발언을 바로 보여주고 채널 관찰을 별도 자막으로 구분했다."
+  },
+  "technical_evidence": "technical-check.json",
+  "visual_evidence": [
+    "preview.jpg",
+    "../../../work/2026-11-12/choi-yogurt-final/s1_curry-final-contact.jpg",
+    "../../../work/2026-11-12/choi-yogurt-final/s2_dripper-final-contact.jpg"
+  ],
+  "visual_method": "최종 MP4의 시작 0·0.7·1.5·2.8초, 모든 편집 구간 전후, 시연·해설·마지막 2초를 프레임 추출해 확인. 270x480 축소 썸네일을 별도 확인했다.",
+  "videos": [
+    {
+      "id": "s1_curry",
+      "duration_seconds": 19.14,
+      "hook_and_payoff": "0–2.9초 요거트 토핑을 먼저 보여주고, 카레만·요거트와 함께 먹는 비교 뒤 14.7–19.1초에 이국적·산미라는 개인 평가를 배치했다.",
+      "plus_alpha": "완성 카레에 요거트를 토핑하는 방식과 비교 순서를 해설해 함께 끓이는 조리법이라는 오해를 피한다.",
+      "crop": "원본 864x864 영역을 1080x1080으로 확대했다. 화각이 바뀌는 11.2–14.7초는 구간을 나누어 얼굴과 접시 위치를 따로 조정했다.",
+      "caption_observation": "하단 원본 대사 자막을 잘린 조각으로 남기지 않도록 원본 위쪽 80%를 사용. 완전히 보이는 원본 강조 문구는 유지했으며 외부 대사 자막과 뜻이 일부 반복되는 구간은 있다.",
+      "source_end": "18:46.79에서 종료해 이어지는 건강 관련 발언과 다음 화제를 포함하지 않는다."
+    },
+    {
+      "id": "s2_dripper",
+      "duration_seconds": 20.602993,
+      "hook_and_payoff": "묽은 요거트를 보여준 뒤 약 2초부터 커피 도구의 낯선 쓰임을 제시. 여과 구조·유청 분리·바뀐 질감으로 이유에 답한다.",
+      "plus_alpha": "드리퍼·여과지·받침컵 역할을 구분하고 토핑을 넣는 것과 달리 유청을 거르는 활용임을 명확히 한다.",
+      "crop": "원본 864x864 영역으로 시연 손·드리퍼·요거트 덩어리와 누르는 용기를 보존한다.",
+      "caption_observation": "원본의 완전한 강조 문구 약간 묽잖아·꾸덕꾸덕은 남아 별도 대사 자막과 일부 중복된다. 잘려 의미를 잃은 대사 자막은 검토 프레임에서 관찰하지 못했다.",
+      "source_end": "03:55.95에서 종료. 더 빨리 된다는 원본 표현으로 마무리하며 다음 제품 가격 이야기를 넣지 않는다."
+    }
+  ],
+  "facts_and_rights": {
+    "permission": "사용자 확인. 문서·음악 권리는 독립 검증하지 않음.",
+    "external_media": "사용하지 않음. 레퍼런스 쇼츠는 제목 구조만 참고했으며 영상·음성·스틸을 재사용하지 않음.",
+    "external_claims": "추가 제품 효과·가격·브랜드 동일성·보관시간을 주장하지 않음.",
+    "source_description": "../../../work/2026-11-12/choi-yogurt/source-metadata.json",
+    "shopping_link": "미제공. 실제 제품 모델과 제휴 상품 동일성을 검증하지 않아 임의 상품 링크를 만들지 않음."
+  },
+  "unverified": [
+    "실제 음성을 청취하지 않았다. 자동 자막 기반 교정의 정확한 발음·발언 시점, 컷 연결의 말끝, 1.2배속 체감을 확인했다고 주장하지 않는다.",
+    "동영상을 연속 재생해 움직임을 인지하지 않았으므로 스틸 관찰만으로 움직임의 연속성을 보증하지 않는다.",
+    "캡컷 앱에서 초안을 직접 열지 않았다. 실제 앱 호환·배치와 MP4의 동일성을 보증하지 않는다.",
+    "모바일 YouTube UI 가림을 실기기에서 확인하지 않았다.",
+    "원본 권한 문서·별도 음악 권리·제휴 게시 문구·정확한 연결 상품은 게시 전 확인 항목이다."
+  ]
+}

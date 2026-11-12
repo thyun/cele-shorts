@@ -1,0 +1,30 @@
+[
+  {
+    "id": "s1_curry",
+    "duration_seconds": 20.570998,
+    "expected_seconds": 20.46666666666681,
+    "duration_tolerance_seconds": 0.25,
+    "timing_note": "Actual muxed duration; 30fps and atempo/AAC segments have frame and audio-block rounding.",
+    "resolution": [
+      1080,
+      1920
+    ],
+    "full_decode": "passed",
+    "capcut_source_paths": "exist",
+    "capcut_square_crop": "passed"
+  },
+  {
+    "id": "s2_dripper",
+    "duration_seconds": 18.518005,
+    "expected_seconds": 18.484166666666702,
+    "duration_tolerance_seconds": 0.25,
+    "timing_note": "Actual muxed duration; 30fps and atempo/AAC segments have frame and audio-block rounding.",
+    "resolution": [
+      1080,
+      1920
+    ],
+    "full_decode": "passed",
+    "capcut_source_paths": "exist",
+    "capcut_square_crop": "passed"
+  }
+]
