@@ -1,0 +1,45 @@
+{
+  "reviewed_on": "2026-11-12",
+  "reviewer": "production_self_check",
+  "not_independent_upload_review": true,
+  "technical_evidence": "technical-check.json",
+  "visual_method": "각 MP4에서 1초 미리보기와 3초 간격 콘택트시트를 추출해 축소 화면 및 주요 구도를 확인했다. 움직임을 연속 재생하거나 음성을 청취한 검사는 아니다.",
+  "videos": [
+    {
+      "id": "s1_pokopia",
+      "duration_seconds": 17.166,
+      "crop": "1:1 (0.5625x1.0)",
+      "visual_evidence": "previews/s1_pokopia_thumbnail.jpg, previews/s1_pokopia_contact.jpg",
+      "observed": "감정 고백으로 시작한 뒤 스위치와 대기 시간, 게임명을 연결한다. 포코피아 원본 그래픽과 인물·기기가 프레임 안에 보이며 일부 잘린 게임 카드 삽입 컷은 사용하지 않았다.",
+      "remaining": "원본 대사와 컷 연결의 청감, 실제 말끝은 미확인."
+    },
+    {
+      "id": "s2_lip-balm",
+      "duration_seconds": 21.166,
+      "crop": "1:1 (0.478125x0.85)",
+      "visual_evidence": "previews/s2_lip-balm_thumbnail.jpg, previews/s2_lip-balm_contact.jpg",
+      "observed": "립밤과 산의 얼굴이 함께 보이고, 개인적인 발색 선택 설명과 사용 장면이 이어진다. 원본은 유료 광고 구간이다.",
+      "remaining": "마지막 자막 뒤 약 3.2초의 오디오·마무리와 대사 정확도는 미확인."
+    },
+    {
+      "id": "s3_perfume",
+      "duration_seconds": 16.9,
+      "crop": "1:1 (0.478125x0.85)",
+      "visual_evidence": "previews/s3_perfume_thumbnail.jpg, previews/s3_perfume_contact.jpg",
+      "observed": "향수병과 인물이 보이며, 제품명 뒤에 산이 말한 향 취향과 사용 이유가 이어진다.",
+      "remaining": "대사 정확도, 실제 말끝과 오디오·컷 연결은 미확인."
+    }
+  ],
+  "facts_and_rights": {
+    "permission": "사용자가 재편집·재업로드, 제휴 목적 상업적 이용 및 별도 음악 권리를 확보했다고 확인했다. 허락 문서와 권리는 독립 검증하지 않았다.",
+    "external_media": "추가 이미지·영상 자료를 사용하지 않았다.",
+    "shopping_scope": "제품·효능에 관한 추가 사실을 덧붙이지 않았으며, 립밤은 원본 광고와 산 개인의 경험 맥락을 유지한다.",
+    "publication": "게시하지 않았다. 제휴 고지·실제 연결 상품·권리 확인은 게시 전에 별도로 확인해야 한다."
+  },
+  "unverified": [
+    "실제 음성 청취, 연속 재생, 움직임의 자연스러움",
+    "CapCut 앱에서의 열기와 편집 동작",
+    "모바일 YouTube UI 가림 여부",
+    "허락 문서·음악 권리·제휴 고지의 독립 검증"
+  ]
+}

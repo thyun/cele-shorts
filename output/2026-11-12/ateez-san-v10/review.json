@@ -1,0 +1,28 @@
+{
+  "reviewed_on": "2026-11-12",
+  "reviewer": "production_self_check",
+  "not_independent_upload_review": true,
+  "technical_evidence": "technical-check.json",
+  "visual_method": "1초 썸네일, 2초 간격 콘택트시트, 17.8초 마지막 프레임을 확인했다. 스틸 검토이며 연속 재생·청취 검사가 아니다.",
+  "changes": [
+    "게임 이름과 감정 고백, '정말 재밌어요'까지 원본 대화를 완결된 덩어리로 묶었다.",
+    "스위치·대기 시간 구간을 뒤에 배치하고 '시간이 되게 금방 가더라고요'라는 완결된 문장으로 종료했다.",
+    "대기 시간 문장 이후의 다음 발언과 다음 화제 화면은 포함하지 않았다."
+  ],
+  "visual_evidence": [
+    "previews/s1_pokopia_thumbnail.jpg",
+    "previews/s1_pokopia_contact.jpg",
+    "previews/s1_pokopia_last.jpg"
+  ],
+  "speech_cross_check": "Faster-Whisper medium 로컬 전사로 원본 대사의 주요 구간과 끝말 시점을 확인했다. 자동 전사는 실제 청취를 대신하지 않는다.",
+  "facts_and_rights": {
+    "permission": "사용자가 재편집·재업로드, 제휴 목적 상업적 이용 및 별도 음악 권리를 확보했다고 확인했다. 허락 문서와 권리는 독립 검증하지 않았다.",
+    "external_media": "추가 이미지·영상 자료를 사용하지 않았다.",
+    "publication": "게시하지 않았다. 제휴 고지와 게시 요건은 별도로 확인해야 한다."
+  },
+  "unverified": [
+    "실제 음성 청취·연속 재생·움직임의 자연스러움",
+    "CapCut 앱에서 프로젝트를 여는 검사",
+    "모바일 UI, 허락 문서·음악 권리·제휴 고지의 독립 검증"
+  ]
+}

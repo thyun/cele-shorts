@@ -1,0 +1,45 @@
+{
+  "reviewed_on": "2026-11-12",
+  "reviewer": "production_self_check",
+  "not_independent_upload_review": true,
+  "durations": {
+    "s1_puffer-pick": 17.1,
+    "s2_heated-vest": 21.833
+  },
+  "technical": {
+    "resolution": "1080x1920 x2",
+    "decode": "ok x2",
+    "audio": "AAC track present x2",
+    "srt": "6 and 8 cues; ordered, non-overlapping, within video duration",
+    "capcut_paths": "absolute path to work/2026-11-12/hyeri-winter-asmr-v2/long.mp4 exists",
+    "capcut_app": "not opened"
+  },
+  "timing": "Rendered at the 1.2x default. Output lengths match source segment totals at 1.2x within frame rounding. Cut points follow completed subtitle phrases; the last selected frame shows no following item or topic.",
+  "visual_method": "Reviewed 270x480 title thumbnails, 2-second contact sheets, and the final 3 seconds. This is still-frame inspection, not continuous playback.",
+  "visual_evidence": [
+    "previews/s1_puffer-pick_thumbnail.jpg",
+    "previews/s1_puffer-pick_contact.jpg",
+    "previews/s1_puffer-pick_tail.jpg",
+    "previews/s2_heated-vest_thumbnail.jpg",
+    "previews/s2_heated-vest_contact.jpg",
+    "previews/s2_heated-vest_tail.jpg"
+  ],
+  "content_checks": [
+    "Each video has a two-line title, dialogue captions, and W KOREA source footer only; no extra text is placed below the title.",
+    "The source's lower burned-in captions are outside the 1:1 crop in reviewed frames; no fragments or duplicate dialogue captions were visible.",
+    "The puffer title and opening match Hyeri's personal account; the heated-vest clip preserves the cold-shooting and gifting story.",
+    "No narration, external images, product specifications, prices, or unverified effectiveness claims were added."
+  ],
+  "facts_and_rights": {
+    "permission": "The user previously confirmed permission for editing, reupload, affiliate commercial use, and separate music rights. Permission documents and separate rights were not independently verified.",
+    "advertising": "The source description links Moose Knuckles items and the video mentions a W × Moose Knuckles collaboration. Exact paid-promotion scope was not independently verified; the edit does not add a sponsorship overlay.",
+    "products": "Exact puffer and heated-vest models were not identified. No product specs or prices are stated."
+  },
+  "unverified": [
+    "Actual audio listening, continuous playback, spoken-word/cut naturalness, and perceived 1.2x speech pace",
+    "Opening and ending motion beyond sampled stills",
+    "CapCut app compatibility",
+    "Independent verification of permission, music rights, source promotion status, and affiliate disclosures before publication"
+  ],
+  "publication": "Not uploaded. Affiliate disclosure and platform/policy requirements remain to be checked before posting."
+}

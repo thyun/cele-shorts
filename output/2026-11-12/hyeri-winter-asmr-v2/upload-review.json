@@ -1,0 +1,199 @@
+{
+  "reviewer": "shorts-upload-reviewer",
+  "reviewed_at": "2026-11-12T18:28:10+09:00",
+  "output_directory": "/Users/1001291/Desktop/workspace-ai/cele-shorts/output/2026-11-12/hyeri-winter-asmr-v2/",
+  "publication_status": "게시 전 확인 필요",
+  "correction": "s1 출력 11.5초 협찬 문구 지적은 철회한다. 원본 프레임의 문구를 최종 출력에 잘못 연결했다. 지정된 최종 출력 11.45초·11.70초 프레임을 확인한 결과 별도 상단 문구가 없다.",
+  "temporary_frames": "work/2026-11-12/hyeri-winter-asmr-v2/review_verification/",
+  "scope": {
+    "reviewed": [
+      "최종 MP4 2개",
+      "SRT 2개",
+      "plan.json",
+      "title-review.json",
+      "review.json",
+      "previews",
+      "원본 지정 구간"
+    ],
+    "title_review": "후보 비교와 축소 썸네일을 확인하고 실제 첫 화면과 대조함. 업로드 제목은 별도 확인되지 않음.",
+    "methods": "ffprobe, FFmpeg 전체 디코딩, 최종 출력 및 원본 구간의 정지 프레임 추출, SRT·편집 구간 대조.",
+    "limitations": "정지 프레임 검토이며 연속 재생·청취가 아님."
+  },
+  "videos": [
+    {
+      "id": "s1_puffer-pick",
+      "file": "s1_puffer-pick.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "혜리의 개인적인 패딩 선택 이유는 구체적이나, 원본 편집 외 채널의 구매 판단 정보가 부족하다. 타이틀 ‘올겨울 고른’은 원본의 잠정적 표현보다 단정적으로 읽힐 수 있다.",
+      "criteria": [
+        {
+          "name": "첫 1~3초",
+          "rating": "보통",
+          "evidence": "0.5–2.5초 얼굴과 두 줄 타이틀. ‘좀 더웠어요’는 SRT상 3.158초부터."
+        },
+        {
+          "name": "시청 보상·전개",
+          "rating": "보통",
+          "evidence": "개인 체감 뒤 패딩을 발견해 올겨울 입을 것 같다는 답. 원본 시간 역순 연결."
+        },
+        {
+          "name": "채널 고유 가치",
+          "rating": "약점",
+          "evidence": "독립 해설·검증·비교·구매 조건 없이 원본 대사와 자막이 중심."
+        },
+        {
+          "name": "쇼핑 판단의 정직성",
+          "rating": "보통",
+          "evidence": "개인 체감으로 표현하지만 타이틀은 선택을 더 확정적으로 보이게 할 수 있음. 모델·가격 미확인."
+        },
+        {
+          "name": "시청 경험",
+          "rating": "보통",
+          "evidence": "review_verification의 11.45초·11.70초 프레임에 두 줄 타이틀, 인물, 하단 대사 자막만 보임. 타이틀 아래 별도 문구 없음."
+        },
+        {
+          "name": "사실·게시 준비",
+          "rating": "약점",
+          "evidence": "협찬 범위·권리·음악·제휴 고지는 미확인."
+        }
+      ],
+      "evidence": [
+        {
+          "file": "review_verification/puffer-transition-11-45.jpg; puffer-transition-11-70.jpg",
+          "output_timecode": "11.45초·11.70초",
+          "method": "최종 출력 프레임 확인",
+          "observation": "두 줄 타이틀 외 별도 상단 문구 없음. 인물과 하단 대사 자막이 보임."
+        },
+        {
+          "file": "s1_puffer-pick.srt",
+          "output_timecode": "0–17.008초",
+          "method": "MP4 길이와 대조",
+          "observation": "6개 큐가 겹치지 않고 영상 안에 있음. 실제 음성 일치는 청취하지 않음."
+        },
+        {
+          "file": "s1_puffer-pick.mp4",
+          "output_timecode": "전체",
+          "method": "ffprobe·FFmpeg 전체 디코딩",
+          "observation": "17.100초, H.264 1080×1920, AAC 스테레오, 디코딩 오류 없음."
+        },
+        {
+          "file": "원본 long.mp4",
+          "source_timecode": "74.75–81.23초, 106.36–120.31초",
+          "method": "지정 구간 정지 프레임·plan.json·SRT 대조",
+          "observation": "패딩과 사용 맥락 확인. 원본 음성은 청취하지 않음. https://www.youtube.com/watch?v=KsRxupJETgk"
+        }
+      ],
+      "required_changes": [
+        {
+          "priority": 1,
+          "action": "독립적인 구매 판단 또는 검증 가능한 제품 정보를 새 최종본에 추가. 정확한 모델을 모르면 사양·가격을 추정하지 말 것.",
+          "pass_condition": "새 MP4가 개인 체감과 확인 사실을 구분하고 구체적 구매 판단 가치를 제공."
+        },
+        {
+          "priority": 2,
+          "action": "타이틀의 단정성을 낮추고 협찬·제휴 적용 범위를 확인.",
+          "pass_condition": "새 최종본이 원본 발언을 과장하지 않고 필요한 고지를 적절히 처리."
+        }
+      ],
+      "unverified": [
+        "연속 재생·실제 청취·컷 자연스러움",
+        "제품 모델·가격·사양",
+        "광고·협찬 범위와 제휴 고지",
+        "권리 문서·음악 권리",
+        "CapCut 앱 호환성",
+        "모바일·YouTube UI 가림 여부"
+      ]
+    },
+    {
+      "id": "s2_heated-vest",
+      "file": "s2_heated-vest.mp4",
+      "content_verdict": "업로드 비추천",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "제품을 보여주고 촬영 당시 추워 사용한 뒤 동료에게 선물했다는 이유를 답한다. 그러나 제품 정보·시연·구매 판단이 빈약한 원본 재포장에 가까워 제목이나 자막 수정만으로 가치를 만들기 어렵다.",
+      "criteria": [
+        {
+          "name": "첫 1~3초",
+          "rating": "강점",
+          "evidence": "제품이 보이고 ‘온열 조끼입니다’로 시작해 제목과 화면이 맞음."
+        },
+        {
+          "name": "시청 보상·전개",
+          "rating": "보통",
+          "evidence": "촬영·선물 이유를 답하지만 개인 일화 한 가지."
+        },
+        {
+          "name": "채널 고유 가치",
+          "rating": "약점",
+          "evidence": "독립 관찰·검증·비교·구매 기준 없음."
+        },
+        {
+          "name": "쇼핑 판단의 정직성",
+          "rating": "보통",
+          "evidence": "개인 경험으로 말하고 객관적 효능은 단정하지 않음. 모델·작동 상태 미확인."
+        },
+        {
+          "name": "시청 경험",
+          "rating": "보통",
+          "evidence": "제품과 인물이 보임. 확인 프레임에서 별도 상단 해설이나 잘린 원본 자막 조각은 확인되지 않음."
+        },
+        {
+          "name": "사실·게시 준비",
+          "rating": "약점",
+          "evidence": "실제 음성 및 협찬·권리·음악·제휴 고지는 미확인."
+        }
+      ],
+      "evidence": [
+        {
+          "file": "s2_heated-vest.mp4",
+          "output_timecode": "0.5초, 약 1.93초 컷, 20–21.83초",
+          "method": "최종 프레임·컨택트 시트·테일 프리뷰",
+          "observation": "도입 제품, 본문 전환, 끝의 선물 설명 확인."
+        },
+        {
+          "file": "s2_heated-vest.srt",
+          "output_timecode": "0–21.808초",
+          "method": "MP4 길이와 대조",
+          "observation": "8개 큐가 겹치지 않고 영상 안에 있음. 실제 음성 일치는 청취하지 않음."
+        },
+        {
+          "file": "s2_heated-vest.mp4",
+          "output_timecode": "전체",
+          "method": "ffprobe·FFmpeg 전체 디코딩",
+          "observation": "21.833초, H.264 1080×1920, AAC 스테레오, 디코딩 오류 없음."
+        },
+        {
+          "file": "원본 long.mp4",
+          "source_timecode": "138.31–140.63초, 154.44–178.31초",
+          "method": "지정 구간 정지 프레임·plan.json·SRT 대조",
+          "observation": "제품 소개 및 촬영·선물 맥락 확인. 음성은 청취하지 않음. https://www.youtube.com/watch?v=KsRxupJETgk"
+        }
+      ],
+      "required_changes": [
+        {
+          "priority": 1,
+          "action": "현재 컷은 제외하고 제품 식별과 검증 가능한 사용·구매 정보가 있는 새 소재로 대체.",
+          "pass_condition": "새 최종 MP4가 원본 일화 외의 독립 정보나 관찰을 제공할 때 재심."
+        },
+        {
+          "priority": 2,
+          "action": "게시 전 광고·협찬 범위, 제휴 고지, 권리 문서 및 음악 권리를 확인.",
+          "pass_condition": "확인 근거와 최종 고지 상태를 기록."
+        }
+      ],
+      "unverified": [
+        "연속 재생·실제 청취·컷 자연스러움",
+        "제품 모델·작동 상태·사양·가격",
+        "광고·협찬 범위와 제휴 고지",
+        "권리 문서·음악 권리",
+        "CapCut 앱 호환성",
+        "모바일·YouTube UI 가림 여부"
+      ]
+    }
+  ],
+  "batch_recommendation": {
+    "우선_재검토": "s1_puffer-pick — 독립 구매 정보 보완 전제, 현재 업로드 추천 아님.",
+    "제외": "s2_heated-vest — 쇼핑 판단 가치 부족.",
+    "현재_업로드_추천": []
+  }
+}
