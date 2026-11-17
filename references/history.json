@@ -2262,6 +2262,568 @@
       "title": "[ENG] 혜리가 가장 좋아하는 겨울 소리는? ❄️ 혜리의 첫 ASMR로 만나는 겨울 테라피 💤",
       "channel": "W KOREA",
       "format": "long"
+    },
+    "rfDx5JECQhk": {
+      "id": "rfDx5JECQhk",
+      "url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+      "references": [
+        {
+          "role": "prepared",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-cropfix/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-cropfix"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final2/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final2"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final3/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final3"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final4/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final4"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final5/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final5"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-13/rf-dx5-shorts-final6/plan.json",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final6"
+        }
+      ],
+      "generations": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.575
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.575
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  792.594,
+                  0.58
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-cropfix",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-cropfix",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-cropfix/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-cropfix/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  792.594,
+                  0.55
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-cropfix/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  792.594,
+                  0.55
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final2",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final2",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final2/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final2/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  792.594,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final2/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final3",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final3",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final3/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final3/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  775.8,
+                  0.64
+                ],
+                [
+                  775.8,
+                  779.159,
+                  0.47
+                ],
+                [
+                  779.159,
+                  792.594,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final3/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final4",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final4",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final4/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final4/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  775.8,
+                  0.58
+                ],
+                [
+                  775.8,
+                  779.159,
+                  0.46
+                ],
+                [
+                  779.159,
+                  792.594,
+                  0.58
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final4/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final5",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final5",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final5/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final5/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  792.594,
+                  0.58
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final5/s3_joy-pajama.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=rfDx5JECQhk",
+          "date": "2026-11-13",
+          "job": "rf-dx5-shorts-final6",
+          "output_directory": "output/2026-11-13/rf-dx5-shorts-final6",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "scope": "re-edit, reupload, affiliate commercial use, separate music rights",
+            "independently_verified": false
+          },
+          "publication_status": "게시 전 확인 필요",
+          "review_file": "output/2026-11-13/rf-dx5-shorts-final6/upload-review.json",
+          "review_verdicts": {
+            "s1_pimple-patches": "수정 후 재심",
+            "s2_hairbrush": "수정 후 재심",
+            "s3_joy-pajama": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_pimple-patches",
+              "title": "여드름이 나도 기분 좋은 레이\n이유는 나비 패치",
+              "segments": [
+                [
+                  226.12,
+                  233.879,
+                  0.5
+                ],
+                [
+                  207.437,
+                  226.1,
+                  0.64
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final6/s1_pimple-patches.mp4"
+            },
+            {
+              "id": "s2_hairbrush",
+              "title": "아무 생각 없이 샀다가\n레이의 절친이 된 브러시",
+              "segments": [
+                [
+                  656.911,
+                  681.552,
+                  0.6
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final6/s2_hairbrush.mp4"
+            },
+            {
+              "id": "s3_joy-pajama",
+              "title": "조이가 파자마를 L로 준 이유\n레이는 입고 나서 알았다",
+              "segments": [
+                [
+                  765.456,
+                  775.8,
+                  0.58
+                ],
+                [
+                  775.8,
+                  777.716,
+                  0.46
+                ],
+                [
+                  777.716,
+                  792.594,
+                  0.58
+                ]
+              ],
+              "file": "output/2026-11-13/rf-dx5-shorts-final6/s3_joy-pajama.mp4"
+            }
+          ]
+        }
+      ],
+      "title": "아침부터 밤까지⋰˚✩ 애착 홈케어 아이템으로 가득 채워왔어요 | 따라해볼레이 EP.87",
+      "channel": "따라해볼레이",
+      "format": "long"
     }
   }
 }

@@ -1,6 +1,7 @@
 import copy
 import json
 import os
+import uuid
 import pycapcut as cc
 from pycapcut import trange, tim
 from title_style import highlight_color, title_ranges
@@ -22,6 +23,14 @@ folder = cc.DraftFolder(ROOT)
 for s in SHORTS:
     clips = narration_clips(s, os.environ["SHORTS_WORK"])
     script = folder.create_draft(s["id"], 1080, 1920, fps=30, allow_replace=False)
+    script.content["id"] = str(uuid.uuid4()).upper()
+    meta_path = os.path.join(ROOT, s["id"], "draft_meta_info.json")
+    with open(meta_path, encoding="utf-8") as meta_file:
+        meta = json.load(meta_file)
+    meta["draft_id"] = str(uuid.uuid4()).upper()
+    with open(meta_path, "w", encoding="utf-8") as meta_file:
+        json.dump(meta, meta_file, ensure_ascii=False, indent=2)
+        meta_file.write("\n")
     script.add_track(cc.TrackType.video, "main")
     script.add_track(cc.TrackType.text, "title")
     script.add_track(cc.TrackType.text, "caption")

@@ -1,0 +1,216 @@
+{
+  "reviewer": "shorts-upload-reviewer",
+  "reviewed_at": "2026-11-13T16:00:29+09:00",
+  "output_directory": "output/2026-11-13/rf-dx5-shorts-final6",
+  "scope": "지정된 final6 폴더의 최종 MP4·SRT·plan.json·title-review.json·미리보기 및 CapCut 프로젝트 식별자를 심사했다. 다른 작업 폴더는 심사하지 않았다. 식별자 수정은 영상 콘텐츠·게시 상태 판정의 근거가 아니다.",
+  "publication_status": "게시 전 확인 필요",
+  "videos": [
+    {
+      "id": "s1_pimple-patches",
+      "file": "s1_pimple-patches.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "나비 모양 패치를 좋아하는 이유는 보여주지만, 첫 구간에서 결론을 말한 뒤 더 이른 원본 대화로 점프해 전개가 어색하다. 원본 클립 외 채널의 실질적인 구매 판단도 없다.",
+      "criteria": {
+        "첫 1~3초": {
+          "rating": "약점",
+          "evidence": "previews/s1_pimple-patches_contact.jpg의 출력 0.4~3.2초. 타이틀은 감정과 나비 패치를 약속하지만, 자막은 ‘그날 하루가 특별해진 기분’으로 시작해 맥락이 먼저 설명되지 않는다."
+        },
+        "시청 보상·전개": {
+          "rating": "약점",
+          "evidence": "plan.json에서 원본 226.12~233.879초 뒤 207.437~226.1초 순이다. 출력 0~6.45초에서 ‘특별해진 기분’을 먼저 보여준 뒤 약 6.47초부터 앞선 ‘내 인생 여드름 패치’ 대화로 돌아간다. 패치는 contact sheet상 약 6.7초에 보인다."
+        },
+        "채널 고유 가치": {
+          "rating": "약점",
+          "evidence": "나비 모양과 개인적인 선호는 확인되지만, 별도의 관찰·비교·구매 판단은 보이지 않는다."
+        },
+        "쇼핑 판단의 정직성": {
+          "rating": "보통",
+          "evidence": "나비 패치와 개인적 선호를 보여준다. 효능을 단정하는 자막은 확인하지 못했다."
+        },
+        "시청 경험": {
+          "rating": "보통",
+          "evidence": "contact sheet에서 얼굴·패치와 두 줄 타이틀, 하단 자막이 보인다. 다만 도입 순서가 혼란스럽다. 별도 축소 썸네일 파일은 없어 독립 확인하지 못했다."
+        },
+        "사실·게시 준비": {
+          "rating": "보통",
+          "evidence": "MP4 22.033초, 1080×1920 H.264/AAC. FFmpeg 디코딩 오류 없음. SRT 10개 큐, 끝 22.018초, 겹침 없음. 실제 음성 청취·권리 문서·제휴 고지는 확인하지 못했다."
+        }
+      },
+      "evidence": [
+        {
+          "file": "s1_pimple-patches.mp4",
+          "timecode": "00:00–00:22.03",
+          "method": "ffprobe, FFmpeg 전체 디코딩, previews/s1_pimple-patches_contact.jpg 육안 확인",
+          "observation": "기술적 디코딩은 정상이다. 도입, 패치 노출, 후반 제품·인물 장면을 확인했으나 연속 재생이나 음성 청취는 하지 않았다."
+        },
+        {
+          "file": "s1_pimple-patches.srt / plan.json",
+          "timecode": "출력 00:00–00:22.018 / 원본 207.437–233.879초",
+          "method": "SRT 타임코드와 plan.json 구간 순서 대조",
+          "observation": "SRT 구간은 겹치지 않는다. 원본 구간 순서가 역전되어 설명이 먼저 배치된다."
+        }
+      ],
+      "required_changes": [
+        "도입을 원본 207.437초 이후의 ‘내 인생 여드름 패치’ 및 이유 설명으로 재편집하고, 특별한 하루라는 감정은 뒤에 배치할 것.",
+        "효능을 암시하지 않으면서 패치 디자인에 관한 채널의 구체적 구매 관점을 제공할 수 없다면 이 소재를 제외할 것.",
+        "게시 전 제휴 표시와 권리 범위를 확인할 것."
+      ],
+      "unverified": [
+        "동영상 연속 재생·실제 음성 청취·말끝 자연스러움",
+        "별도 축소 썸네일 파일",
+        "이용 허락·별도 음악 권리 문서의 독립 검증; 이용 허락은 plan.json에 사용자 확인으로만 기록",
+        "제휴 고지 및 플랫폼 게시 설정",
+        "CapCut 앱 호환성"
+      ]
+    },
+    {
+      "id": "s2_hairbrush",
+      "file": "s2_hairbrush.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "브러시의 손잡이·크기·무게·빗살에 대한 구체적인 개인 선호와 제품 화면은 있다. 그러나 원본 대화의 편집·자막을 넘어서는 채널의 구매 판단이 부족하다.",
+      "criteria": {
+        "첫 1~3초": {
+          "rating": "보통",
+          "evidence": "previews/s2_hairbrush_contact.jpg의 출력 0.4~3.5초. 레이가 브러시를 들고 ‘다음은 헤어 브러시’ 자막으로 제품을 바로 알 수 있다. 제목의 ‘절친이 된 이유’는 아직 해결되지 않는다."
+        },
+        "시청 보상·전개": {
+          "rating": "보통",
+          "evidence": "손잡이 감각·크기·무게·나무 느낌을 차례로 말하고 끝부분 약 20초에 ‘제 절친’으로 마무리한다. 한 구간이며 반복은 두드러지지 않는다."
+        },
+        "채널 고유 가치": {
+          "rating": "약점",
+          "evidence": "구체적인 취향 정보는 있지만 모두 원본 발언이다. 채널의 비교·검증·구매 기준은 확인되지 않는다."
+        },
+        "쇼핑 판단의 정직성": {
+          "rating": "보통",
+          "evidence": "제품을 들고 손잡이와 크기를 보여주며 개인적인 만족 이유를 설명한다. 실제 머리 빗기 시연이나 제품명·모델은 확인되지 않는다."
+        },
+        "시청 경험": {
+          "rating": "보통",
+          "evidence": "contact sheet에서 얼굴·브러시·두 줄 타이틀이 보이고, 마지막에 제품을 든 채 발언을 끝낸다. 별도 축소 썸네일 파일은 확인하지 못했다."
+        },
+        "사실·게시 준비": {
+          "rating": "보통",
+          "evidence": "MP4 20.545초, 1080×1920 H.264/AAC. FFmpeg 디코딩 오류 없음. SRT 9개 큐, 끝 20.518초, 겹침 없음. 음성은 청취하지 않았다."
+        }
+      },
+      "evidence": [
+        {
+          "file": "s2_hairbrush.mp4",
+          "timecode": "00:00–00:20.55",
+          "method": "ffprobe, FFmpeg 전체 디코딩, previews/s2_hairbrush_contact.jpg 육안 확인",
+          "observation": "한 장면의 제품 소개와 발언이 이어진다. 브러시를 보여주지만 실제 사용 시연은 확인되지 않았다."
+        },
+        {
+          "file": "s2_hairbrush.srt / plan.json",
+          "timecode": "출력 00:00–00:20.518 / 원본 656.911–681.552초",
+          "method": "SRT 타임코드·plan.json 구간 대조",
+          "observation": "자막 큐는 겹치지 않고 원본 구간 하나를 사용한다."
+        }
+      ],
+      "required_changes": [
+        "제품 모델이나 확인되지 않은 특성을 추정하지 말고, 손잡이 감각·크기·무게가 어떤 구매자에게 판단 기준이 되는지 채널 관점을 추가할 것.",
+        "실제 사용 시연을 보강할 수 있는 원본 장면이 있을 때만 포함하고, 제품명을 확인할 수 없다면 특정 제품처럼 소개하지 말 것.",
+        "게시 전 제휴 표시와 권리 범위를 확인할 것."
+      ],
+      "unverified": [
+        "동영상 연속 재생·실제 음성 청취·말끝 자연스러움",
+        "별도 축소 썸네일 파일",
+        "이용 허락·별도 음악 권리 문서의 독립 검증",
+        "제휴 고지 및 플랫폼 게시 설정",
+        "CapCut 앱 호환성"
+      ]
+    },
+    {
+      "id": "s3_joy-pajama",
+      "file": "s3_joy-pajama.mp4",
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "조이가 L 사이즈를 선물한 이야기와 레이의 착용감으로 제목의 답은 제공한다. 다만 착용감은 개인 체감이고, 영상 자체에 추가적인 사이즈 판단 기준은 없다.",
+      "criteria": {
+        "첫 1~3초": {
+          "rating": "보통",
+          "evidence": "previews/s3_joy-pajama_contact.jpg의 출력 0.4~3.5초. 파자마와 레이가 보이고 제목이 L 사이즈 이유를 묻는다. 초반 대사는 선물 이야기를 시작한다."
+        },
+        "시청 보상·전개": {
+          "rating": "보통",
+          "evidence": "출력 약 12~17초에 L 사이즈가 조이지 않고 편안했다는 답이 나오고, 약 20초 이후 파자마를 모으게 된다는 후속 결과가 이어진다."
+        },
+        "채널 고유 가치": {
+          "rating": "약점",
+          "evidence": "선물·착용감·수집 계기는 구체적이나 원본 발언을 벗어나는 채널의 사이즈 판단이나 비교가 없다."
+        },
+        "쇼핑 판단의 정직성": {
+          "rating": "보통",
+          "evidence": "파자마는 화면에 보이지만 착용감은 레이의 개인 경험이다. 보편적인 사이즈 권고나 확인된 제품 모델은 제시되지 않는다."
+        },
+        "시청 경험": {
+          "rating": "보통",
+          "evidence": "contact sheet에서 얼굴과 걸린 파자마가 보이며 타이틀은 두 줄이다. 시연은 주로 파자마를 들고 이야기하는 장면이다. 별도 축소 썸네일 파일은 확인하지 못했다."
+        },
+        "사실·게시 준비": {
+          "rating": "보통",
+          "evidence": "MP4 22.657초, 1080×1920 H.264/AAC. FFmpeg 디코딩 오류 없음. SRT 9개 큐, 끝 22.598초, 겹침 없음. 음성은 청취하지 않았다."
+        }
+      },
+      "evidence": [
+        {
+          "file": "s3_joy-pajama.mp4",
+          "timecode": "00:00–00:22.66",
+          "method": "ffprobe, FFmpeg 전체 디코딩, previews/s3_joy-pajama_contact.jpg 육안 확인",
+          "observation": "파자마 선물, L 사이즈, 편안함, 이후 파자마를 모으게 된다는 내용을 확인했다."
+        },
+        {
+          "file": "s3_joy-pajama.srt / plan.json",
+          "timecode": "출력 00:00–00:22.598 / 원본 765.456–792.594초",
+          "method": "SRT 타임코드·plan.json 구간 대조",
+          "observation": "세 원본 구간이 연결되며 자막 큐 겹침은 없다."
+        }
+      ],
+      "required_changes": [
+        "‘L이 편했다’는 레이의 개인 체감과 일반적인 사이즈 조언을 분명히 구분하고, 시청자의 구매 판단을 돕는 구체적 기준을 추가할 것. 근거를 추가할 수 없으면 원본 경험담으로만 제한할 것.",
+        "확인되지 않은 제품·사이즈 정보를 보태지 말 것. 재심 MP4에서 제목의 답과 개인 경험의 범위가 함께 명확해야 한다.",
+        "게시 전 제휴 표시와 권리 범위를 확인할 것."
+      ],
+      "unverified": [
+        "동영상 연속 재생·실제 음성 청취·말끝 자연스러움",
+        "별도 축소 썸네일 파일",
+        "이용 허락·별도 음악 권리 문서의 독립 검증",
+        "제휴 고지 및 플랫폼 게시 설정",
+        "CapCut 앱 호환성"
+      ]
+    }
+  ],
+  "batch_recommendation": {
+    "priority_candidates": [
+      {
+        "id": "s3_joy-pajama",
+        "reason": "선물의 구체적 맥락과 착용 후 결과가 이어져, 개인 경험의 한계를 분명히 하는 편집을 전제로 재심 우선 후보."
+      },
+      {
+        "id": "s2_hairbrush",
+        "reason": "제품의 구체적인 선호 기준은 있으나 구매자에게 유용한 채널 관점을 보강해야 한다."
+      }
+    ],
+    "excluded_candidates": [
+      {
+        "id": "s1_pimple-patches",
+        "reason": "현재 렌더는 원본 대화 순서가 뒤집혀 도입이 혼란스럽다. 재편집 전 현재본은 후보에서 제외."
+      }
+    ],
+    "current_upload_recommendation": "없음. 세 영상 모두 재심 전이며 게시 전 제휴 고지·권리 범위 확인도 남아 있다."
+  },
+  "draft_id_uniqueness": {
+    "checked": [
+      "capcut_drafts/s1_pimple-patches/draft_content.json:id = 6258225E-DDF4-4A67-A733-E37B8E1EABE0",
+      "capcut_drafts/s2_hairbrush/draft_content.json:id = 89D90FC3-7D26-470A-82B7-55E2C102DA96",
+      "capcut_drafts/s3_joy-pajama/draft_content.json:id = CCFD56EF-B41F-4C34-AAC5-66C97F3959E4",
+      "capcut_drafts/s1_pimple-patches/draft_meta_info.json:draft_id = D880BBA4-7484-40B3-A3C0-3D1613CA62E0",
+      "capcut_drafts/s2_hairbrush/draft_meta_info.json:draft_id = CC501CA4-8F39-4465-9966-3DE099FFE6F1",
+      "capcut_drafts/s3_joy-pajama/draft_meta_info.json:draft_id = 86DD4C1B-FED7-4970-A95A-6C96C7FFF612"
+    ],
+    "result": "draft_content.json의 세 id와 draft_meta_info.json의 세 draft_id는 각각 서로 고유하다. CapCut 앱 호환성은 시험하지 않았다."
+  }
+}
