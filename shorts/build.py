@@ -2,6 +2,7 @@ import json, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 from title_style import highlight_color, title_parts
 from narration import narration_clips
+from crop import segment_crop
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
@@ -89,17 +90,16 @@ def build(s):
         raise ValueError(t)
 
     inputs, fc = [], []
-    crop_width = s.get("crop_width", 0.4)
-    crop_height = s.get("crop_height", 0.75)
     for i, (a, b, cx) in enumerate(segs):
+        crop_width, crop_height, crop_top = segment_crop(s, i)
         inputs += ["-ss", f"{a}", "-t", f"{b-a}", "-i", SRC]
         x = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         fc.append(
-            f"[{i}:v]split[bg{i}][fg{i}];"
+            f"[{i}:v]trim=duration={b-a:.6f},split[bg{i}][fg{i}];"
             f"[bg{i}]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,gblur=sigma=40,eq=brightness=-0.15[b{i}];"
-            f"[fg{i}]crop=iw*{crop_width}:ih*{crop_height}:iw*{x:.6f}:0,scale=1080:-2[f{i}];"
+            f"[fg{i}]crop=iw*{crop_width}:ih*{crop_height}:iw*{x:.6f}:ih*{crop_top},scale=1080:-2[f{i}];"
             f"[b{i}][f{i}]overlay=0:(H-h)/2-40,setsar=1,setpts=(PTS-STARTPTS)/{SPEED},fps=30,format=yuv420p[v{i}];"
-            f"[{i}:a]asetpts=PTS-STARTPTS,afade=t=in:d=0.04,afade=t=out:st={b-a-0.04:.3f}:d=0.04,atempo={SPEED}[a{i}]"
+            f"[{i}:a]atrim=duration={b-a:.6f},asetpts=PTS-STARTPTS,afade=t=in:d=0.04,afade=t=out:st={b-a-0.04:.3f}:d=0.04,atempo={SPEED}[a{i}]"
         )
     n = len(segs)
     fc.append("".join(f"[v{i}][a{i}]" for i in range(n)) + f"concat=n={n}:v=1:a=1[cv][ca]")
@@ -151,6 +151,7 @@ def build(s):
     base = os.path.join(PNG_DIR, f"{s['id']}_base.mp4") if clips else out
     cmd = ["ffmpeg", "-v", "error", "-n"] + inputs + [
         "-filter_complex", ";".join(fc), "-map", f"[{last}]", "-map", "[audio]" if END_FADE else "[ca]",
+        "-t", f"{total:.6f}",
         "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", base,
     ]

@@ -1,0 +1,74 @@
+{
+  "reviewer": "production-agent",
+  "output_directory": "output/2026-11-17/sooyoung-story-final",
+  "permission": {
+    "status": "user_confirmed",
+    "confirmed_date": "2026-11-17",
+    "scope": "원본 재편집·재업로드·제휴 목적 상업적 이용 및 별도 음악 권리",
+    "independently_verified": false
+  },
+  "videos": [
+    {
+      "id": "s1_vacation-cap",
+      "file": "s1_vacation-cap.mp4",
+      "sha256": "31060b6ce3fd9800656f93f005aed60ede326c5c03c6378c7cdd42d9f536e818",
+      "duration_seconds": 17.966667,
+      "planned_duration_seconds": 17.966667,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "codecs": [
+        "h264",
+        "aac"
+      ],
+      "full_decode": "passed",
+      "srt_cues": 15,
+      "srt_bounds_order_and_nonoverlap": "passed",
+      "capcut_source_paths_and_segment_crops": "passed",
+      "capcut_track_nonoverlap": "passed"
+    },
+    {
+      "id": "s2_cream-selfcare",
+      "file": "s2_cream-selfcare.mp4",
+      "sha256": "0c05df63bd28eac64183f24a18568242c5b535221867ef204f570727aebe7ab6",
+      "duration_seconds": 19.533333,
+      "planned_duration_seconds": 19.525,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "codecs": [
+        "h264",
+        "aac"
+      ],
+      "full_decode": "passed",
+      "srt_cues": 14,
+      "srt_bounds_order_and_nonoverlap": "passed",
+      "capcut_source_paths_and_segment_crops": "passed",
+      "capcut_track_nonoverlap": "passed"
+    }
+  ],
+  "capcut_project_ids_unique": true,
+  "visual_inspection": {
+    "method": "최종 MP4 정지 프레임과 270×480 축소 썸네일 육안 검토",
+    "coverage": "첫 0.2·1·2·3초, 각 컷 전후, 제품·반응, 마지막 2초",
+    "observations": [
+      "두 줄 타이틀과 하단 실제 대사 자막을 사용하며 타이틀 아래 별도 해설을 넣지 않았다.",
+      "모자 문구와 크림 용기, 티파니의 반응 동작을 확인했다.",
+      "모자 후반은 모자 문구 중심의 근접 구도이며 인물이 고개를 숙이는 장면이 있다. 모든 동작의 자연스러움을 스틸로 보증하지 않는다."
+    ]
+  },
+  "audio_listened": false,
+  "continuous_playback": false,
+  "capcut_app_opened": false,
+  "youtube_mobile_ui_checked": false,
+  "rights_documents_independently_verified": false,
+  "affiliate_disclosure_publication_checked": false,
+  "publication_status": "게시 전 확인 필요",
+  "archives": [
+    "output/2026-11-17/sooyoung-story",
+    "work/2026-11-17/sooyoung-story-final/pre-trim-render",
+    "work/2026-11-17/sooyoung-story-final/candidate-final"
+  ]
+}

@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 from title_style import highlight_color, title_parts
 from narration import narration_clips
 from history import record_generation, update_history, video_id
+from crop import validate_crops
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -42,12 +43,7 @@ def youtube_url(value):
 def validate_visual_options(short):
     if short.get("editorial_position", "bottom") not in {"top", "bottom"}:
         raise ValueError(f"{short['id']}: editorial_position은 top 또는 bottom이어야 합니다")
-    width = short.get("crop_width", 0.4)
-    if not isinstance(width, (int, float)) or not 0 < width <= 1:
-        raise ValueError(f"{short['id']}: crop_width는 0보다 크고 1 이하여야 합니다")
-    height = short.get("crop_height", 0.75)
-    if not isinstance(height, (int, float)) or not 0 < height <= 1:
-        raise ValueError(f"{short['id']}: crop_height는 0보다 크고 1 이하여야 합니다")
+    validate_crops(short)
     for start, end, text in short.get("editorial_notes", []):
         if not isinstance(text, str) or not text.strip() or "\n" in text:
             raise ValueError(f"{short['id']}: 추가 화면 문구는 비어 있지 않은 한 줄이어야 합니다")

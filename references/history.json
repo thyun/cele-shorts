@@ -1427,6 +1427,18 @@
         {
           "role": "source",
           "record": "work/2026-11-09/sooyoung/plan.json"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-17/sooyoung-story/plan.json",
+          "date": "2026-11-17",
+          "job": "sooyoung-story"
+        },
+        {
+          "role": "source",
+          "record": "output/2026-11-17/sooyoung-story-final/plan.json",
+          "date": "2026-11-17",
+          "job": "sooyoung-story-final"
         }
       ],
       "generations": [
@@ -1589,6 +1601,213 @@
             }
           ],
           "migration_note": "기존 최종 MP4와 캡컷 초안의 실제 원본 구간을 대조해 이관함. 게시 여부 미확인."
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=z16w81kdlVw",
+          "date": "2026-11-17",
+          "job": "sooyoung-story",
+          "output_directory": "output/2026-11-17/sooyoung-story",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_date": "2026-11-17",
+            "scope": "원본 재편집·재업로드·제휴 목적 상업적 이용 및 별도 음악 권리",
+            "independently_verified": false
+          },
+          "publication_status": "unknown",
+          "review_file": null,
+          "review_verdicts": {},
+          "shorts": [
+            {
+              "id": "s1_vacation-cap",
+              "title": "촬영 끝난 수영이\n이 모자를 꺼내 쓴 이유",
+              "segments": [
+                [
+                  1490.0,
+                  1496.0,
+                  0.22
+                ],
+                [
+                  1496.02,
+                  1498.81,
+                  0.8
+                ],
+                [
+                  1498.84,
+                  1502.6,
+                  0.235
+                ],
+                [
+                  1502.64,
+                  1504.48,
+                  0.8
+                ],
+                [
+                  1504.51,
+                  1506.8,
+                  0.5
+                ],
+                [
+                  1506.84,
+                  1510.32,
+                  0.515
+                ],
+                [
+                  1510.36,
+                  1511.74,
+                  0.575
+                ]
+              ],
+              "file": "output/2026-11-17/sooyoung-story/s1_vacation-cap.mp4"
+            },
+            {
+              "id": "s2_cream-selfcare",
+              "title": "바디크림 아껴 쓴다니\n티파니가 바로 한 말",
+              "segments": [
+                [
+                  1609.56,
+                  1610.84,
+                  0.5
+                ],
+                [
+                  1610.87,
+                  1612.0,
+                  0.6
+                ],
+                [
+                  1612.03,
+                  1613.76,
+                  0.75
+                ],
+                [
+                  1613.78,
+                  1618.7,
+                  0.47
+                ],
+                [
+                  1618.74,
+                  1622.4,
+                  0.5
+                ],
+                [
+                  1622.42,
+                  1625.31,
+                  0.5
+                ],
+                [
+                  1625.34,
+                  1633.25,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-17/sooyoung-story/s2_cream-selfcare.mp4"
+            }
+          ]
+        },
+        {
+          "source_url": "https://www.youtube.com/watch?v=z16w81kdlVw",
+          "date": "2026-11-17",
+          "job": "sooyoung-story-final",
+          "output_directory": "output/2026-11-17/sooyoung-story-final",
+          "status": "generated",
+          "permission": {
+            "status": "user_confirmed",
+            "confirmed_date": "2026-11-17",
+            "scope": "원본 재편집·재업로드·제휴 목적 상업적 이용 및 별도 음악 권리",
+            "independently_verified": false
+          },
+          "publication_status": "게시 전 확인 필요",
+          "review_file": "output/2026-11-17/sooyoung-story-final/upload-review.json",
+          "review_verdicts": {
+            "s1_vacation-cap": "수정 후 재심",
+            "s2_cream-selfcare": "수정 후 재심"
+          },
+          "shorts": [
+            {
+              "id": "s1_vacation-cap",
+              "title": "촬영 끝난 수영이\n이 모자를 꺼내 쓴 이유",
+              "segments": [
+                [
+                  1490.0,
+                  1496.0,
+                  0.22
+                ],
+                [
+                  1496.02,
+                  1498.81,
+                  0.8
+                ],
+                [
+                  1498.84,
+                  1502.6,
+                  0.235
+                ],
+                [
+                  1502.64,
+                  1504.48,
+                  0.8
+                ],
+                [
+                  1504.51,
+                  1506.8,
+                  0.5
+                ],
+                [
+                  1506.84,
+                  1510.13,
+                  0.515
+                ],
+                [
+                  1510.15,
+                  1511.74,
+                  0.575
+                ]
+              ],
+              "file": "output/2026-11-17/sooyoung-story-final/s1_vacation-cap.mp4"
+            },
+            {
+              "id": "s2_cream-selfcare",
+              "title": "바디크림 아껴 쓴다니\n티파니가 바로 한 말",
+              "segments": [
+                [
+                  1609.56,
+                  1610.84,
+                  0.5
+                ],
+                [
+                  1610.87,
+                  1611.94,
+                  0.6
+                ],
+                [
+                  1612.06,
+                  1613.76,
+                  0.75
+                ],
+                [
+                  1613.78,
+                  1618.7,
+                  0.47
+                ],
+                [
+                  1618.74,
+                  1622.4,
+                  0.5
+                ],
+                [
+                  1622.42,
+                  1625.31,
+                  0.5
+                ],
+                [
+                  1625.34,
+                  1633.25,
+                  0.5
+                ]
+              ],
+              "file": "output/2026-11-17/sooyoung-story-final/s2_cream-selfcare.mp4"
+            }
+          ]
         }
       ],
       "title": "[SUB] 소시 왜 이제 와? 소녀시대 도장깨기 시작 (다음 가족도 대기 중..🫢) ✨수영✨ l 얼굴보고 얘기해 EP08 #티파니영 #수영 #소녀시대",

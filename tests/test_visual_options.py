@@ -4,6 +4,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "shorts"))
 from cli import validate_visual_options
+from crop import segment_crop
 
 
 class VisualOptionsTests(unittest.TestCase):
@@ -35,6 +36,25 @@ class VisualOptionsTests(unittest.TestCase):
                 validate_visual_options({
                     "id": "test", "segments": [[10, 15, 0.5]], "crop_width": width,
                 })
+
+    def test_segment_crops_override_only_selected_geometry(self):
+        short = {
+            "id": "test", "segments": [[10, 15, 0.5], [20, 25, 0.5]],
+            "crop_width": 0.45, "crop_height": 0.8,
+            "segment_crops": [{}, {"width": 0.4, "height": 0.7, "top": 0.1}],
+        }
+        validate_visual_options(short)
+        self.assertEqual(segment_crop(short, 0), (0.45, 0.8, 0))
+        self.assertEqual(segment_crop(short, 1), (0.4, 0.7, 0.1))
+
+    def test_segment_crops_reject_wrong_count_and_out_of_bounds(self):
+        short = {"id": "test", "segments": [[10, 15, 0.5]]}
+        for crops in (None, [], [{}, {}], [None], [{"left": 0.2}],
+                      [{"width": 0}], [{"height": 0.8, "top": 0.3}],
+                      [{"top": -0.1}], [{"top": float("nan")}],
+                      [{"height": float("nan")}], [{"width": "wide"}]):
+            with self.subTest(crops=crops), self.assertRaises(ValueError):
+                validate_visual_options(short | {"segment_crops": crops})
 
     def test_note_must_fit_one_selected_segment(self):
         for note in ([12, 21, "구간을 넘는 해설"], [10, 10, "빈 구간"],

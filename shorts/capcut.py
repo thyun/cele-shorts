@@ -6,6 +6,7 @@ import pycapcut as cc
 from pycapcut import trange, tim
 from title_style import highlight_color, title_ranges
 from narration import narration_clips
+from crop import segment_crop
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
@@ -52,15 +53,14 @@ for s in SHORTS:
         acc += round((b - a) * 1_000_000 / SPEED) / 1_000_000
     total = acc
 
-    crop_width = s.get("crop_width", 0.4)
-    crop_height = s.get("crop_height", 0.75)
     for i, ((a, b, cx), o) in enumerate(zip(segs, offs)):
+        crop_width, crop_height, crop_top = segment_crop(s, i)
         x0 = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         crop = cc.CropSettings(
-            upper_left_x=x0, upper_left_y=0.0,
-            upper_right_x=x0 + crop_width, upper_right_y=0.0,
-            lower_left_x=x0, lower_left_y=crop_height,
-            lower_right_x=x0 + crop_width, lower_right_y=crop_height,
+            upper_left_x=x0, upper_left_y=crop_top,
+            upper_right_x=x0 + crop_width, upper_right_y=crop_top,
+            lower_left_x=x0, lower_left_y=crop_top + crop_height,
+            lower_right_x=x0 + crop_width, lower_right_y=crop_top + crop_height,
         )
         mat = cc.VideoMaterial(SRC_ABS, crop_settings=crop)
         seg = cc.VideoSegment(

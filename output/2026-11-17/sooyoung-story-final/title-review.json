@@ -1,0 +1,97 @@
+{
+  "reference": "TITLE_PLAYBOOK.md",
+  "reviewed_on": "2026-11-17",
+  "principles_applied": ["구체적인 행동과 이유", "기대와 실제의 대비", "원본으로 답할 수 없는 제목 제외"],
+  "shorts": [
+    {
+      "id": "s1_vacation-cap",
+      "source_facts": [
+        {"fact": "수영은 촬영 종료 뒤 모자를 찾아 쓰고 인증샷을 보냈다고 말한다.", "source_timecode": "00:24:56–00:25:04.5"},
+        {"fact": "모자에 ON VACATION 문구가 보인다.", "source_timecode": "00:25:06.84–00:25:11.74"},
+        {"fact": "3년 전 구매했다는 설명의 발언자는 티파니다.", "source_timecode": "00:24:51.83–00:24:56"}
+      ],
+      "candidates": [
+        {
+          "title": "촬영 끝난 수영이\n이 모자를 꺼내 쓴 이유",
+          "structure": "행동과 이유",
+          "viewer_question": "촬영 종료와 이 모자는 무슨 관계일까?",
+          "source_evidence": "원본 1496.02–1511.74초의 사용 계기와 실제 모자 문구",
+          "opening_visual": "티파니가 커플 모자를 들고 있는 장면",
+          "payoff": "후반부 모자를 쓴 모습에서 ON VACATION을 읽고, 촬영이 끝나야 쓸 수 있다는 말과 연결",
+          "risk": "다른 모자를 안 쓴다거나 실제로 휴가를 떠났다고 확대하지 않는다. 처음 등장하는 모자 착용자를 수영으로 오인시키지 않는다.",
+          "decision": "선정. 사용 계기라는 구체적인 질문에 말과 실제 문구로 답할 수 있다."
+        },
+        {
+          "title": "소시가 회사 갈 때 쓰는\n휴가 중 모자",
+          "structure": "기대와 실제의 대비",
+          "viewer_question": "휴가를 뜻하는 모자를 왜 회사에 쓰고 갈까?",
+          "source_evidence": "원본 1506.84–1511.74초의 문구와 회사 방문 발언",
+          "opening_visual": "모자 실물",
+          "payoff": "마지막 회사 갈 때 발언",
+          "risk": "핵심 문구를 제목에서 먼저 공개해 발견의 보상이 줄어든다.",
+          "decision": "탈락. 장면의 작은 발견을 제목에서 너무 많이 설명한다."
+        },
+        {
+          "title": "티파니가 선물한 모자\n수영이 보낸 인증샷",
+          "structure": "선물과 후속 행동",
+          "viewer_question": "어떤 상황에 인증샷을 보냈을까?",
+          "source_evidence": "원본 1490–1504.5초의 선물 설명과 인증샷 발언",
+          "opening_visual": "티파니와 커플 모자",
+          "payoff": "수영이 촬영 후 모자를 썼다는 설명",
+          "risk": "원본에 삽입된 사진을 바로 그 인증샷이라고 독립 확인한 것은 아니다. 제목이 특정 사진의 공개를 약속하는 듯 보일 수 있다.",
+          "decision": "탈락. 사진의 정확한 관계보다 실제로 확인되는 모자 문구에 집중한다."
+        }
+      ],
+      "selected_title": "촬영 끝난 수영이\n이 모자를 꺼내 쓴 이유",
+      "upload_title": "촬영 끝난 수영이 꺼내 쓴 모자, 앞에 적힌 말까지 보니",
+      "thumbnail_check": {"status": "최종 MP4의 270×480 축소 이미지에서 두 줄과 강조어를 육안 확인했다. 실제 YouTube 모바일 UI 가림은 미확인이다.", "preflight_artifact": "work/2026-11-17/sooyoung-story/preflight/s1_vacation-cap_thumbnail.jpg", "artifact": "previews/s1_vacation-cap_thumbnail.jpg"},
+      "opening_check": "최종 출력 0.2·1·2·3초 프레임 확인. 수영의 선물 설명 후 3초 안에 티파니와 모자가 등장한다. 동영상 연속 재생·청취는 미확인.",
+      "payoff_check": "최종 출력 약 14–18초에서 ON VACATION 문구와 착용 장면을 확인했다. 원본에 있던 의미를 선별해 연결한 이야기형이며 직접 제품을 검증한 형식은 아니다."
+    },
+    {
+      "id": "s2_cream-selfcare",
+      "source_facts": [
+        {"fact": "수영이 바닥까지 쓰는 크림이라고 소개한다. 내부를 보여주지는 않는다.", "source_timecode": "00:26:49.56–00:26:53.3"},
+        {"fact": "수영이 처음에는 아까워 조금씩 발랐다고 말한다.", "source_timecode": "00:27:05.5–00:27:09.14"},
+        {"fact": "티파니가 내 몸에는 아깝지 않다고 반응하며 팔을 몸에 두르는 동작을 한다.", "source_timecode": "00:27:09.17–00:27:13.1"}
+      ],
+      "candidates": [
+        {
+          "title": "바디크림 아껴 쓴다니\n티파니가 바로 한 말",
+          "structure": "발언과 반응",
+          "viewer_question": "티파니는 아껴 쓴다는 말에 어떻게 답할까?",
+          "source_evidence": "원본 1625.5–1633.1초의 대화",
+          "opening_visual": "수영의 소개 뒤 바디크림 실물을 보여주는 장면",
+          "payoff": "후반부 티파니의 내 몸에는 아깝지 않다는 말과 팔 동작",
+          "risk": "상대에게 실제로 질문한 것으로 바꾸거나 고가 크림 구매를 권하는 의미로 확대하지 않는다.",
+          "decision": "선정. 원본의 구체적인 대화 반응으로 약속을 해결할 수 있다."
+        },
+        {
+          "title": "수영은 조금씩 바르는데\n티파니는 생각이 달랐다",
+          "structure": "두 사람의 태도 대비",
+          "viewer_question": "같은 크림을 두고 어떤 생각이 다를까?",
+          "source_evidence": "원본 1625.5–1633.1초",
+          "opening_visual": "수영과 실제 크림",
+          "payoff": "티파니의 반응",
+          "risk": "티파니의 실제 사용량을 보여주는 것은 아닌데 바르는 양의 실증 비교로 오인할 수 있다.",
+          "decision": "탈락. 실제로 보여주는 것은 사용량 비교가 아니라 대화 속 태도다."
+        },
+        {
+          "title": "비싼 크림 얘기하다\n갑자기 나온 자기애",
+          "structure": "제품 이야기에서 가치관으로 전환",
+          "viewer_question": "크림 이야기에서 왜 자기애가 나올까?",
+          "source_evidence": "원본 1618.96–1633.1초의 가격 소감과 반응",
+          "opening_visual": "크림 용기",
+          "payoff": "티파니가 자기 몸에는 아끼지 않는다고 말하는 장면",
+          "risk": "자기애라는 채널 해석이 구체적인 대화를 추상적인 교훈으로 만들 수 있다.",
+          "decision": "탈락. 티파니의 실제 반응을 기대하게 하는 후보가 더 구체적이다."
+        }
+      ],
+      "selected_title": "바디크림 아껴 쓴다니\n티파니가 바로 한 말",
+      "upload_title": "바디크림 조금씩 바른다는 수영에게 티파니가 한 말",
+      "thumbnail_check": {"status": "최종 MP4의 270×480 축소 이미지에서 두 줄과 강조어를 육안 확인했다. 실제 YouTube 모바일 UI 가림은 미확인이다.", "preflight_artifact": "work/2026-11-17/sooyoung-story/preflight/s2_cream-selfcare_thumbnail.jpg", "artifact": "previews/s2_cream-selfcare_thumbnail.jpg"},
+      "opening_check": "최종 출력 0.2·1·2·3초 프레임 확인. 바닥까지 쓰는 제품이라는 소개와 크림 용기가 연결된다. 동영상 연속 재생·청취는 미확인.",
+      "payoff_check": "최종 출력 약 16–19.5초에서 내 몸에는 아깝지 않다는 티파니의 반응과 팔 동작을 확인했다. 고가 제품의 객관적 효능이나 구매 권고로 해석하지 않는다."
+    }
+  ]
+}
