@@ -1,12 +1,15 @@
 import copy
 import json
 import os
+import sys
 import uuid
 import pycapcut as cc
 from pycapcut import trange, tim
 from title_style import highlight_color, title_ranges
 from narration import narration_clips
 from crop import segment_crop
+if sys.platform == "darwin":
+    from capcut_mac import create_mac98_draft
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
@@ -148,4 +151,11 @@ for s in SHORTS:
         script.add_segment(label, "visual_labels")
 
     script.save()
+    if sys.platform == "darwin":
+        create_mac98_draft(
+            os.path.join(ROOT, s["id"]),
+            os.path.join(os.environ["SHORTS_OUTPUT"], f"{s['id']}.mp4"),
+            s["id"],
+            ROOT,
+        )
     print("saved", s["id"], f"{total:.1f}s")
