@@ -1,0 +1,21 @@
+{
+  "reference": "TITLE_PLAYBOOK.md",
+  "reviewed_on": "2026-11-20",
+  "shorts": [
+    {
+      "id": "s1_vibration-plate",
+      "source_facts": [
+        {"fact": "손태영이 발판에 올라 몸이 흔들린다고 말하고, 밴드와 스쿼트를 시연한다.", "source_timecode": "02:44–02:53"},
+        {"fact": "얼마나 흔들리냐는 질문에 손태영이 직접 올라가 보라고 권한다. 다른 출연자의 첫 반응에 원본 '허업' 자막이 나온다.", "source_timecode": "03:18–03:25.8"}
+      ],
+      "candidates": [
+        {"title": "손태영이 올라가 보랬더니\n서자마자 나온 첫 소리", "structure": "권유와 실제 반응", "viewer_question": "직접 올라간 사람은 어떤 소리를 냈나?", "source_evidence": "03:18–03:25.8 권유와 체험 반응", "opening_visual": "손태영이 진동에 반응하는 상체 클로즈업 뒤 바로 기구와 시연이 보인다.", "payoff": "마지막 약 2초에 발판 위 출연자의 원본 반응", "risk": "반응의 주체를 손태영으로 바꾸지 않고 실제 체험을 화면으로 구분한다.", "decision": "선정. 사용 동작이 몸의 실제 반응으로 이어진다."},
+        {"title": "진동판이 얼마나 흔들리길래\n손태영이 직접 올라가 봤다", "structure": "장면을 통한 강도 확인", "viewer_question": "진동 때문에 몸이 어떻게 움직이나?", "source_evidence": "02:44–02:53 신체 움직임", "opening_visual": "몸이 흔들린다는 말과 시연", "payoff": "흔들리는 상·하체", "risk": "진동 강도를 계측한 영상으로 오해시키면 안 된다.", "decision": "탈락. 처음에 바로 답이 나오고 다른 출연자 반응과 연결이 약하다."},
+        {"title": "발 올리는 판인 줄 알았는데\n손태영은 밴드까지 쓴다", "structure": "예상 밖의 사용 동작", "viewer_question": "밴드로 무슨 동작을 하나?", "source_evidence": "02:46–02:53 밴드 설명과 동작", "opening_visual": "발판 위에서 흔들리는 손태영", "payoff": "밴드 동작과 스쿼트", "risk": "실물 밴드를 연결했다고 단정하지 않는다.", "decision": "탈락. 앞 버전의 제품 사용 소개와 차이가 작다."}
+      ],
+      "selected_title": "손태영이 올라가 보랬더니\n서자마자 나온 첫 소리",
+      "thumbnail_check": {"status": "렌더 후 확인 예정"},
+      "opening_check": "원본의 반응과 시연 프레임 확인. 최종 출력 확인 예정."
+    }
+  ]
+}

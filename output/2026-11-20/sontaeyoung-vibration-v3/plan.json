@@ -1,0 +1,97 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=oVms4Y22wVs",
+  "source_title": "손태영 결혼 결심하게 만든 권상우 떡볶이 레시피 최초공개 (초간단,역대급 맛)",
+  "references": [
+    {
+      "url": "https://www.youtube.com/shorts/wH6koL90Dik",
+      "title": "가만히 서 있기만 해도 5분 만에 땀이 난다는 손태영의 홈트 기구는?🔥",
+      "channel": "힐스픽",
+      "format": "short"
+    }
+  ],
+  "permission": {
+    "status": "user_confirmed",
+    "confirmed_date": "2026-11-20",
+    "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용, 사용할 음악 포함",
+    "independently_verified": false
+  },
+  "production": {
+    "revision_of": "output/2026-11-20/sontaeyoung-vibration-v2-final",
+    "revision_reason": "기존 제목·도입·시연을 유지한다. 첫 반응 뒤 잘린 후속 발언을 빼고 앞서 나눈 미국 유행 문답을 엔딩에 배치한다. 유행은 검증된 사실이 아니라 출연진의 문답으로만 보여준다.",
+    "speed": 1.2,
+    "end_fade_seconds": 0.08,
+    "caption_delivery": "원본 내장 대사 자막만 화면에 표시하고 별도 SRT를 제공한다.",
+    "title_review": "work/2026-11-20/sontaeyoung-vibration-v2-final/title-review.json"
+  },
+  "shorts": [
+    {
+      "id": "s1_vibration-plate",
+      "title": "손태영이 올라가 보랬더니\n서자마자 나온 첫 소리",
+      "title_highlights": [
+        "올라가 보랬더니",
+        "첫 소리"
+      ],
+      "highlight_color": [
+        0.98,
+        0.85,
+        0.31
+      ],
+      "upload_title": "손태영이 쓰는 진동판, 얼마나 흔들리나 직접 올라갔더니",
+      "source": "Mrs.뉴저지 손태영",
+      "viewer_question": "진동판에 직접 올라간 사람은 어떤 반응을 보일까?",
+      "payoff": {
+        "source_timecode": "03:23.31–03:24.51",
+        "scene": "다른 출연자가 진동판에 서고 원본 '허업' 자막이 나온다."
+      },
+      "closing": {
+        "source_timecode": "03:02.35–03:05.72",
+        "scene": "진동판이 미국에서 유행인지 묻는 출연자와 손태영의 답을 덧붙인다."
+      },
+      "crop_width": 0.5625,
+      "crop_height": 1.0,
+      "segment_crops": [
+        {
+          "width": 0.72
+        },
+        {},
+        {
+          "width": 0.72
+        },
+        {
+          "width": 0.76
+        },
+        {
+          "width": 0.86
+        }
+      ],
+      "segments": [
+        [
+          163.97,
+          165.98,
+          0.49
+        ],
+        [
+          166.01,
+          173.65,
+          0.53
+        ],
+        [
+          198.11,
+          202.75,
+          0.58
+        ],
+        [
+          203.31,
+          204.51,
+          0.54
+        ],
+        [
+          182.35,
+          185.72,
+          0.53
+        ]
+      ],
+      "captions": []
+    }
+  ]
+}

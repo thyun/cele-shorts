@@ -2,10 +2,11 @@ import json, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 from title_style import highlight_color, title_parts
 from narration import narration_clips
-from crop import segment_crop
+from crop import segment_crop, source_dimensions
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
     plan = json.load(plan_file)
 SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
+SOURCE_SIZE = None
 
 OUT = os.environ["SHORTS_OUTPUT"]
 SPEED = float(os.environ.get("SHORTS_SPEED", "1.2"))
@@ -75,6 +76,9 @@ def srt_time(t):
 
 
 def build(s):
+    global SOURCE_SIZE
+    if SOURCE_SIZE is None:
+        SOURCE_SIZE = source_dimensions(SRC)
     clips = narration_clips(s, os.environ["SHORTS_WORK"])
     segs = s["segments"]
     offs, acc = [], 0.0
@@ -91,7 +95,7 @@ def build(s):
 
     inputs, fc = [], []
     for i, (a, b, cx) in enumerate(segs):
-        crop_width, crop_height, crop_top = segment_crop(s, i)
+        crop_width, crop_height, crop_top = segment_crop(s, i, SOURCE_SIZE)
         inputs += ["-ss", f"{a}", "-t", f"{b-a}", "-i", SRC]
         x = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         fc.append(

@@ -7,7 +7,7 @@ import pycapcut as cc
 from pycapcut import trange, tim
 from title_style import highlight_color, title_ranges
 from narration import narration_clips
-from crop import segment_crop
+from crop import segment_crop, source_dimensions
 if sys.platform == "darwin":
     from capcut_mac import create_mac98_draft
 with open(os.environ["SHORTS_PLAN"], encoding="utf-8") as plan_file:
@@ -17,6 +17,7 @@ SHORTS, SRC = plan["shorts"], os.environ["SHORTS_SOURCE"]
 ROOT = os.path.abspath(os.environ["SHORTS_DRAFTS"])
 os.makedirs(ROOT, exist_ok=True)
 SRC_ABS = os.path.abspath(SRC)
+SOURCE_SIZE = source_dimensions(SRC_ABS)
 SPEED = float(os.environ.get("SHORTS_SPEED", "1.2"))
 END_FADE = float(os.environ.get("SHORTS_END_FADE", "0.2"))
 if SPEED <= 0:
@@ -57,7 +58,7 @@ for s in SHORTS:
     total = acc
 
     for i, ((a, b, cx), o) in enumerate(zip(segs, offs)):
-        crop_width, crop_height, crop_top = segment_crop(s, i)
+        crop_width, crop_height, crop_top = segment_crop(s, i, SOURCE_SIZE)
         x0 = max(0.0, min(1 - crop_width, cx - crop_width / 2))
         crop = cc.CropSettings(
             upper_left_x=x0, upper_left_y=crop_top,

@@ -1,10 +1,34 @@
-def segment_crop(short, index):
+import json
+import subprocess
+
+
+def source_dimensions(path):
+    result = subprocess.run(
+        [
+            "ffprobe", "-v", "error", "-select_streams", "v:0",
+            "-show_entries", "stream=width,height", "-of", "json", str(path),
+        ],
+        capture_output=True, text=True, check=True,
+    )
+    streams = json.loads(result.stdout).get("streams", [])
+    if not streams or not streams[0].get("width") or not streams[0].get("height"):
+        raise ValueError(f"영상 크기를 확인할 수 없습니다: {path}")
+    return streams[0]["width"], streams[0]["height"]
+
+
+def segment_crop(short, index, source_size=None):
     crops = short.get("segment_crops")
     override = crops[index] if crops is not None else {}
+    source_size = source_size or (16, 9)
+    aspect = source_size[0] / source_size[1]
+    square_width = min(1.0, 1 / aspect)
+    square_height = min(1.0, aspect)
+    square_top = (1 - square_height) / 2
+    has_crop_override = "crop_width" in short or "crop_height" in short
     return (
-        override.get("width", short.get("crop_width", 0.4)),
-        override.get("height", short.get("crop_height", 0.75)),
-        override.get("top", 0.0),
+        override.get("width", short.get("crop_width", square_width)),
+        override.get("height", short.get("crop_height", square_height)),
+        override.get("top", 0.0 if has_crop_override else square_top),
     )
 
 

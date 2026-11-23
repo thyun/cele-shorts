@@ -1,0 +1,42 @@
+{
+  "source_url": "https://www.youtube.com/watch?v=oVms4Y22wVs",
+  "source_title": "손태영 결혼 결심하게 만든 권상우 떡볶이 레시피 최초공개 (초간단,역대급 맛)",
+  "references": [
+    {"url": "https://www.youtube.com/shorts/wH6koL90Dik", "title": "가만히 서 있기만 해도 5분 만에 땀이 난다는 손태영의 홈트 기구는?🔥", "channel": "힐스픽", "format": "short"}
+  ],
+  "permission": {
+    "status": "user_confirmed",
+    "confirmed_date": "2026-11-20",
+    "scope": "원본 재편집·재업로드 및 제휴 목적 상업적 이용, 사용할 음악 포함",
+    "independently_verified": false
+  },
+  "production": {
+    "revision_of": "output/2026-11-20/sontaeyoung-vibration",
+    "revision_reason": "기구를 켜는 도입과 일반적인 마무리를 빼고 손태영의 진동 반응으로 바로 시작해 다른 출연자의 첫 체험 반응으로 끝낸다.",
+    "speed": 1.2,
+    "end_fade_seconds": 0.08,
+    "caption_delivery": "원본 내장 대사 자막을 보존하고 새 대사 자막은 화면에 합성하지 않는다. 별도 SRT는 편집 시간 기준으로 제공한다."
+  },
+  "shorts": [
+    {
+      "id": "s1_vibration-plate",
+      "title": "손태영이 올라가 보랬더니\n서자마자 나온 첫 소리",
+      "title_highlights": ["올라가 보랬더니", "첫 소리"],
+      "highlight_color": [0.98, 0.85, 0.31],
+      "upload_title": "손태영이 쓰는 진동판, 얼마나 흔들리나 직접 올라갔더니",
+      "source": "Mrs.뉴저지 손태영",
+      "viewer_question": "진동판에 직접 올라간 사람은 어떤 반응을 보일까?",
+      "payoff": {"source_timecode": "03:23.30–03:25.85", "scene": "다른 출연자가 진동판에 서자 자세를 잡고 짧게 숨을 들이켠다. 원본에도 반응 자막이 나온다."},
+      "crop_width": 0.5625,
+      "crop_height": 1.0,
+      "segment_crops": [{}, {}, {}, {"width": 0.71}],
+      "segments": [
+        [163.97, 165.98, 0.53],
+        [166.01, 173.65, 0.53],
+        [198.11, 202.75, 0.69],
+        [203.31, 205.83, 0.54]
+      ],
+      "captions": []
+    }
+  ]
+}

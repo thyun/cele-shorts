@@ -1,0 +1,35 @@
+{
+  "reviewer": "shorts-upload-reviewer",
+  "reviewed_at": "2026-11-20T14:45:18+09:00",
+  "review_mode": "production",
+  "criteria_revision": "2026-11-17-success-calibrated",
+  "publication_status": "게시 전 확인 필요",
+  "videos": [
+    {
+      "id": "s1_vibration-plate",
+      "file": "s1_vibration-plate.mp4",
+      "performance_evidence": {"status": "미확인", "views": null},
+      "content_verdict": "수정 후 재심",
+      "publication_status": "게시 전 확인 필요",
+      "strengths": [
+        "0~3초에 진동판 실물과 타이틀을 함께 제시한다.",
+        "약 10~16초의 밴드 설명과 실제 스쿼트가 제목에서 약속한 사용 장면을 제공한다.",
+        "시연과 개인 의견을 보여주되 가격·효능·사용 기간을 별도로 주장하지 않는다."
+      ],
+      "required_changes": [
+        {
+          "timecode": "00:04.85~00:17.88, 특히 약 00:10 및 00:12.9~00:16",
+          "finding": "원본에 구워진 자막과 새 대사 자막이 반복해서 동시에 노출된다. 말미 원본 화면의 '집에서'가 별도 SRT에는 없다.",
+          "action": "영상 안에서 대사 자막은 한 레이어만 보이도록 정리하고, 말미 대사를 실제 음성과 대조해 화면과 SRT를 맞춘 뒤 재심한다."
+        }
+      ],
+      "optional_improvements": [],
+      "verification": "최종 MP4 17.90초, H.264 1080×1920, AAC 오디오, 전체 디코딩 정상. 도입·컷 전후·시연·말미의 정지 프레임과 SRT를 확인했다.",
+      "unverified": [
+        "직접 청취, 연속 재생, 실제 모바일 YouTube UI, CapCut 앱 열기는 미확인.",
+        "원본과 사용할 음악 권리는 사용자가 확인했으며, 독립 검증하지 않았다.",
+        "제휴 링크를 사용할 경우 해당 고지 요건은 게시 전에 별도 확인이 필요하다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "reference": "TITLE_PLAYBOOK.md",
+  "reviewed_on": "2026-11-20",
+  "shorts": [
+    {
+      "id": "s1_vibration-plate",
+      "source_facts": [
+        {"fact": "기구의 실물과 올라서서 흔들리는 모습이 나온다.", "source_timecode": "02:34–02:46"},
+        {"fact": "밴드 연결과 팔 동작, 스쿼트 동작을 소개한다.", "source_timecode": "02:46–02:54"}
+      ],
+      "candidates": [
+        {"title": "손태영의 홈트 진동판\n그냥 서 있는 줄 알았는데", "structure": "기대와 실제", "viewer_question": "서 있는 것 말고 어떤 동작을 할까?", "source_evidence": "02:46–02:54의 밴드 설명과 스쿼트", "opening_visual": "손태영이 거실 바닥에 놓인 발판을 짚는다.", "payoff": "약 10–16초에 밴드와 스쿼트", "risk": "효능이나 운동 강도를 약속하지 않는다.", "decision": "선정. 첫 화면에서 발판을 보여주고 동작은 뒤에 공개한다."},
+        {"title": "진동판 위 손태영\n밴드는 어디에 거는 걸까", "structure": "부품과 사용법", "viewer_question": "밴드는 어디에 연결할까?", "source_evidence": "02:46–02:50의 연결 위치 설명", "opening_visual": "진동판 실물", "payoff": "밴드 부분", "risk": "실물 연결점이 화면에서 명확히 식별되지 않는다.", "decision": "탈락. 근접 사용법을 약속하기엔 화면 정보가 약하다."},
+        {"title": "운동이 되냐는 말에\n손태영이 보여준 동작", "structure": "대화와 반응", "viewer_question": "질문에 어떤 시연으로 답할까?", "source_evidence": "02:43–02:54의 질문과 시연", "opening_visual": "진동판 실물", "payoff": "흔들림부터 스쿼트 시연까지", "risk": "효과 입증을 기대하게 만들 수 있다.", "decision": "탈락. 사용 장면에 집중하는 편이 더 정직하다."}
+      ],
+      "selected_title": "손태영의 홈트 진동판\n그냥 서 있는 줄 알았는데",
+      "thumbnail_check": {"status": "확인", "artifact": "output/2026-11-20/sontaeyoung-vibration/thumbnail.jpg"},
+      "opening_check": "최종 출력 0~3초 표본 프레임에서 제목과 발판을 함께 확인했다. 실제 모바일 UI와 연속 재생은 미확인."
+    }
+  ]
+}

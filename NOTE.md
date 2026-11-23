@@ -25,4 +25,5 @@
 * 게시 정보 생성 - title, keyword, 자동 게시?
 * 영상 편집 - 텍스트 annimation, 광고 영상
 * 영상 편집 - 인물 바꾸기, 배경 바꾸기
+* 소재 - excel file
 

@@ -18,10 +18,17 @@ class VisualOptionsTests(unittest.TestCase):
     def test_existing_plan_and_valid_options(self):
         short = {"id": "test", "segments": [[10, 15, 0.5], [20, 25, 0.5]]}
         validate_visual_options(short)
+        self.assertEqual(segment_crop(short, 0), (0.5625, 1.0, 0.0))
         validate_visual_options(short | {
             "crop_width": 0.8, "editorial_notes": [[10, 15, "내 용도부터 확인"]],
         })
         validate_visual_options(short | {"crop_width": 0.5625, "crop_height": 1.0})
+
+    def test_default_square_crop_matches_source_aspect(self):
+        short = {"id": "test", "segments": [[10, 15, 0.5]]}
+        self.assertEqual(segment_crop(short, 0, (1920, 1080)), (0.5625, 1.0, 0.0))
+        self.assertEqual(segment_crop(short, 0, (1080, 1920)), (1.0, 0.5625, 0.21875))
+        self.assertEqual(segment_crop(short, 0, (1440, 1080)), (0.75, 1.0, 0.0))
 
     def test_invalid_crop_height(self):
         for height in (0, -0.1, 1.1, "full", float("nan")):

@@ -1,0 +1,31 @@
+{
+  "reviewer": "shorts-upload-reviewer",
+  "reviewed_at": "2026-11-20T15:31:20+09:00",
+  "review_mode": "production",
+  "criteria_revision": "2026-11-17-success-calibrated",
+  "output_directory": "output/2026-11-20/sontaeyoung-vibration-v3",
+  "publication_status": "게시 전 확인 필요",
+  "videos": [
+    {
+      "id": "s1_vibration-plate",
+      "file": "s1_vibration-plate.mp4",
+      "performance_evidence": {"status": "미확인", "views": null},
+      "content_verdict": "업로드 추천",
+      "publication_status": "게시 전 확인 필요",
+      "rationale": "손태영의 시연과 출연자의 체험 반응이 제목에서 약속한 장면을 제공한다. 반응 직후 잘린 후속 대사 대신 원본의 미국 유행 문답을 엔딩에 배치했다. 미국 내 유행을 사실로 단정하지 않고 출연자 간 대화로 전달한다.",
+      "evidence": [
+        {"output_timecode": "00:00–00:03", "observation": "기존 타이틀과 손태영의 반응으로 시작하고 진동판 시연으로 넘어간다."},
+        {"output_timecode": "00:12.9–00:15.7", "source_timecode": "03:02.35–03:05.72", "observation": "미국에서 유행인지 묻는 질문과 손태영의 답이 읽힌다. 별도 SRT에도 문답이 들어 있다."},
+        {"output_timecode": "전체", "observation": "1080×1920, 15.733초, H.264 및 AAC. 전체 디코딩과 표본 프레임 확인을 마쳤다."}
+      ],
+      "required_changes": [],
+      "optional_improvements": [],
+      "unverified": [
+        "직접 청취 및 컷 연결의 청감",
+        "미국 내 유행 여부의 독립 검증",
+        "CapCut 앱에서 열기 및 실제 YouTube UI 가림 여부",
+        "사용 허락 문서의 독립 검증 및 게시 시 필요한 제휴 표시"
+      ]
+    }
+  ]
+}
