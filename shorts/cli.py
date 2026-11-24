@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 
 from title_style import highlight_color, title_parts
 from narration import narration_clips
-from history import record_generation, update_history, video_id
+from history import connect, import_json, lookup, record_generation, record_uses, video_id
 from crop import validate_crops
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,23 +63,26 @@ def main():
     prepare.add_argument("url", type=youtube_url)
     history = sub.add_parser("history", help="영상 ID 기준 참고·제작 이력 조회")
     history.add_argument("--url", type=youtube_url)
+    history.add_argument("--import-json", type=Path, help="기존 history.json을 DB로 가져오기")
     for cmd in (prepare, sub.add_parser("render", help="검토된 plan.json으로 MP4, SRT 및 캡컷 초안 생성")):
         cmd.add_argument("--date", type=valid_date, default=date.today().isoformat())
         cmd.add_argument("--job", type=valid_job, required=True)
     args = parser.parse_args()
     if args.command == "history":
-        data = update_history(ROOT)
-        result = data["videos"].get(video_id(args.url)) if args.url else data
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        conn = connect(ROOT)
+        if args.import_json:
+            import_json(conn, args.import_json)
+        print(json.dumps(lookup(conn, video_id(args.url) if args.url else None), ensure_ascii=False, indent=2))
         return
     work = ROOT / "work" / args.date / args.job
     output = ROOT / "output" / args.date / args.job
     if args.command == "prepare":
         work.mkdir(parents=True, exist_ok=False)
         print(f"작업 폴더: {work}", flush=True)
-        known = update_history(ROOT)["videos"].get(video_id(args.url))
-        if known:
-            print(f"기존 이력: 참고 {len(known['references'])}건, 제작 {len(known['generations'])}건", flush=True)
+        conn = connect(ROOT)
+        known = lookup(conn, video_id(args.url))
+        if known["uses"] or known["generations"]:
+            print(f"기존 이력: 참고 {len(known['uses'])}건, 제작 {len(known['generations'])}건", flush=True)
         subprocess.run([
             "yt-dlp", "--no-playlist", "--no-overwrites",
             "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/b[height<=1080]",
@@ -92,7 +95,7 @@ def main():
         if not list(work.glob("long.*.srt")):
             print("한국어 자막이 없습니다. 전사 또는 수동 대본이 필요합니다.", file=sys.stderr)
         metadata = json.loads((work / "long.info.json").read_text(encoding="utf-8"))
-        update_history(ROOT, [{
+        record_uses(conn, [{
             "url": args.url, "title": metadata["title"], "channel": metadata.get("uploader"),
             "role": "prepared", "date": args.date, "job": args.job,
         }])

@@ -17,6 +17,8 @@
 *.aac
 
 # Python and local environment
+.env
+.env.*
 __pycache__/
 *.py[cod]
 .venv/

@@ -102,7 +102,7 @@
 
 ## 작업 파일
 
-- 중앙 레퍼런스·사용 이력은 `references/history.json`에 YouTube 영상 ID 기준으로 누적한다. 작업 전 `python3 shorts/cli.py history --url '유튜브 URL'`로 기존 사용을 조회한다. 조사·준비·제목 참고와 실제 제작 이력은 구분하며, 미게시를 게시 완료로 추정하지 않는다.
+- 중앙 레퍼런스·사용 이력은 `.env`의 MySQL(`shorts_source_uses`, `shorts_generations` 테이블)에 YouTube 영상 ID 기준으로 누적한다. 테이블은 `shorts/history.py`의 `connect()`가 없으면 생성한다. 작업 전 `python3 shorts/cli.py history --url '유튜브 URL'`로 기존 사용을 조회한다. 기존 `references/history.json`은 2026-11-24에 `history --import-json`으로 DB에 가져온 뒤 삭제했다. 조사·준비·제목 참고와 실제 제작 이력은 구분하며, 미게시를 게시 완료로 추정하지 않는다.
 - 새 편집안에는 `source_url`, `source_title`, 작업에 실제 참고한 영상 목록 `references`(url·title·channel·format)를 기록한다. 렌더 성공 후 CLI가 사용 구간·작업명·결과 경로를 자동 기록한다. 같은 원본의 다른 구간이나 수정본도 별도 작업으로 남긴다. 독립 심사 후 `shorts/history.py`의 `record_generation`으로 심사 상태를 갱신한다.
 
 - 각 작업은 `work/YYYY-MM-DD/작업명/`과 `output/YYYY-MM-DD/작업명/`에 둔다. 같은 날짜에도 다른 작업명을 사용해 덮어쓰지 않는다.
@@ -112,7 +112,7 @@
 - 선택적 `crop_width`와 `crop_height`(각 0 초과~1 이하)로 기본 1:1 크롭을 바꿀 수 있다. 생략하면 원본 해상도에서 픽셀 기준 정사각형이 되도록 자동 계산한다. 1920x1080 원본에서는 너비 0.5625·높이 1.0이 기본이며, 구도를 넓히거나 핵심 요소를 보존해야 할 때만 명시적으로 다른 값을 지정한다. 신규 작업에서는 타이틀 아래 해설을 만들 수 있는 `editorial_notes`를 사용하지 않는다.
 - 구간마다 자막 높이·인물 위치가 다르면 `segments`와 길이가 같은 `segment_crops` 목록을 지정할 수 있다. 각 항목의 `width`·`height`는 해당 구간의 크롭 비율, `top`은 원본 위쪽 기준 시작 비율이다. 생략한 너비·높이는 기본 1:1 크롭 또는 편집안의 크롭 설정을 따르며, `top`도 해당 기본 구도에 맞춘다. `top + height`는 1 이하여야 하며 MP4와 캡컷에 같은 크롭 좌표를 반영한다. 빈 객체 `{}`로 해당 구간의 기본 구도를 유지할 수 있다.
 - 선택적 `visual_labels`는 `[원본 시작, 끝, 부위 라벨, x, y]` 목록이다. x·y는 전체 1080x1920 캔버스의 0~1 중심 좌표이며 한 편집 구간 안에 둔다. 실제 부품·비교 단계 표시가 필요하고 사용자가 요청한 경우에만 사용하며, 타이틀 아래 추가 문구를 대신하는 용도로 쓰지 않는다. 움직이는 부위에 잘못 붙지 않는지 최종 프레임을 확인한다.
-- `shorts/build.py`는 MP4·SRT, `shorts/capcut.py`는 캡컷 프로젝트를 생성한다. FFmpeg, yt-dlp, Python Pillow, pycapcut 및 macOS의 AppleSDGothicNeo 폰트가 필요하다.
+- `shorts/build.py`는 MP4·SRT, `shorts/capcut.py`는 캡컷 프로젝트를 생성한다. FFmpeg, yt-dlp, Python Pillow, pycapcut, PyMySQL, python-dotenv 및 macOS의 AppleSDGothicNeo 폰트가 필요하다.
 - macOS에서는 CapCut 9.8.0이 저장한 네이티브 프로젝트를 템플릿으로 사용해 결과 폴더의 초안을 구성하고 CapCut 프로젝트 목록에도 별도 복사본을 등록한다. 렌더 전에 CapCut을 종료해야 하며, `SHORTS_CAPCUT_PROJECTS_DIR`로 프로젝트 루트를 바꿀 수 있다. 네이티브 템플릿이 없으면 기존 형식으로 조용히 대체하지 않고 오류를 낸다. 앱에서 실제로 열어 확인하기 전까지 호환 완료로 간주하지 않는다.
 - 선택적 `narration_intro`와 `narration_outro`는 각각 `{"video": "작업 폴더 내 파일 경로", "text": "자막"}`으로 지정한다. 필요한 위치에만 넣으며 둘 다 생략할 수 있다. 클립은 영상·음성이 포함된 2~4초 길이의 1080x1920 영상으로, 타이틀·출처·자막을 미리 포함해야 한다. 별도 SRT에도 자막을 추가하며 캡컷에서는 별도 오디오 트랙이 아니다. 자동 음성 생성이나 외부 업로드는 하지 않는다.
 - `work/`의 임시 파일은 사용자가 남겨두도록 요청했다. 정리하거나 원본을 이동·삭제하기 전에 사용자 지시를 확인한다. 기존 결과물을 덮어쓰거나 삭제할 때도 요청 범위를 지킨다.
