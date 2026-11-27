@@ -1,0 +1,141 @@
+{
+  "cloud_draft_cover": false,
+  "cloud_draft_sync": false,
+  "cloud_package_completed_time": "",
+  "draft_cloud_capcut_purchase_info": "",
+  "draft_cloud_last_action_download": false,
+  "draft_cloud_package_type": "",
+  "draft_cloud_purchase_info": "",
+  "draft_cloud_template_id": "",
+  "draft_cloud_tutorial_info": "",
+  "draft_cloud_videocut_purchase_info": "",
+  "draft_cover": "draft_cover.jpg",
+  "draft_deeplink_url": "",
+  "draft_enterprise_info": {
+    "draft_enterprise_extra": "",
+    "draft_enterprise_id": "",
+    "draft_enterprise_name": "",
+    "enterprise_material": []
+  },
+  "draft_fold_path": "/Users/1001291/Desktop/workspace-ai/cele-shorts/output/2026-11-27/kimdoyeon-vogue-v5/capcut_drafts/s1_cheese",
+  "draft_has_unfinished_aigc_video_effect": false,
+  "draft_id": "2212E1A3-7639-4CE7-AED8-46CAC6F59356",
+  "draft_is_ae_produce": false,
+  "draft_is_ai_packaging_used": false,
+  "draft_is_ai_shorts": false,
+  "draft_is_ai_translate": false,
+  "draft_is_article_video_draft": false,
+  "draft_is_cloud_temp_draft": false,
+  "draft_is_from_deeplink": "false",
+  "draft_is_infinite_canvas_draft": false,
+  "draft_is_invisible": false,
+  "draft_is_pippit_draft": false,
+  "draft_is_web_article_video": false,
+  "draft_materials": [
+    {
+      "type": 0,
+      "value": [
+        {
+          "ai_group_type": "",
+          "create_time": 1795235161,
+          "duration": 33333,
+          "enter_from": 0,
+          "extra_info": "",
+          "file_Path": "",
+          "height": 0,
+          "id": "cd484075-d92a-4bc9-b45c-d093d2f9e71b",
+          "import_time": 1795235161,
+          "import_time_ms": 1795235161953923,
+          "item_source": 1,
+          "material_color_tag": "",
+          "md5": "",
+          "metetype": "none",
+          "roughcut_time_range": {
+            "duration": 33333,
+            "start": 0
+          },
+          "sub_time_range": {
+            "duration": -1,
+            "start": -1
+          },
+          "type": 0,
+          "width": 0
+        },
+        {
+          "ai_group_type": "",
+          "create_time": 1795235752,
+          "duration": 5000000,
+          "enter_from": 0,
+          "extra_info": "손태영 홈트.png",
+          "file_Path": "/Users/1001291/Desktop/workspace-ai/cele-shorts/output/2026-11-20/sontaeyoung-vibration-v3/손태영 홈트.png",
+          "height": 1256,
+          "id": "7c0261cf-237c-4e37-ad72-4e089225e774",
+          "import_time": 1795235914,
+          "import_time_ms": 1795235913540645,
+          "item_source": 1,
+          "material_color_tag": "",
+          "md5": "",
+          "metetype": "photo",
+          "roughcut_time_range": {
+            "duration": -1,
+            "start": -1
+          },
+          "sub_time_range": {
+            "duration": -1,
+            "start": -1
+          },
+          "type": 0,
+          "width": 1278
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "value": []
+    },
+    {
+      "type": 2,
+      "value": []
+    },
+    {
+      "type": 3,
+      "value": []
+    },
+    {
+      "type": 6,
+      "value": []
+    },
+    {
+      "type": 7,
+      "value": []
+    },
+    {
+      "type": 8,
+      "value": []
+    }
+  ],
+  "draft_materials_copied_info": [],
+  "draft_name": "s1_cheese",
+  "draft_need_rename_folder": false,
+  "draft_new_version": "",
+  "draft_removable_storage_device": "",
+  "draft_root_path": "/Users/1001291/Desktop/workspace-ai/cele-shorts/output/2026-11-27/kimdoyeon-vogue-v5/capcut_drafts",
+  "draft_segment_extra_info": [],
+  "draft_timeline_materials_size_": 36321,
+  "draft_type": "",
+  "draft_web_article_video_enter_from": "",
+  "pippit_avatar_url": "",
+  "pippit_extra_info": "",
+  "pippit_id": "",
+  "pippit_user_name": "",
+  "tm_draft_cloud_completed": "",
+  "tm_draft_cloud_entry_id": -1,
+  "tm_draft_cloud_modified": 0,
+  "tm_draft_cloud_parent_entry_id": -1,
+  "tm_draft_cloud_space_id": -1,
+  "tm_draft_cloud_user_id": -1,
+  "tm_draft_create": 1795751932311439,
+  "tm_draft_modified": 1795751932311439,
+  "tm_draft_removed": 0,
+  "tm_duration": 23041667
+}

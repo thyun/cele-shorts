@@ -1,0 +1,386 @@
+{
+ "reference": "PLAYBOOK.md",
+ "recorded_on": "2026-11-26",
+ "source_url": "https://www.youtube.com/watch?v=RRQvsZ6U-I0",
+ "source_title": "[EN] 장원영의 뷰티 시크릿✨ 헤어 케어, 모닝 루틴, 촬영 전날 꼭 하는 것 | BEAUTY SECRET",
+ "source_channel": "VOGUE KOREA",
+ "job": "wonyoung-vogue-v4b",
+ "stage1_record": "work/2026-11-26/wonyoung-vogue-v4/stage1.json",
+ "shorts": [
+  {
+   "id": "s2_oil",
+   "source_facts": [
+    {
+     "fact": "'제가 전에도 리터 단위로 쟁여두고 싶다고 말한 만큼 제 찐 애정템인데요'",
+     "source_timecode": "02:41.98–02:46.44"
+    },
+    {
+     "fact": "'텍스처는 너무 가벼운데 영양감이 깊게 느껴지고요'",
+     "source_timecode": "02:46.78–02:50.48"
+    },
+    {
+     "fact": "'자연스러운 엔젤링을 만들어주면서도 절대 뭉치지 않아서 너무 좋더라고요'",
+     "source_timecode": "02:50.80–02:55.72"
+    },
+    {
+     "fact": "'나가기 전에 헤어 미스트를 뿌려주면 정말 제가 생각하는 딱 글로스 걸'",
+     "source_timecode": "02:56.28–03:01.72"
+    },
+    {
+     "fact": "원본 라벨: Glaze Drops Hair Oil(글레이즈 퍼퓸 헤어 오일), Gloss Absolu Perfume Hair-mist",
+     "source_timecode": "02:41.9, 02:56.2"
+    }
+   ],
+   "thumbnail_candidates": [
+    {
+     "title": "리터로 쟁여두고픈\n장원영 애정템은?",
+     "name_included": true,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "선정. '리터 단위로 쟁여두고 싶다'는 실제 발언 기반, 제품은 보류. 첫 화면이 오일 단독 컷이라 제품군은 보이지만 '왜 리터로?'가 남음"
+    },
+    {
+     "title": "장원영이 전에도\n또 말한 그 오일",
+     "name_included": true,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'전에도 말했다' 근거 있음. 제품군 공개로 궁금증 약함 → 2순위"
+    },
+    {
+     "title": "가벼운데 깊다는\n장원영의 한 방울",
+     "name_included": true,
+     "structure": "증거 공개",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'한 방울'은 원본 발언 아님(제품 형태 추정) → 탈락"
+    },
+    {
+     "title": "리터 단위로 사고픈\n머릿결 마무리템",
+     "name_included": false,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'사고픈'은 '쟁여두고 싶다'와 유사하나 구매 단정 뉘앙스. 이름 없는 버전 중 1순위"
+    },
+    {
+     "title": "엔젤링 만들면서\n뭉치지 않는 비결?",
+     "name_included": false,
+     "structure": "결론 선공개",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "효과 설명이 결론 선공개 + 효능 뉘앙스 → 탈락"
+    },
+    {
+     "title": "나가기 전 마지막\n장원영이 뿌리는 것",
+     "name_included": true,
+     "structure": "기대와 실제",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "미스트 중심. 영상 전반(오일)과 약속이 어긋남 → 탈락"
+    },
+    {
+     "title": "쟁여두고 싶다고\n두 번이나 말한 것",
+     "name_included": false,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'전에도 말한 만큼' 발언으로 두 번 근거 가능. 인물 없이도 궁금증 유지 → 보류"
+    },
+    {
+     "title": "머리에 바르는 건데\n리터로 산다고?",
+     "name_included": false,
+     "structure": "과장",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'산다'는 과장(희망 발언) → 탈락"
+    },
+    {
+     "title": "글로스 걸 완성하는\n장원영의 두 단계",
+     "name_included": true,
+     "structure": "제품명 위험",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'글로스 걸'이 브랜드 라인명(Gloss Absolu)과 겹쳐 제품명 금지 조건 위험 → 탈락"
+    },
+    {
+     "title": "딱 한 방울인데\n리터로 쟁이고픈 것",
+     "name_included": false,
+     "structure": "미확인 사실",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "오일 단독 컷 + 자막 '제가 전에도 리터'",
+     "payoff": "0~3.8초 발언, 4~11.5초 설명, 12~18.2초 미스트",
+     "risk": "",
+     "decision": "'한 방울' 미확인 → 탈락"
+    }
+   ],
+   "selected_title": "리터로 쟁여두고픈\n장원영 애정템은?",
+   "selected_from": [
+    "리터로 쟁여두고픈\n장원영 애정템은?"
+   ],
+   "selection_reason": "실제 발언 '리터 단위로 쟁여두고 싶다'를 행동으로 공개하고 제품은 보류. 첫 화면이 오일 컷이라 제품군은 보이지만 '왜 리터로?'가 남는다.",
+   "thumbnail_check": {
+    "status": "확인(270x480 축소 미리보기)",
+    "artifact": "output/2026-11-26/wonyoung-vogue-v4b/review/s2_oil_thumb270.jpg"
+   },
+   "opening_check": "0~3.8초 오일 단독 컷(라벨 말풍선 크롭 제외) 위로 '제가 전에도 리터 단위로 쟁여두고 싶다고 말한 만큼' 자막. 타이틀 약속과 일치. 실제 청취는 미실시.",
+   "upload_title": {
+    "candidates": [
+     "장원영이 리터 단위로 쟁여두고 싶다는 헤어 오일",
+     "장원영 \"전에도 말했지만\" 또 꼽은 찐 애정템 헤어오일",
+     "가벼운데 영양감은 깊다는 장원영 헤어 오일 + 마무리 미스트",
+     "장원영 외출 전 마지막 두 단계, 오일과 헤어 미스트",
+     "뭉치지 않는 헤어 오일? 장원영이 리터로 쟁이고 싶다는 그것",
+     "아이브 장원영 머릿결 마무리 루틴 (오일 → 미스트)",
+     "장원영이 두 번이나 쟁이고 싶다고 한 헤어오일",
+     "\"딱 글로스 걸\" 장원영이 나가기 전 뿌리는 헤어 미스트",
+     "장원영 헤어 오일 추천 이유: 가볍고 엔젤링 살고 안 뭉침",
+     "장원영이 리터째 사고 싶다는 오일, 뭐가 다르길래"
+    ],
+    "selected": "장원영이 리터 단위로 쟁여두고 싶다는 헤어 오일",
+    "reason": "검색 표현(장원영, 헤어 오일)과 실제 발언(리터 단위로 쟁여두고 싶다)을 결합. 효능 주장 없음."
+   },
+   "description": "장원영이 \"전에도 리터 단위로 쟁여두고 싶다고 말했다\"는 헤어 오일, 직접 들고 설명합니다.\n가벼운데 영양감이 깊다는 이유와 외출 전 마지막에 뿌리는 헤어 미스트까지.\n\n원본: VOGUE KOREA 「장원영의 뷰티 시크릿」\n\n※ 이 영상에는 제휴 링크가 포함될 수 있으며, 구매 시 수수료를 받을 수 있습니다. 링크는 채널 프로필에서 확인하세요.",
+   "tags": [
+    "장원영",
+    "아이브 장원영",
+    "장원영 헤어",
+    "장원영 헤어오일",
+    "헤어 오일 추천",
+    "헤어 미스트",
+    "머릿결 관리",
+    "헤어 케어 루틴",
+    "아이돌 헤어 케어",
+    "케라스타즈",
+    "글레이즈 드롭스",
+    "헤어 에센스",
+    "엔젤링",
+    "보그코리아",
+    "뷰티 시크릿"
+   ],
+   "unmet_conditions": [
+    "원본 재편집·재업로드·제휴 상업적 이용 허락 및 배경음악 권리 미확인",
+    "협찬 성격 원본의 유료 광고 표기 요건 미확인",
+    "실제 청취·연속 재생·CapCut 앱 열기 미실시",
+    "출력 길이 18.5초로 20초 기준에 약간 미달(다른 제품 발언을 붙이지 않음)"
+   ]
+  },
+  {
+   "id": "s3_daily",
+   "source_facts": [
+    {
+     "fact": "'저는 거의 매일 트리트먼트를 하는데요'",
+     "source_timecode": "01:11.04–01:13.40"
+    },
+    {
+     "fact": "'제 모발이 조금 얇은 편이기도 하고 머릿결 좋은 거를 굉장히 중요하게 생각하는 사람이라 꼭 하루에 한 번씩은 해주는 편입니다'",
+     "source_timecode": "01:13.40–01:23.14"
+    },
+    {
+     "fact": "'바로 이 귀엽게 생긴 글로스 마스크인데요. 오래 방치하면 모발의 컨디션을 탄탄하게 해주는 느낌이라'",
+     "source_timecode": "01:23.40–01:32.08"
+    },
+    {
+     "fact": "'헹궈낼 때 우와 부드러워졌다 이렇게 생각이 드는 제품이에요'",
+     "source_timecode": "01:32.08–01:36.66"
+    },
+    {
+     "fact": "원본 라벨: Gloss Absolu Masque(글로스 압솔뤼 헤어 마스크)",
+     "source_timecode": "01:27.3–01:29.8"
+    }
+   ],
+   "thumbnail_candidates": [
+    {
+     "title": "모발 얇은 장원영\n거의 매일 하는 것",
+     "name_included": true,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "선정. '모발 얇은 편'·'거의 매일' 모두 본인 발언. 무엇인지는 보류하고 재배열로 2~3초 뒤 답 제공"
+    },
+    {
+     "title": "장원영 머릿결\n하루 한 번의 비밀",
+     "name_included": true,
+     "structure": "범용 표현",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "'비밀'이 범용 → 탈락"
+    },
+    {
+     "title": "헹굴 때 우와\n장원영이 감탄한 것",
+     "name_included": true,
+     "structure": "반응과 계기",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "반응 기반. 첫 화면(얼굴 토크)과 약속이 어긋남 → 2순위"
+    },
+    {
+     "title": "머릿결에 진심인\n매일 하는 한 가지",
+     "name_included": false,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "'진심'은 채널 표현이나 '굉장히 중요하게 생각' 발언으로 뒷받침. 이름 없는 버전 1순위"
+    },
+    {
+     "title": "얇은 모발이라서\n매일 챙긴다는 것",
+     "name_included": false,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "1번과 구조 동일(이름만 제거) → 보류"
+    },
+    {
+     "title": "장원영이 귀엽다며\n꺼낸 통의 정체",
+     "name_included": true,
+     "structure": "정체 의존",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "'정체' 의존 + 통이 화면에 바로 보임 → 탈락"
+    },
+    {
+     "title": "오래 둘수록 좋다는\n헤어 마스크 쓰는 법",
+     "name_included": false,
+     "structure": "결론 선공개",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "제품군·결론 선공개 → 탈락"
+    },
+    {
+     "title": "트리트먼트 매일?\n장원영의 이유",
+     "name_included": true,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "결론(트리트먼트) 선공개지만 이유 보류. 2순위 대안"
+    },
+    {
+     "title": "하루 한 번 꼭\n머릿결 위해 하는 것",
+     "name_included": false,
+     "structure": "행동과 이유",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "무난하나 인물·상황 약함"
+    },
+    {
+     "title": "헹구는 순간 달라진\n촉감의 이유는?",
+     "name_included": false,
+     "structure": "반응과 계기",
+     "viewer_question": "",
+     "source_evidence": "",
+     "opening_visual": "미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'",
+     "payoff": "8.3~10.2초 '거의 매일 트리트먼트' 공개, 10.3~21.3초 마스크·반응",
+     "risk": "",
+     "decision": "'달라진'은 '부드러워졌다'로 뒷받침되나 썸네일 정지화면만으로 이해 어려움"
+    }
+   ],
+   "selected_title": "모발 얇은 장원영\n거의 매일 하는 것",
+   "selected_from": [
+    "모발 얇은 장원영\n거의 매일 하는 것"
+   ],
+   "selection_reason": "'모발 얇은 편'·'거의 매일' 모두 본인 발언. 무엇을 하는지는 보류하고 재배열로 8초대에 답을 제공한다.",
+   "thumbnail_check": {
+    "status": "확인(270x480 축소 미리보기)",
+    "artifact": "output/2026-11-26/wonyoung-vogue-v4b/review/s3_daily_thumb270.jpg"
+   },
+   "opening_check": "0~3초 미디엄 샷 '제 모발이 조금 얇은 편이기도 하고'. 타이틀 첫 줄과 일치하며 답(트리트먼트)은 8.3초에 나온다. 실제 청취는 미실시.",
+   "upload_title": {
+    "candidates": [
+     "모발 얇다는 장원영이 거의 매일 한다는 헤어 트리트먼트",
+     "장원영 하루 한 번 꼭 하는 머릿결 루틴, 헹굴 때 \"우와\"",
+     "장원영이 귀엽다며 꺼낸 헤어 마스크, 오래 둘수록 좋다는 이유",
+     "트리트먼트 매일 해도 될까? 장원영의 대답",
+     "아이브 장원영 머릿결 관리법: 거의 매일 트리트먼트",
+     "장원영 \"머릿결 좋은 거 굉장히 중요\" 그래서 매일 하는 것",
+     "헹굴 때 부드러워졌다는 장원영 헤어 마스크 사용법",
+     "장원영 얇은 모발 관리 루틴, 트리트먼트 + 헤어 마스크",
+     "장원영이 하루 한 번씩 꼭 한다는 헤어 케어 한 가지",
+     "머릿결에 진심인 장원영의 매일 트리트먼트 습관"
+    ],
+    "selected": "모발 얇다는 장원영이 거의 매일 한다는 헤어 트리트먼트",
+    "reason": "'모발 얇다'·'거의 매일'이 모두 발언 근거가 있고 검색 표현(헤어 트리트먼트)을 포함."
+   },
+   "description": "모발이 얇은 편이라는 장원영, 머릿결을 위해 거의 매일 한다는 것이 있습니다.\n귀엽게 생겼다며 꺼낸 헤어 마스크와 헹궈낼 때 \"우와\" 반응까지.\n\n원본: VOGUE KOREA 「장원영의 뷰티 시크릿」\n\n※ 이 영상에는 제휴 링크가 포함될 수 있으며, 구매 시 수수료를 받을 수 있습니다. 링크는 채널 프로필에서 확인하세요.",
+   "tags": [
+    "장원영",
+    "아이브 장원영",
+    "장원영 헤어",
+    "장원영 머릿결",
+    "헤어 트리트먼트",
+    "헤어 마스크 추천",
+    "머릿결 관리",
+    "얇은 모발 관리",
+    "헤어 케어 루틴",
+    "케라스타즈",
+    "글로스 압솔뤼",
+    "아이돌 헤어 케어",
+    "홈케어 헤어",
+    "보그코리아",
+    "뷰티 시크릿"
+   ],
+   "unmet_conditions": [
+    "원본 재편집·재업로드·제휴 상업적 이용 허락 및 배경음악 권리 미확인",
+    "협찬 성격 원본의 유료 광고 표기 요건 미확인",
+    "실제 청취·연속 재생·CapCut 앱 열기 미실시(특히 재배열 연결 8.1~8.4초)",
+    "'트리트먼트'와 '마스크'가 동일 제품인지 원본에서 명시되지 않음",
+    "82~83.3초 원본 장식 아이콘이 프레임에 남음"
+   ]
+  }
+ ]
+}
